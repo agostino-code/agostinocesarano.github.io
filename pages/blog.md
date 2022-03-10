@@ -1,11 +1,11 @@
 ---
 layout: layouts/blog.njk
-title: Articles
-date: 2017-01-01
-permalink: /blog/index.html
+title: Appunti
+subtitle: ""
 metaDescription: A sample Blog page listing various posts and authors.
-subtitle: A collection of technical blog posts and random thoughts
+date: 2022-03-10T22:55:03.689Z
+permalink: /blog/index.html
 eleventyNavigation:
-  key: Blog
+  key: Appunti
   order: 2
 ---

@@ -1,6 +1,6 @@
 {
-  "title": "Hello, my name is Fernfolio",
-  "image": "/static/img/fern-in-hand.jpeg",
-  "subtitle": "The super simple portfolio template built with Eleventy and Netlify CMS",
-  "image_alt": "Fern in hand"
+  "title": "Ciao, benvenuto sul mio Sito!",
+  "image": "/static/img/home.jpg",
+  "subtitle": "Il sito di un semplice studente Universitario.",
+  "image_alt": ""
 }

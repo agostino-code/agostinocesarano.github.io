@@ -1,8 +1,8 @@
 ---
 title: Linguaggi di Progammazione
 date: 2022-03-10T23:13:22.891Z
-author: Agostino CEsarano
-summary: Appunti per il corso LP
+author: Agostino Cesarano
+summary: Appunti per il corso di Linguaggi di Progammazione, Professore Bonatti.
 tags: []
 ---
 **Come vedere se un linguaggio è Completo?**

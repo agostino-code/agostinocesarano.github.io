@@ -2,7 +2,7 @@
 title: Laboratorio Algoritmi e Strutture Dati
 date: 2022-03-14T10:42:54.368Z
 author: Agostino Cesarano
-summary: Appunti LASD
+summary: Appunti per il corso di LASD, Professore Mogavero.
 metaDescription: ""
 tags:
   - LASD

@@ -25,7 +25,7 @@ A differenza degli int e long, che utilizzano un bit per la rappresentazione del
 
 > In base al compilatore sono presenti sono presenti u***type***/unsigned ***type***
 >
-> ```
+> ```cpp
 > unsigned type varname [ =default value ];
 > ```
 
@@ -42,7 +42,7 @@ A differenza degli int e long, che utilizzano un bit per la rappresentazione del
 
 L'ultimo non per importanza è il tipo const che permette di definire costanti, valori di sola lettura. Utili anche nel passaggio dei puntatori nelle chiamate a funzione.
 
-```
+```cpp
 const type varname = value;
 ```
 
@@ -50,6 +50,40 @@ const type varname = value;
 
 **Dichiarazione puntatori**
 
+```cpp
+type* varname [ = riferimento indirizzo];
 ```
-type
+
+Ricordiamo che la dimenzione di un puntatore non dipende dal tipo di dato puntato, ma dal tipo di architettura della macchina in uso, genericamente 64 Bit nelle nuove macchine, 32 Bit nelle macchine obsolete.
+
+*Esempi di utilizzo*
+
+```cpp
+char c='a';
+char *p = &c ;
+cout<< *p <<endl;
+p = nullptr; //nullptr corrisponde alla NULL assegniata al puntatore in C.
+cout<< c <<endl;
+//Attenzione errori comuni!
+cout<< *p <<endl; 
+/* In questo caso avro un Segmentation fault,
+non posso stampare un puntatore null */
+cout<< p <<endl; 
+/* In questo caso la stampa del valore
+non va a buon fine, provato stampa simboli senza senso */
 ```
+
+*Altri esempi di errore*
+
+```cpp
+const char c ='b'
+char *p = &c; 
+/* Errore,non posso assegnare l'indirizzo di una costante
+ad un puntatore classico, potrei modificare una costante.
+Questo porterebbe ad un errore.*/
+const char *p = &c; //Modo corretto.
+```
+
+Posso fare il contrario, puntore costante ad una variabile, non permette la modifica dell'indirizzo del puntato. 
+
+##### Puntatore Void

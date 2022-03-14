@@ -51,7 +51,7 @@ const type varname = value;
 **Dichiarazione puntatori**
 
 ```cpp
-type* varname [ = riferimento indirizzo];
+type *varname [ = riferimento indirizzo];
 ```
 
 Ricordiamo che la dimenzione di un puntatore non dipende dal tipo di dato puntato, ma dal tipo di architettura della macchina in uso, genericamente 64 Bit nelle nuove macchine, 32 Bit nelle macchine obsolete.
@@ -69,8 +69,8 @@ cout<< *p <<endl;
 /* In questo caso avro un Segmentation fault,
 non posso stampare un puntatore null */
 cout<< p <<endl; 
-/* In questo caso la stampa del valore
-non va a buon fine, provato stampa simboli senza senso */
+/* In questo caso la stampa del valore non va
+a buon fine, provato stampa simboli senza senso */
 ```
 
 *Altri esempi di errore*
@@ -87,3 +87,21 @@ const char *p = &c; //Modo corretto.
 Posso fare il contrario, puntore costante ad una variabile, non permette la modifica dell'indirizzo del puntato. 
 
 ##### Puntatore Void
+
+```cpp
+void *varname [ = riferimento indirizzo];
+```
+
+*Esempi di utilizzo*
+
+```cpp
+void *p = &c;
+/* Il puntatore void fa la stampa dell' indirizzo,
+quando dichiariamo il tipo di un puntatore definiamo già il tipo
+che ci sarà in quella locazione di memoria è quindi stamperà il valore */
+cout<< *((char *)p) <<endl;
+cout<< *(static_cast <char *>(p)) <<endl;
+/* Possiamo fare il cast del tipo per permettere la stampa del valore */
+
+
+```

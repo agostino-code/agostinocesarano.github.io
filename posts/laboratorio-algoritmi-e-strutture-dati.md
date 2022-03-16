@@ -241,3 +241,119 @@ friend
 ```
 
 **Enumerazioni**
+
+**Dichiarazione enum**
+
+```cpp
+enum class enumName{elemento,...,elemento};
+enum enumName{...};/* C Like,gli elementi sono globali,
+non posso dichiarare un altro elemento con lo stesso nome in un altra enum,
+sarebbe un errore,ecco perchè è preferibile usare il primo modo di C++ */
+```
+
+**Accesso ai valori di un enum**
+
+```cpp
+enumName::elemento
+```
+
+Le enumerazioni possono essere confrontate: ==,!=,<,>,<=,>= 
+
+o assegnate: =
+
+Levariabili di tipo enumerativo possono ovviamanete abvere un valore di default iniziale.
+
+##### Libreria <iostream>
+
+**Dichiarazione libreria**
+
+```cpp
+#include<iostream>
+```
+
+**Operatori principali**
+
+```cpp
+<< //put-to
+>> //get-from
+```
+
+**Standard Stream**
+
+```cpp
+cerr //
+cout //Output stream : ostream
+clog //
+  
+cin //Input stream : istream
+```
+
+**Override degli operatori di put-to e get-from**
+
+*Esempio di utilizzo*
+
+```cpp
+struct Studente {
+
+  ulong Id = 0;
+  string Matricola = "N86000000";
+  string Cognome = "";
+  string Nome = "";
+
+   friend ostream& operator<<(ostream& outstr, const Studente& stu); 
+  //Dichiaro la funzione amica,può accede agli attributi privati per l'output
+
+   friend istream& operator>>(istream& instr, Studente& stu);
+  //Dichiaro la funzione amica,può accede agli attributi privati per l'input
+  
+   private:
+
+   ulong SecureNum = 0x25242310; //Attributo privato
+
+};
+
+ostream& operator<<(ostream& outstr, const Studente& stu) { 
+  // Definisco l'output della struct Studente
+  outstr << "Id: " << stu.Id << "; Matricola: " << stu.Matricola 
+    << "; Cognome: " << stu.Cognome << "; Nome: " << stu.Nome;
+  outstr << "; Numero di sicurezza: " << stu.SecureNum;
+  return outstr;
+}
+
+istream& operator>>(istream& instr, Studente& stu) {
+  //Definisco l'input della struct Studente
+  instr >> stu.Id >> stu.Matricola >> stu.Cognome >> stu.Nome;
+  instr >> stu.SecureNum;
+  return instr;
+}
+
+enum class Color { Giallo, Verde, Bianco, Rosso };
+
+ostream& operator<<(ostream& outstr, const Color& clr) {
+  switch(clr) {
+    case Color::Verde:
+      outstr << "Green";
+      break;
+    case Color::Bianco:
+      outstr << "White";
+      break;
+    case Color::Rosso:
+      outstr << "Red";
+      break;
+    default:
+      outstr << "Color{ " << int(clr) << " }";
+  }
+  return outstr;
+}
+```
+
+**Funzioni di libreria**
+
+```cpp
+//Classe istream
+good(); eof(); fail(); bad(); //Funzioni per l'analisi dello Stato
+get(c); getline(p,n) //c char, p puntatore char, numero di caratteri da leggere
+  
+//Classe ostream
+put(c); write(p,n) //c char, p puntatore const char, numero di caratteri da leggere
+```

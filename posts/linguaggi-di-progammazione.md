@@ -36,7 +36,7 @@ Ad esempio Java utilizza una macchina astratta JVM che traduce tramite Software 
 
 *Compilazione per macchina intermedia.*
 
-> Interpreti: traducono ed eseguono un costrutto alla volta.
+> **Interpreti:** traducono ed eseguono un costrutto alla volta.
 
 **PRO**: debug - fase di sviluppo: interazione piu snella.
 
@@ -58,3 +58,23 @@ ad es. funzionidi I/O.
 *Gestione della memoria;* 
 
 garbage collection; gestione dell’heap; gestione dello stack.
+
+##### Proprietà dei linguaggi
+
+> Semplicità
+
+*Semantica:* minimo numero di concetti e strutture.
+
+*Sintattica:* unica rappresentazione di ogni concetto.
+
+> Astrazione
+
+*Dati:* nasconde i dettagli dei vari oggetti.
+
+*Procedure:* facilitare la modularità del progetto.
+
+Espressività: facilità di rappresentazione di oggetti.
+
+Ortoganità: meno eccezzioni alle regole del linguaggio.
+
+Portabilità

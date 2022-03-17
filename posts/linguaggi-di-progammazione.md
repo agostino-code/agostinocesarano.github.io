@@ -140,11 +140,36 @@ return (! empty (L1 ));
 }
 ```
 
-*In Lisp ( paradigma funzionale )*
+*pseuduo codice ( paradigma funzionale )*
 
 ```lisp
 function member (X,L)
 if vuota (L) then false
 else if X == testa (L) then true
 else member (X, coda (L))
+```
+
+*In LISP ( linguaggio di tipo funzionale )*
+
+```lisp
+( defun membro (x l)
+( cond (( null l) nil )
+(( equal x ( first l)) T)
+(T ( membro x ( rest l )))))
+```
+
+*C si potrebbe usare in stile funzionale se evitassimo di usare i costrutti imperativi:*
+
+```ags
+bool member (X,L) {
+return ( vuota (L)) ? false :
+(X == testa (L ))? true :
+member (X, coda (L)) }
+```
+
+*In Prolog ( linguaggio di tipo Logico, paradigma logico )*
+
+```
+membro (X, [X|L ]).
+membro (X, [Y|L]) :- membro (X, L).
 ```

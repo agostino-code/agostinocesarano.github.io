@@ -170,6 +170,6 @@ member (X, coda (L)) }
 *In Prolog ( linguaggio di tipo Logico, paradigma logico )*
 
 ```
-membro (X, [X|L ]).
+membro (X, [X|L]).
 membro (X, [Y|L]) :- membro (X, L).
 ```

@@ -49,7 +49,7 @@ Ad esempio Java utilizza una macchina astratta JVM che traduce tramite Software 
 
 Interpetre nella compilazione per macchina intermedia è detta **Supporto Run Time (SRT)**
 
-L'SRT ha funzionalità aggiuntive
+*L'SRT* ha funzionalità aggiuntive
 
 *Funzioni di basso livello / interfacce col S.O. ;* 
 
@@ -63,6 +63,8 @@ garbage collection; gestione dell’heap; gestione dello stack.
 
 > Semplicità
 
+*( concisione ) vs ( leggibilità )*
+
 *Semantica:* minimo numero di concetti e strutture.
 
 *Sintattica:* unica rappresentazione di ogni concetto.
@@ -73,8 +75,22 @@ garbage collection; gestione dell’heap; gestione dello stack.
 
 *Procedure:* facilitare la modularità del progetto.
 
-Espressività: facilità di rappresentazione di oggetti.
+> Espressività
 
-Ortoganità: meno eccezzioni alle regole del linguaggio.
+*( facilità di rappresentazione di oggetti ) vs (semplicità)*
 
-Portabilità
+> Ortoganità
+
+meno eccezzioni alle regole del linguaggio.
+
+> Portabilità
+
+**Criterio di scelta del linguaggio**
+
+* Disponibilita dei traduttori
+* Maggiore conoscenza da parte del programmatore
+* Esistenza di standard di portabilita
+* Comodita dell’ambiente di programmazione
+* Sintassi aderente al problema
+* Semantica aderente alla architettura fisica?
+  *con le moderne tecniche di implementazione dei linguaggi non è più un criterio stringente*

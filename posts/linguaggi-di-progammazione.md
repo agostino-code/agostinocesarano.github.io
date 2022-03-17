@@ -6,6 +6,18 @@ summary: Appunti per il corso di Linguaggi di Progammazione, Professore Bonatti.
 tags:
   - LP
 ---
+**Terminologia**
+
+> **Linguaggio di programmazione:** è un linguaggio che è usato
+> per esprimere (mediante un programma) un processo con il quale
+> un processore pu`o risolvere un problema.
+>
+> **Processore:** e la macchina che eseguirà il processo descritto dal
+> programma; non si deve intendere come un singolo oggetto, ma
+> come una architettura di elaborazione.
+>
+> **Programma:** è l’espressione codificata di un processo.
+
 **Come vedere se un linguaggio è Completo?**
 
 Un linguaggio di progammazione è completo se può simulare una macchina di Turing.

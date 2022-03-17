@@ -119,6 +119,16 @@ meno eccezzioni alle regole del linguaggio.
 * testa() restituisce il valore di testa.
 * coda() restituisce la coda tagliando il valore di testa.
 
+*In pseduo codice, paradigma imperativo.*
+
+```
+procedure membro (X,L)
+local L1 = L
+while not vuota (L1) and not X= testa (L1)
+do L1 = coda (L1)
+return not vuota (L1)
+```
+
 *In C ( linguaggio di tipo imperativo )*
 
 ```c
@@ -128,4 +138,13 @@ while ( ! empty (L1) && ! X= testa (L1 ))
 L1 = coda (L1 );
 return (! empty (L1 ));
 }
+```
+
+*In Lisp ( paradigma funzionale )*
+
+```lisp
+function member (X,L)
+if vuota (L) then false
+else if X == testa (L) then true
+else member (X, coda (L))
 ```

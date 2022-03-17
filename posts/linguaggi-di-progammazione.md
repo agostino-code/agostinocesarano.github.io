@@ -173,3 +173,16 @@ member (X, coda (L)) }
 membro (X, [X|L]).
 membro (X, [Y|L]) :- membro (X, L).
 ```
+
+##### Memoria
+
+*Consiste in un insieme di “contenitori di dati”.*
+
+Ad es. parole (o celle) della memoria centrale.
+
+Tipicamente rappresentate dal loro indirizzo associati ai valori in essi contenuti,i valori delle variabili.
+
+Dunque (concettualmente) la memoria è:
+
+* Una funzione da uno spazio di locazioni ad uno spazio di valori
+* mem(loc) = “valore contenuto in loc”

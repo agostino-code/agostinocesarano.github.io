@@ -111,4 +111,21 @@ meno eccezzioni alle regole del linguaggio.
 
 *Esempio:*
 
-*Vogliamo scrivere in un linguaggio imperativo, funzionale e logico la funzione* membro(X, L) *che decida se l’elemento X appartiene alla lista L.*
+*Vogliamo scrivere in un linguaggio imperativo, funzionale e logico la funzione* **membro(X,L)** *che decida se l’elemento X appartiene alla lista L.*
+
+*Useremo tre funzioni* 
+
+* empty() restituisce **true** se la lista è vuota.
+* testa() restituisce il valore di testa.
+* coda() restituisce la coda tagliando il valore di testa.
+
+*In C ( linguaggio di tipo imperativo )*
+
+```c
+bool member (X,L) {
+List L1 = L;
+while ( ! empty (L1) && ! X= testa (L1 ))
+L1 = coda (L1 );
+return (! empty (L1 ));
+}
+```

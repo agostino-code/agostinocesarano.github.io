@@ -20,7 +20,11 @@ tags:
 
 **Come vedere se un linguaggio è Completo?**
 
-Un linguaggio di progammazione è completo se può simulare una macchina di Turing.
+I linguaggi di progammazione *computazionalmente completi*, sono quelli che possono
+programmare qualunque funzione calcolabile.
+
+1. Un linguaggio di progammazione è completo se può simulare una macchina di Turing.
+2. Sono completi solo quelli che riescono ad esprimere anche programmi di cui non è decidibile la terminazione.
 
 **Macchine Astratte**
 

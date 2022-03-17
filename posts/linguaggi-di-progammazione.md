@@ -94,3 +94,17 @@ meno eccezzioni alle regole del linguaggio.
 * Sintassi aderente al problema
 * Semantica aderente alla architettura fisica?
   *con le moderne tecniche di implementazione dei linguaggi non è più un criterio stringente*
+
+**Paradigmi computazionali**
+
+**Imperativo:** Un programma specifica sequenze di modifiche da apportare allo stato della macchina (memoria).
+
+*Progammi di tipo ( iterativo )*
+**Funzionale:** Il programma e le sue componenti sono funzioni. Esecuzione come valutazione di funzioni.
+
+*Progammi di tipo ( ricorsivo )*
+**Logico:** Programma come descrizione logica di un problema. Esecuzione analoga a processi di dimostrazione di teoremi.
+**Orientato ad oggetti:** Programma costituito da oggetti che scambiano messaggi.
+**Parallelo:** Programmi che descrivono entit`a distribuite che sono eseguite contemporaneamente ed in modo asincrono.
+
+*I linguaggi di progammazione modermi permettono di usare più paradigmi in base alle nostre esigenze.*

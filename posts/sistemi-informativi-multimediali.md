@@ -56,4 +56,7 @@ Mediante il testo è possibile fornire una descrizione *(Annotazione)* ai vari m
 
 **MIRS (Multimedia Indexing and Retrieval Systems)**
 
-Elaborazione estrazione delle caratteristiche
+1. Elaborazione e estrazione delle caratteristiche
+2. Preelaborazione e indicizzazione
+
+![Schema di funzionamento MIRS](/static/img/mirs-scheme.png "MIRS schema di funzionamento")

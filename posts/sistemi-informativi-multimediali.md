@@ -158,7 +158,7 @@ Metodi noti impiegati per la compressione:
 * Run length
 * Lempel‐Ziv‐Welch (LZW)
 
-**Huffman**
+##### Huffman
 
 1. E’ basato sull’analisi statistica del dato da comprimere, in particolare sulla frequenza con la quale si ripetono i suoi elementi.
 2. Ha una prestazione proporzionata alla varianza delle frequenze con cui compaiono i caratteri del testo da comprimere (maggiore varianza -> maggiore prestazione)
@@ -177,3 +177,31 @@ Metodi noti impiegati per la compressione:
 **Importante!**
 
 Il codice di Huffman è univocamente decifrabile, non c'è possibilità di ambiguità, ogni parola non è prefisso di un altra.
+
+##### RUN-LENGHT
+
+RUN-LENGTH è un metodo di compressione lossless che riduce le ripetizioni di caratteri, sostituendo un RUN (insieme di caratteri ripetuti) con il carattere che viene ripetuto e con la lunghezza del RUN.
+
+**RUN:** insieme di caratteri ripetuti.
+
+**Lunghezza RUN:** lunghezza della ripetizioni.
+
+> Sc | X | C
+
+*Sc = carattere speciale per l’identificazione della codifica*
+
+*X = il carattere che viene ripetuto nel RUN*
+
+*C = numero di ripetizioni del carattere.*
+
+Prestazioni buone per **run-length > 3**
+
+*Esempio:*
+
+"eeeeeeetnnnnnnnn" --> @e7t@n8
+
+##### Codifica LZW
+
+É un metodo di compressione lossless che sfrutta la ripetizione di gruppi di caratteri o frasi.
+
+Prestazioni buone per input di testo con molte ripetizioni: linguaggio naturale (inglese, italiano,…).

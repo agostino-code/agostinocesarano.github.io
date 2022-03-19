@@ -166,4 +166,6 @@ Metodi noti impiegati per la compressione:
 
 *Esempio di utilizzo*
 
-![Compressione metodo Huffman](/static/img/hoffman1.png "Compressione metodo Huffman")
+![Compressione metodo Huffman fase 1](/static/img/hoffman1.png "Compressione metodo Huffman fase 1")
+
+![Compressione metodo Huffman fase 2](/static/img/hoffman2.png "Compressione metodo Huffman fase 2")

@@ -140,3 +140,30 @@ la struttura, le caratteristiche e le peculiarità dei dati multimediali.
 La gran parte delle informazioni sono codificate con testo di caratteri alfanumerici e sono tradizionalmente rappresentati mediante il codice *ASCII.*
 
 I caratteri vengono rappresentati mediante 8 bit e i caratteri stampabili vanno dal 32 al 126 e gli altri sono caratteri per il controllo, quindi non stampabili.
+
+**Compressione**
+
+Sebbene tra i vari Media (audio, video,…), il testo richiede meno spazio per la sua memorizzazione, conviene intervenire con algoritmi di compressione soprattutto quando aumenta il numero dei testi da archiviare.
+
+La compressione effettuata sul testo è **LOSSLESS** (senza perdita): la decompressione ottiene esattamente l’oggetto originario.
+
+La compressione sul testo è giustificata dal fatto che:
+
+1. Alcuni caratteri appaiono più frequentemente rispetto ad altri.
+2. Alcuni gruppi di caratteri appaiono molto frequentemente.
+
+Metodi noti impiegati per la compressione:
+
+* Huffman
+* Run length
+* Lempel‐Ziv‐Welch (LZW)
+
+**Huffman**
+
+1. E’ basato sull’analisi statistica del dato da comprimere, in particolare sulla frequenza con la quale si ripetono i suoi elementi.
+2. Ha una prestazione proporzionata alla varianza delle frequenze con cui compaiono i caratteri del testo da comprimere (maggiore varianza -> maggiore prestazione)
+3. Utilizzabile in combinazione con altre tecniche.
+
+*Esempio di utilizzo*
+
+![Compressione metodo Huffman](/static/img/hoffman1.png "Compressione metodo Huffman")

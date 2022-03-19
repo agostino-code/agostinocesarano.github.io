@@ -171,3 +171,5 @@ Metodi noti impiegati per la compressione:
 ![Compressione metodo Huffman fase 2](/static/img/hoffman2.png "Compressione metodo Huffman fase 2")
 
 ![Compressione metodo Huffman fase 3](/static/img/hoffman3.png "Compressione metodo Huffman fase 3")
+
+![Compressione metodo Huffman fase 4](/static/img/hoffman4.png "Compressione metodo Huffman fase 4")

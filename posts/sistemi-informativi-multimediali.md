@@ -173,3 +173,7 @@ Metodi noti impiegati per la compressione:
 ![Compressione metodo Huffman fase 3](/static/img/hoffman3.png "Compressione metodo Huffman fase 3")
 
 ![Compressione metodo Huffman fase 4](/static/img/hoffman4.png "Compressione metodo Huffman fase 4")
+
+**Importante!**
+
+Il codice di Huffman è univocamente decifrabile, non c'è possibilità di ambiguità, ogni parola non è prefisso di un altra.

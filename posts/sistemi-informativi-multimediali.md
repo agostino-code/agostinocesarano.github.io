@@ -16,7 +16,7 @@ Di conseguenza si è posto il problema su come gestire questi dati.
 
 I primi sistemi che permettono la gestione dei dati sono i Database.
 
-I primi sono i DBMS *( Database Managment System )* che però potevano immagazzinare solo caratteri *AlfaNumerici* cioè dati testuali o numerici.
+I primi sono i DBMS *( Database Managment System )* che però potevano immagazzinare solo caratteri *Alfanumerici* cioè dati testuali o numerici.
 
 Successivamente con l'avvento dei MMDBMS *( MultiMedia DBMS )* è stata possibile l'immaganizzazione e la gestione dei media.
 
@@ -28,7 +28,7 @@ Gli RDBMS *(Relational DBMS)* costituiscono la tipologia maggiormente diffusa di
 
 **Colonne ->** Attributi o CAMPI.
 
-L’ **SQL** *(Structured Query Language)* è utilizzato per la creazione delle tabelle, per l’inserimento ed il reperimento degli elementi dal DataBase.
+L’ **SQL** *(Structured Query Language)* è utilizzato per la creazione delle tabelle, per l’inserimento ed il reperimento degli elementi dal Database.
 
 I RDBMS permettono la memorizzazione di BLOB.
 
@@ -43,7 +43,7 @@ OODBMS *(Object‐Oriented DBMS)* è un tipo di DBMS orientato ad Oggetti, esso 
 
 ##### IR (Information Retrieval)
 
-Costituiscono una parte rilevante tra i sistemi di recupero delle informazioni,essi operano prevalentemente in modalità testuale, ma possono essere ugualmente impiegati in ambito multimediale.
+Costituiscono una parte rilevante tra i sistemi di recupero delle informazioni, essi operano prevalentemente in modalità testuale, ma possono essere ugualmente impiegati in ambito multimediale.
 
 Mediante il testo è possibile fornire una descrizione *(Annotazione)* ai vari media *(Audio, Immagini, Video)* per permetterne, così, le successive consultazioni.
 
@@ -119,7 +119,7 @@ es. cercare in un vasto D.B. un video divertente come quello appena visto
 
 es. cercare in un D.B. di brevetti eventuali oggetti simili a quello che dovrebbe essere brevettato.
 
-##### Tipologia e Formati dei Dati MultiMediali
+##### Tipologia e Formati dei Dati Multimediali
 
 L'obiettivo principale di un MIRS è quello di **Indicizzare e Ricercare i dati Multimediali** tra cui testi, grafica, immagini, audio, video.
 
@@ -137,4 +137,6 @@ la struttura, le caratteristiche e le peculiarità dei dati multimediali.
 
 ##### Il Testo
 
-prova
+La gran parte delle informazioni sono codificate con testo di caratteri alfanumerici e sono tradizionalmente rappresentati mediante il codice *ASCII.*
+
+I caratteri vengono rappresentati mediante 8 bit e i caratteri stampabili vanno dal 32 al 126 e gli altri sono caratteri per il controllo, quindi non stampabili.

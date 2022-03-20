@@ -6,6 +6,8 @@ summary: Appunti per il corso di Linguaggi di Progammazione, Professore Bonatti.
 tags:
   - LP
 ---
+**ù**
+
 **Terminologia**
 
 > **Linguaggio di programmazione:** è un linguaggio che è usato
@@ -140,7 +142,7 @@ return (! empty (L1 ));
 }
 ```
 
-*pseuduo codice ( paradigma funzionale )*
+*pseudo codice ( paradigma funzionale )*
 
 ```lisp
 function member (X,L)
@@ -180,9 +182,51 @@ membro (X, [Y|L]) :- membro (X, L).
 
 Ad es. parole (o celle) della memoria centrale.
 
-Tipicamente rappresentate dal loro indirizzo associati ai valori in essi contenuti,i valori delle variabili.
+Tipicamente rappresentate dal loro indirizzo associati ai valori in essi contenuti, i valori delle variabili.
 
 Dunque (concettualmente) la memoria è:
 
 * Una funzione da uno spazio di locazioni ad uno spazio di valori
 * mem(loc) = “valore contenuto in loc”
+
+> **mem(loc)** *\= locazione di memoria  --> valore*
+
+**Assegnazioni**
+
+Definizione grammaticale (sintassi):
+
+```pascal
+<name > <assignment - operator > <expression >
+
+//Esempio in Pascal:
+a := b + c;
+```
+
+
+*<name>* rappresenta la locazione dove viene posto il risultato.
+*<expression>*sono specificati una computazione (espressione matematica) e i riferimenti ai valori necessari alla computazione.
+
+**Modello Imperativo**
+
+I programmi sono descrizioni di sequenze di modifiche della “memoria” del calcolatore.
+
+Ogni unità di esecuzione consiste di 4 passi:
+
+1. ottenere indirizzi delle locazioni di operandi e risultato;
+2. ottenere dati di operandi da locazioni di operandi;
+3. valutare risultato;
+4. memorizzare risultato in locazione risultato.
+
+In sostanza un assegnamento!
+
+Il modello imperativo usa dei nomi come astrazione di indirizzi di locazioni di memoria **(variabili)**.
+
+Quindi l'ambiente di esecuzione *(environment)* comprende:
+
+Un insieme di nomi di variabili e parametri, non indirizzi di memoria ma identificatori.
+
+Quindi l'ambiente di esecuzione associato ad un modello imperativo è una funzione, identificata come **env(id)** che dato un certo identificatore, per lo più variabili, ci restituisce la locazione di memoria identificata con quel nome.
+
+> **env(id)** = identificatore --> locazione
+
+a sua volta le funzioni *env* sono associate a funzioni *mem* che restituiscono i valori delle locazioni.

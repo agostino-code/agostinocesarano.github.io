@@ -230,3 +230,27 @@ Quindi l'ambiente di esecuzione associato ad un modello imperativo è una funzio
 > **env(id)** = identificatore --> locazione
 
 A sua volta le funzioni *env* sono associate a funzioni *mem* che restituiscono i valori delle locazioni.
+
+Il **valore di una variabile x è**:
+
+>  mem( env ( x ))
+
+Nel **paradigma funzionale**, non esiste la funzione *mem* e la funzione *env* associa direttamente gli identificatori al contenuto della memoria.
+
+Nel paradigma imperativo la funzione *env* identifica una associazione immutabile (la locazione di memoria associata a un nome non cambia);
+
+*Esempi di esercizi, può uscire all'esame!*
+
+**\*(x+1)**=... **\-->** mem( env( x )) + 1
+
+A destra si aggiunge un **mem** davanti.
+
+...=**\*(x+1)** **\-->** **mem**( mem( env( x ) + 1)
+
+...=**\*(x+y) --> mem**( mem( env(x) ) + mem( env(y) ))
+
+**v\[ i ]** vettore di dimensione i = **\*(v+i) -->** mem( env(v) + mem( env(i))
+
+**p\[ i ]** puntatore di dimensione i = **\*(p+i) -->** mem( mem( env(p) + mem( env(i))
+
+Il puntatore è gestito come una locazione di memoria mentre il vettore no.

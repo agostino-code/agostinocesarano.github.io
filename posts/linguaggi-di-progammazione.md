@@ -229,4 +229,4 @@ Quindi l'ambiente di esecuzione associato ad un modello imperativo è una funzio
 
 > **env(id)** = identificatore --> locazione
 
-a sua volta le funzioni *env* sono associate a funzioni *mem* che restituiscono i valori delle locazioni.
+A sua volta le funzioni *env* sono associate a funzioni *mem* che restituiscono i valori delle locazioni.

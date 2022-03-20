@@ -10,7 +10,7 @@ tags:
 
 > **Linguaggio di programmazione:** è un linguaggio che è usato
 > per esprimere (mediante un programma) un processo con il quale
-> un processore pu`o risolvere un problema.
+> un processore può risolvere un problema.
 >
 > **Processore:** e la macchina che eseguirà il processo descritto dal
 > programma; non si deve intendere come un singolo oggetto, ma
@@ -20,17 +20,17 @@ tags:
 
 **Come vedere se un linguaggio è Completo?**
 
-I linguaggi di progammazione *computazionalmente completi*, sono quelli che possono
+I linguaggi di programmazione *computazionalmente completi*, sono quelli che possono
 programmare qualunque funzione calcolabile.
 
-1. Un linguaggio di progammazione è completo se può simulare una macchina di Turing.
+1. Un linguaggio di programmazione è completo se può simulare una macchina di Turing.
 2. Sono completi solo quelli che riescono ad esprimere anche programmi di cui non è decidibile la terminazione.
 
 **Macchine Astratte**
 
-Una macchina astratta per un linguaggio di Progammazione è un insieme di strutture di dati e algoritmi che permettono di memorizzare progammi scritti in quel linguaggio.
+Una macchina astratta per un linguaggio di Programmazione è un insieme di strutture di dati e algoritmi che permettono di memorizzare programmi scritti in quel linguaggio.
 
-> Quando traduciamo il linguaggio di progammazione non lo traduciamo su una **macchina hardware** ma su una macchina di livello superiore.
+> Quando traduciamo il linguaggio di programmazione non lo traduciamo su una **macchina hardware** ma su una macchina di livello superiore.
 
 Ad esempio Java utilizza una macchina astratta JVM che traduce tramite Software il codice da tradurre.
 
@@ -38,26 +38,26 @@ Ad esempio Java utilizza una macchina astratta JVM che traduce tramite Software 
 
 > **Interpreti:** traducono ed eseguono un costrutto alla volta.
 
-**PRO**: debug - fase di sviluppo: interazione piu snella.
+**PRO**: debug - fase di sviluppo: interazione più snella.
 
 > Compilatori: prima traducono l’intero programma; poi la
-> traduzione puo essere eseguita (anche piu volte).
+> traduzione può essere eseguita (anche più volte).
 
 **PRO**: velocita di esecuzione finale - fase di rilascio.
 
 **PRO**: più controlli e in anticipo
 
-Interpetre nella compilazione per macchina intermedia è detta **Supporto Run Time (SRT)**
+Interprete nella compilazione per macchina intermedia è detta **Supporto Run Time (SRT)**
 
 *L'SRT* ha funzionalità aggiuntive
 
 *Funzioni di basso livello / interfacce col S.O. ;* 
 
-ad es. funzionidi I/O.
+ad es. funzioni di I/O.
 
 *Gestione della memoria;* 
 
-garbage collection; gestione dell’heap; gestione dello stack.
+garbage collector; gestione dell’heap; gestione dello stack.
 
 ##### Proprietà dei linguaggi
 
@@ -81,16 +81,16 @@ garbage collection; gestione dell’heap; gestione dello stack.
 
 > Ortoganità
 
-meno eccezzioni alle regole del linguaggio.
+meno eccezioni alle regole del linguaggio.
 
 > Portabilità
 
 **Criterio di scelta del linguaggio**
 
-* Disponibilita dei traduttori
+* Disponibilità dei traduttori
 * Maggiore conoscenza da parte del programmatore
-* Esistenza di standard di portabilita
-* Comodita dell’ambiente di programmazione
+* Esistenza di standard di portabilità
+* Comodità dell’ambiente di programmazione
 * Sintassi aderente al problema
 * Semantica aderente alla architettura fisica?
   *con le moderne tecniche di implementazione dei linguaggi non è più un criterio stringente*
@@ -99,15 +99,15 @@ meno eccezzioni alle regole del linguaggio.
 
 > **Imperativo:** Un programma specifica sequenze di modifiche da apportare allo stato della macchina (memoria).
 >
-> *Progammi di tipo ( iterativo )*
+> *Programmi di tipo ( iterativo )*
 > **Funzionale:** Il programma e le sue componenti sono funzioni. Esecuzione come valutazione di funzioni.
 >
-> *Progammi di tipo ( ricorsivo )*
+> *Programmi di tipo ( ricorsivo )*
 > **Logico:** Programma come descrizione logica di un problema. Esecuzione analoga a processi di dimostrazione di teoremi.
 > **Orientato ad oggetti:** Programma costituito da oggetti che scambiano messaggi.
-> **Parallelo:** Programmi che descrivono entit`a distribuite che sono eseguite contemporaneamente ed in modo asincrono.
+> **Parallelo:** Programmi che descrivono entità distribuite che sono eseguite contemporaneamente ed in modo asincrono.
 
-*I linguaggi di progammazione modermi permettono di usare più paradigmi in base alle nostre esigenze.*
+*I linguaggi di programmazione moderni permettono di usare più paradigmi in base alle nostre esigenze.*
 
 *Esempio:*
 
@@ -119,7 +119,7 @@ meno eccezzioni alle regole del linguaggio.
 * testa() restituisce il valore di testa.
 * coda() restituisce la coda tagliando il valore di testa.
 
-*In pseduo codice, paradigma imperativo.*
+*In pseudo codice, paradigma imperativo.*
 
 ```
 procedure membro (X,L)

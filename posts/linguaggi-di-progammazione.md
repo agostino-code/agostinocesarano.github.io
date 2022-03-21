@@ -202,7 +202,6 @@ Definizione grammaticale (sintassi):
 a := b + c;
 ```
 
-
 *<name>* rappresenta la locazione dove viene posto il risultato.
 *<expression>*sono specificati una computazione (espressione matematica) e i riferimenti ai valori necessari alla computazione.
 
@@ -279,6 +278,57 @@ p\[ 3 ] = &p\[ 3 ] **\-->** mem( env (p) +3 ) = mem( env ( p ) + 3 )
 
 &x = ... non c'è un mem da togliere **ERRORE non è un  l-value**
 
-> **l-value** oggetto che occupa una posizione identificabile in memoria ( cioè ha un indirizzo )
+> **l-value** oggetto che occupa una posizione identificabile in memoria ( cioè ha un indirizzo ).
 >
 > **r-value** sono i restanti oggetti che non hanno un indirizzo.
+
+##### Legame di tipo
+
+Per definizione è correlato al legame di valore (ad es. il tipo di una variabile e il tipo del suo valore devono corrispondere).
+
+Ogni volta che il legame di valore viene modificato, occorrerebbe controllare (**type checking**) la consistenza con il legame di tipo.
+
+> Un linguaggio si dice **dinamicamente tipizzato** se il controllo del legame di tipo e di conseguenza anche il controllo di consistenza avviene durante l’esecuzione.
+
+*Esempio: nei linguaggi di scripting e Python*
+
+```python
+x = 1; 
+...
+x= " abc ";
+```
+
+Inizialmente il tipo di x è un numerico, successivamente diventa un tipo stringa.
+
+1. Gli identificativi non vengono dichiarati.
+2. Gli assegnamenti determinano il tipo dell'identificatore.
+
+Il tipo della variabile dipende dal valore che gli assegniamo, *avviene un type checking al cambio di valore.*
+
+> Un linguaggio è **staticamente tipizzato** se il legame avviene durante la compilazione; in questo caso il controllo di consistenza può avvenire in entrambe le fasi.
+
+##### Type checking
+
+È il meccanismo di controllo di consistenza della coppia dei legami valore-tipo.
+
+*Può avvenire:* 
+
+1. durante la compilazione
+2. durante l’esecuzione
+3. per nulla
+
+> Un linguaggio è **fortemente tipizzato** se il controllo di consistenza avviene sempre.
+
+*Esempio di linguaggi fortemente tipizzati*
+
+* Java è fortemente tipizzato.
+* Pascal è quasi fortemente tipizzato (una sola eccezione di assenza di controllo: i record con varianti).
+
+> Un linguaggio e **debolmente tipizzato** se il controllo di consistenza può non avvenire affatto in numerosi casi.
+
+*Esempio di linguaggi debolmente tipizzati*
+
+* C è debolmente tipizzato:
+  in esso esistono le operazioni di casting, che consentono di forzare, in esecuzione, l’interpretazione di un qualunque valore secondo un qualunque tipo (anche un tipo diverso da quello a cui il valore è stato precedentemente associato);
+  esistono puntatori a void, che godono, in esecuzione, di conversione di tipo implicita verso qualunque altro tipo puntatore;
+  esistono le unioni, che sovrappongono la locazione di variabili di tipo diverso, senza controllare se il valore corrisponde al tipo con cui viene usato.

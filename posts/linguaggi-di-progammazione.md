@@ -249,14 +249,36 @@ A destra si aggiunge un **mem** davanti.
 
 ...=**\*(x+y) --> mem**( mem( env(x) ) + mem( env(y) ))
 
+> **Sempre SBAGLIATI!**
+>
+> env ( mem (...) )
+>
+> env ( x +1 )
+
 **v\[ i ]** vettore di dimensione i = **\*(v+i) -->** mem( env(v) + mem( env(i))
 
 **p\[ i ]** puntatore di dimensione i = **\*(p+i) -->** mem( mem( env(p) + mem( env(i))
 
 Il puntatore è gestito come una locazione di memoria mentre il vettore no.
 
+Quando c'è una & si toglie un mem, ad esempio.
+
 v\[ 3 ] = &v\[ 3 ] **\-->** env( v ) + 3 = env ( v ) +3
 
 **NO** v\[ 3 ] **\-->** **mem(** env ( v ) +3 **)**
 
 **NO** &v\[ 3 ] **\--> mem(** env ( v ) +3 **) oppure env(mem(env**... **GRAVE! mai fare.**
+
+Perché il vettore non viene visto come una variabile?
+
+es. v\[ 3 ] = 1 indica dove scrivere "1" quindi quello che mi interessa è il solo indirizzo di quella casella del vettore.
+
+p\[ 3 ] = &p\[ 3 ] **\-->** mem( env (p) +3 ) = mem( env ( p ) + 3 )
+
+**NO mem(**mem( env ( p ) + 3 )**)**
+
+&x = ... non c'è un mem da togliere **ERRORE non è un  l-value**
+
+> **l-value** oggetto che occupa una posizione identificabile in memoria ( cioè ha un indirizzo )
+>
+> **r-value** sono i restanti oggetti che non hanno un indirizzo.

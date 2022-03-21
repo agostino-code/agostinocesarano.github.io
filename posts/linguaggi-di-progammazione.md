@@ -254,3 +254,9 @@ A destra si aggiunge un **mem** davanti.
 **p\[ i ]** puntatore di dimensione i = **\*(p+i) -->** mem( mem( env(p) + mem( env(i))
 
 Il puntatore è gestito come una locazione di memoria mentre il vettore no.
+
+v\[ 3 ] = &v\[ 3 ] **\-->** env( v ) + 3 = env ( v ) +3
+
+**NO** v\[ 3 ] **\-->** **mem(** env ( v ) +3 **)**
+
+**NO** &v\[ 3 ] **\--> mem(** env ( v ) +3 **) oppure env(mem(env**... **GRAVE! mai fare.**

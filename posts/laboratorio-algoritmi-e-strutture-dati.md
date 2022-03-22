@@ -389,3 +389,12 @@ empty(); //Restituisce un booleano,true se la stringa è vuota.
 front() //Restituisce il primo carattere della stringa.
 back() //Restituisce l'ultimo carattere della stringa.
 ```
+
+**Concatenazione di tipi stringa**
+
+La concatenazione tra oggetti di tipi stringa, viene effettuata tramite l'operatore "+".
+
+```cpp
+String var= var1+ var2 //Il valore della concatenazione viene inserito nella variabiloe var.
+String var+= var1 //Il valore della concatenazione viene inserito direttamente nella variabile più a sinistra.  
+```

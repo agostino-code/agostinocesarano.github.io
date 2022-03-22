@@ -381,3 +381,11 @@ Gli oggetti stringa sono confrontabili logicamente ==,!=,<=,>=,<,>.
 Gli operatori di put-to e get-from tramite *override* permettono output e input degli oggetti di tipo stringa.
 
 **Funzioni di libreria**
+
+```cpp
+size(); //Restituisce la size della stringa.
+empty(); //Restituisce un booleano,true se la stringa è vuota.
+[i]; //Permette di accedere all' i-esimo carattere.
+front() //Restituisce il primo carattere della stringa.
+back() //Restituisce l'ultimo carattere della stringa.
+```

@@ -418,6 +418,5 @@ var.substr(i,n) //Testituisce la sottostringa da posizione i a posizione i+n-1
     //Attributi e metodi visibili solo con altre classi nella gerarchia.
   public:
     //Attributi e motodi visibili a tutti.   
-}
-  
+} 
 ```

@@ -464,4 +464,8 @@ class ClassName : [virtual][private/protected/public] BaseClassName,...{
 * ***noexcept*** indica che il metodo non solleva eccezioni.
 * ***override*** indica che la funzione sarà un Override di una funzione della classe padre. Usare sempre quando si deve fare Override per evitare errori.
 
-**Assignam**=0
+**Assegnamenti**
+
+* ***\= 0*** Indica che il metodo non ha un assegnamento quindi indico che la Classe è astratta.
+* ***\= default*** Indica che il metodo ha una implementazione classica, costruttori e distruttori di default
+*  ***\= delete*** Indica che il metodo

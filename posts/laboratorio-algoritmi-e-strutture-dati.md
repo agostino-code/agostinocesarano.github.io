@@ -429,3 +429,15 @@ ClassName(parametri); //Specific constructor
 ClassName(const ClassName&); //Copy constructor
 ClassNAme(ClassName&&) noexept; //Move constructor
 ```
+
+**Distruttore**
+
+```cpp
+~ClassName(); //Distruttore
+```
+
+**Attenzione!** Non ci sarà mai bisogno di chiamare un distruttore nelle librerie che creeremo.
+
+*Ereditarietà delle classi in C++*
+
+La differenza principale rispetto a JAVA è che in C++ non esistono le *Interface*, infatti è il programmatore che deve distinguere se quella classe è un **Interfaccia** o un **estensione**.

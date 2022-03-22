@@ -441,3 +441,11 @@ ClassNAme(ClassName&&) noexept; //Move constructor
 *Ereditarietà delle classi in C++*
 
 La differenza principale rispetto a JAVA è che in C++ non esistono le *Interface*, infatti è il programmatore che deve distinguere se quella classe è un **Interfaccia** o un **estensione**.
+
+**Dichiarazione di classi estensione**
+
+```cpp
+class ClassName : [virtual][private/protected/public] BaseClassName,...{
+...
+} //Private è il metodo di default
+```

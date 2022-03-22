@@ -398,3 +398,10 @@ La concatenazione tra oggetti di tipi stringa, viene effettuata tramite l'operat
 String var= var1+ var2 //Il valore della concatenazione viene inserito nella variabiloe var.
 String var+= var1 //Il valore della concatenazione viene inserito direttamente nella variabile più a sinistra.  
 ```
+
+**Sottostringhe**
+
+```cpp
+String var;
+var.substr(i,n) //Testituisce la sottostringa da posizione i a posizione i+n-1
+```

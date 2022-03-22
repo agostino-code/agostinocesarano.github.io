@@ -452,6 +452,8 @@ class ClassName : [virtual][private/protected/public] BaseClassName,...{
 
  Il tipo che più utilizzeremo sarà il tipo **protected**, ad esempio nel secondo esercizio.
 
+Virtual permette ad una qualsiasi sottoclasse di accedere agli attributi della classe padre senza effettuare nessuna dichiarazione.
+
 **Dichiarazione dei metodi**
 
 ```cpp

@@ -420,3 +420,12 @@ var.substr(i,n) //Testituisce la sottostringa da posizione i a posizione i+n-1
     //Attributi e motodi visibili a tutti.   
 } 
 ```
+
+**Costruttori**
+
+```cpp
+ClassName(); //Default costructor
+ClassName(parametri); //Specific constructor
+ClassName(const ClassName&); //Copy constructor
+ClassNAme(ClassName&&) noexept; //Move constructor
+```

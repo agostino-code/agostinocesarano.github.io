@@ -468,4 +468,12 @@ class ClassName : [virtual][private/protected/public] BaseClassName,...{
 
 * ***\= 0*** Indica che il metodo non ha un assegnamento quindi indico che la Classe è astratta.
 * ***\= default*** Indica che il metodo ha una implementazione classica, costruttori e distruttori di default
-*  ***\= delete*** Indica che il metodo
+*  ***\= delete*** Indica che il metodo 
+
+**Definizione dei metodi**
+
+```cpp
+type ClassName :: NomeFunzione(parametri)[specifers]{
+  //Code
+}
+```

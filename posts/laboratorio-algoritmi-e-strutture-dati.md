@@ -357,3 +357,27 @@ get(c); getline(p,n) //c char, p puntatore char, numero di caratteri da leggere
 //Classe ostream
 put(c); write(p,n) //c char, p puntatore const char, numero di caratteri da leggere
 ```
+
+##### Libreria <string>
+
+**Dichiarazione libreria**
+
+```cpp
+#include<string>
+```
+
+Libreria che introduce l'oggetto stringa, non è un array di char.
+
+**Dichiarazione di stringhe**
+
+```cpp
+String VarName="alone";
+String VarName={"alone"};
+String VarName("alone");
+```
+
+Gli oggetti stringa sono confrontabili logicamente ==,!=,<=,>=,<,>.
+
+Gli operatori di put-to e get-from tramite *override* permettono output e input degli oggetti di tipo stringa.
+
+**Funzioni di libreria**

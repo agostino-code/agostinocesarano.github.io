@@ -405,3 +405,19 @@ String var+= var1 //Il valore della concatenazione viene inserito direttamente n
 String var;
 var.substr(i,n) //Testituisce la sottostringa da posizione i a posizione i+n-1
 ```
+
+##### Classi
+
+**Dichiarazione delle classi**
+
+```cpp
+  class ClassName{
+  private:
+    //Attributi e funzioni privati, ossia accessibili solo all'interno della classe
+  protected:
+    //Attributi e metodi visibili solo con altre classi nella gerarchia.
+  public:
+    //Attributi e motodi visibili a tutti.   
+}
+  
+```

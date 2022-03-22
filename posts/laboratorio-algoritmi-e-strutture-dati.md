@@ -406,6 +406,20 @@ String var;
 var.substr(i,n) //Testituisce la sottostringa da posizione i a posizione i+n-1
 ```
 
+##### Generazione Pseduo-Casuale di Numeri
+
+```cpp
+  // // Random generation a la C++
+#include <random>
+
+default_random_engine genx(random_device{}());
+uniform_int_distribution<type> distx(i,j); //Tipo e range di valori.
+for(uint i = 0; i < 15; i++) {
+  cout << distx(genx);
+}
+    
+```
+
 ##### Classi
 
 **Dichiarazione delle classi**

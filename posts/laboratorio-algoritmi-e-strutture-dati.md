@@ -447,5 +447,21 @@ La differenza principale rispetto a JAVA è che in C++ non esistono le *Interfac
 ```cpp
 class ClassName : [virtual][private/protected/public] BaseClassName,...{
 ...
-} //Private è il metodo di default
+} //Private è il metodo di default, ClassName ha i metodo di BaseClassName in base al tipo di protezione. 
 ```
+
+ Il tipo che più utilizzeremo sarà il tipo **protected**, ad esempio nel secondo esercizio.
+
+**Dichiarazione dei metodi**
+
+```cpp
+[virtual] type NomeFunzione(parametri) [const][noexcept][override][= assignament]
+```
+
+**Attenzione!** 
+
+* ***const*** non permette la modifica di elementi della Classe.
+* ***noexcept*** indica che il metodo non solleva eccezioni.
+* ***override*** indica che la funzione sarà un Override di una funzione della classe padre. Usare sempre quando si deve fare Override per evitare errori.
+
+**Assignam**=0

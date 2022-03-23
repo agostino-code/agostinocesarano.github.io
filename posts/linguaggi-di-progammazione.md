@@ -383,7 +383,7 @@ BEGIN P
     ... {X da P}
      BLOCK C;
        DECLARE Z;
-     BEGIN C
+     START C
         ... {X da P, Z da C}
      END C;
 ... {X da P}
@@ -391,3 +391,25 @@ END P;
 ```
 
 Ogni blocco vede le variabili dichiarate dai blocchi più esterni è nel caso in cui è dichiarata una variabile locale con lo stesso identificativo, la variabile globale sarà sovrapposta con quella locale.
+
+**Mascheramento**
+
+Il processo descritto precedentemente è detto mascheramento.
+
+*Esempio di Mascheramento*
+
+```
+PROGRAM P;
+DECLARE X,Y;
+BEGIN P
+... {X e Y da P}
+  BLOCK A;
+    DECLARE X,Z;
+  BEGIN A
+  ... {X e Z da A, Y da P}
+  END A;
+... {X e Y da P}
+END P;
+```
+
+##### Allocazione statica della memoria

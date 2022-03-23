@@ -432,6 +432,36 @@ for(uint i = 0; i < 15; i++) {
     
 ```
 
+##### Eccezioni
+
+```cpp
+try {
+...
+throw NomeException;
+...
+} catch (NomeException exc) {
+
+  //Gestione dell'eccezione
+} catch (...) { //Se non trova una qualsiasi eccezione solleva questa eccezione generica.
+
+  throw; //Risolleva l'eccezione.
+}
+```
+
+##### Eccezioni della libreria Standard Library
+
+exception
+
+* logic_error
+
+  * lenght_error
+  * out_of_range
+* runtime_error
+
+  * overflow_error
+  * uderflow_error
+* bad_alloc
+
 ##### Classi
 
 **Dichiarazione delle classi**
@@ -439,7 +469,7 @@ for(uint i = 0; i < 15; i++) {
 ```cpp
   class ClassName{
   private:
-    //Attributi e funzioni privati, ossia accessibili solo all'interno della classe
+    //Attributi e funzioni privati, ossia accessibili solo all'interno della classe.
   protected:
     //Attributi e metodi visibili solo con altre classi nella gerarchia.
   public:

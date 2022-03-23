@@ -623,6 +623,15 @@ ClassNAme(ClassName&&) noexept; //Move constructor
 
 La differenza principale rispetto a JAVA è che in C++ non esistono le *Interface*, infatti è il programmatore che deve distinguere se quella classe è un **Interfaccia** o un **estensione**.
 
+**Operatori**
+
+```cpp
+bool operator==(const ClassName&) const noexcept; //Confronto
+             !=
+ClassName& operator=(const ClassName&); //Operatore di assegniamento
+ClassName& operator=(ClassName&&) noexcept; //Operatore di move
+```
+
 **Dichiarazione di classi estensione**
 
 ```cpp

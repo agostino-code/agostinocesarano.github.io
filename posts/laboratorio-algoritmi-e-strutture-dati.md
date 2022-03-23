@@ -435,6 +435,8 @@ for(uint i = 0; i < 15; i++) {
 ##### Eccezioni
 
 ```cpp
+#include<stdexception> // Se non è inclusa la libreria standard
+//Se è inclusa posso omettere questa inclusione
 try {
 ...
 throw NomeException;

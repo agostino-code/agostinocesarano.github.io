@@ -330,3 +330,64 @@ Il tipo della variabile dipende dal valore che gli assegniamo, *avviene un type 
   in esso esistono le operazioni di casting, che consentono di forzare, in esecuzione, l’interpretazione di un qualunque valore secondo un qualunque tipo (anche un tipo diverso da quello a cui il valore è stato precedentemente associato);
   esistono puntatori a void, che godono, in esecuzione, di conversione di tipo implicita verso qualunque altro tipo puntatore;
   esistono le unioni, che sovrappongono la locazione di variabili di tipo diverso, senza controllare se il valore corrisponde al tipo con cui viene usato.
+
+I linguaggi staticamente e fortemente tipizzati sono i più “forti” tra i fortemente tipizzati.
+
+Quindi la strategia per i linguaggi **fortemente e staticamente tipati** è fare quanti più controlli possibile a tempo di compilazione ed eseguire i rimanenti a tempo di esecuzione perché prima si scoprono gli errori e più il testing diventa economico.
+
+##### Blocchi di istruzioni
+
+Le istruzioni nei linguaggi di programmazione moderni sono definiti in blocchi, questo è necessario per distinguere le varie componenti del codice ed assegnargli un nome.
+
+Definiamo un piccolo pseudo-linguaggio per rappresentare un blocco:
+
+```
+...
+BLOCK A;
+  DECLARE I;
+BEGIN A
+  ... {I DEL BLOCCO A}
+END A;
+...
+```
+
+**Scoping**
+
+In ambito **statico o lessicale.**
+
+Blocchi annidati *vedono e usano i legami dei blocchi più esterni* (legami non locali) e, di solito, possono aggiungere legami locali o sovrapporne di nuovi.
+
+
+In ambito **dinamico.**
+
+Concetto qui esaminato solo in relazione ai blocchi annidati, ma che assume il proprio senso maggiore quando vi sono procedure chiamanti e chiamate. In questo caso *la procedura* *chiamata vede e usa i legami visti e usati dalla procedura chiamante.*
+
+*Esempio Scoping Statico*
+
+```
+PROGRAM P;
+  DECLARE X;
+BEGIN P
+... {X da P}
+  BLOCK A;
+    DECLARE Y;
+  BEGIN A
+    ... {X da P, Y da A}
+    BLOCK B;
+      DECLARE Z;
+    BEGIN B
+      ... {X da P, Y da A, Z da B}
+    END B;
+      ... {X da P, Y da A}
+  END A;
+    ... {X da P}
+     BLOCK C;
+       DECLARE Z;
+     BEGIN C
+        ... {X da P, Z da C}
+     END C;
+... {X da P}
+END P;
+```
+
+Ogni blocco vede le variabili dichiarate dai blocchi più esterni è nel caso in cui è dichiarata una variabile locale con lo stesso identificativo, la variabile globale sarà sovrapposta con quella locale.

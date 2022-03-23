@@ -412,4 +412,18 @@ BEGIN P
 END P;
 ```
 
-##### Allocazione statica della memoria
+**Allocazione statica della memoria**
+
+Si dice allocazione statica di memoria (load-time) quando le variabili conservano il proprio valore ogni volta che si rientra in un blocco (il legame di locazione è fissato e costante al tempo di caricamento).
+
+**Allocazione dinamica della memoria**
+
+Si dice allocazione dinamica di memoria (run-time) quando il legame di locazione (e anche di nome) è creato all’inizio dell’esecuzione di un blocco e viene rilasciato a fine esecuzione.
+
+##### Stack di attivazione
+
+In ogni momento dell’esecuzione lo stack di attivazione contiene i record “attivi”:
+
+1. il top dello stack contiene sempre il record del blocco correntemente in esecuzione;
+2. ogni volta che si entra in un blocco, il record di attivazione del blocco viene posto sullo stack (push);
+3. ogni volta che si esce da un blocco, viene eliminato il record al top dello stack (pop).

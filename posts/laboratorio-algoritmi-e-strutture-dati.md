@@ -448,7 +448,7 @@ throw NomeException;
 }
 ```
 
-##### Eccezioni della libreria Standard Library
+**Eccezioni della libreria Standard Library**
 
 exception
 
@@ -461,6 +461,129 @@ exception
   * overflow_error
   * uderflow_error
 * bad_alloc
+
+Durante la dichiarazione di una funzione posso indicare che quella funzione non solleva eccezioni tramite:
+
+```cpp
+type f(parametri) noexcept; //La funzione non solleverà alcuna eccezione
+```
+
+##### Puntatori a funzione
+
+Possibili usi:
+
+* Passaggio di funzione come parametro di altre funzioni
+* Funzioni di callback
+
+Un puntatore a funzione permette la chiamata di funzioni diverse con lo stesso prototipo conoscendone l'indirizzo.
+
+**Definizione**
+
+```cpp
+#include <functional>
+typedef function<type(lista parametri)> NomeFunzione;
+```
+
+*Esempio di utilizzo*
+
+```cpp
+/*Algoritmo di QuickSort con tipo di ordinamento variabile in base alla
+funzione di Compare che passo come parametro all'algoritmo di QuickSorting*/
+
+#include <iostream>
+using namespace std;
+enum class ComparisonType { LessThan, Equal, GreaterThen};
+//Enumerazione che definisce il tipo di ritorno
+
+// Function pointer a la C++
+#include <functional>
+typedef function<ComparisonType(int, int)> CompareFunction; 
+//Puntatore a funzione su la funzione CompareFunction con tipo di ritorno ComparisonType
+
+//Dichiaro le mie funzioni che come parametro ottengono il puntatore a funzione CompareFunction
+void quicksort(int*, uint, CompareFunction); 
+void quicksort(int*, uint, uint, CompareFunction);
+uint partition(int*, uint, uint, CompareFunction);
+
+/*Dichiaro le mie funzioni con parametri interi e con ritorno ComparisonType,
+come definito nel puntatore a funzione*/
+ComparisonType OrdA(int a, int b) { 
+    return ComparisonType::LessThan;
+  } else if (a > b) {
+    return ComparisonType::GreaterThen;
+  }
+  return ComparisonType::Equal;
+}
+
+ComparisonType OrdB(int a, int b) {
+  if (a < b) {
+    return ComparisonType::GreaterThen;
+  } else if (a > b) {
+    return ComparisonType::LessThan;
+  }
+  return ComparisonType::Equal;
+}
+
+ComparisonType OrdC(int a, int b) {
+  if (a % 2 != b % 2) {
+    return ((a % 2 == 0) ? ComparisonType::LessThan : ComparisonType::GreaterThen);
+  } else if (a < b) {
+    return ComparisonType::LessThan;
+  } else if (a > b) {
+    return ComparisonType::GreaterThen;
+  }
+  return ComparisonType::Equal;
+}
+
+int main() {
+
+  int A[11] = {5, 7, 6, 8, 4, 9, 3, 10, 2, 0, 1};
+
+  quicksort(A, 11, OrdA); //Avrò un ordinamento di tipo Crescente
+  
+  quicksort(A, 11, OrdB); //Avrò un ordinamento di tipo Decrescente
+  
+  quicksort(A, 11, OrdC); //Avrò un ordinamento,prima pari poi dispari
+
+  for (uint i = 0; i < 11; i++) { cout << A[i] << ' '; }; cout << endl;
+
+  return 0;
+}
+
+//Algoritmi di QuickSorting
+
+void quicksort(int* A, uint size, CompareFunction cmp) {
+  quicksort(A, 0, size - 1, cmp);
+}
+
+void quicksort(int* A, uint p, uint r, CompareFunction cmp) {
+  if (p < r) {
+    uint q = partition(A, p, r, cmp);
+    quicksort(A, p, q, cmp);
+    quicksort(A, q + 1, r, cmp);
+  }
+}
+
+uint partition(int* A, uint p, uint r, CompareFunction cmp) {
+
+  int x = A[p];
+  int i = p - 1;
+  int j = r + 1;
+
+  do {
+
+    do { j--; } while ( cmp(x, A[j]) == ComparisonType::LessThan );
+
+    do { i++; } while ( cmp(x, A[i]) == ComparisonType::GreaterThen );
+
+    if (i < j) { swap(A[i], A[j]); } // "swap" is standard-library function
+
+  } while (i < j);
+
+  return j;
+
+}
+```
 
 ##### Classi
 

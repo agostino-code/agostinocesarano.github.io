@@ -628,7 +628,7 @@ La differenza principale rispetto a JAVA è che in C++ non esistono le *Interfac
 ```cpp
 bool operator==(const ClassName&) const noexcept; //Confronto
              !=
-ClassName& operator=(const ClassName&); //Operatore di assegniamento
+ClassName& operator=(const ClassName&); //Operatore di copy
 ClassName& operator=(ClassName&&) noexcept; //Operatore di move
 ```
 

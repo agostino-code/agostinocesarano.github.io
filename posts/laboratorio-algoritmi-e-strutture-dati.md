@@ -199,6 +199,18 @@ Se la funzione malloc fallisce, ritorna con un puntatore NULL. L'operatore new n
 
 A differenza di Java,dove la gestione della memoria è affidata al Garbage Collector, la gestione in C++ è a carico del progammatore, si deve eliminare tutto ciò che non usiamo manualmente con delle delete.
 
+**Errori da non fare!**
+
+```cpp
+int* a =new int
+...
+a =new int;
+oppure
+a=b;
+//Perdo l'allocazione precedente,non potrò più eliminarla.
+//Problemi di Memory Leakage da considerare
+```
+
 Nelle allocazioni all'interno di costruttori in genere non ci vuole il try catch.
 
 ##### Struct

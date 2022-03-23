@@ -6,8 +6,6 @@ summary: Appunti per il corso di Linguaggi di Progammazione, Professore Bonatti.
 tags:
   - LP
 ---
-**ù**
-
 **Terminologia**
 
 > **Linguaggio di programmazione:** è un linguaggio che è usato

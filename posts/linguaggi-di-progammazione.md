@@ -442,7 +442,6 @@ Procedure sono astrazioni di parti di programma in unita di esecuzione più picc
 
 Ogni volta che una procedura viene invocata il suo **record di attivazione** viene aggiunto al cosiddetto **stack di esecuzione**.
 
-
 Sul top dello stack c'è sempre il record relativo alla procedura correntemente in esecuzione.
 
 Alla terminazione della procedura, il record di attivazione viene rimosso dallo stack.
@@ -459,5 +458,12 @@ Include:
 
 Viene realizzata aggiungendo al record di attivazione un puntatore al record di attivazione della procedura da cui vengono propagate le definizioni o i dati.
 
-
 Se viene richiesto l’accesso ad un dato che non è definito localmente, esso viene ricercato in modo ricorsivo nei record di attivazione precedenti.
+
+Tre tipologie di realizzazione della propagazione.
+
+1. *Propagazione in ambito statico.*In questo caso la procedura è propagata dal programma che la contiene.
+2. *Propagazione in ambito dinamico.* In questo caso la procedura è propagata dal programma chiamante.
+
+Nessuna propagazione. L’uso di ambienti non locali `e scoraggiato
+perch´e produce effetti collaterali non facilmente prevedibili.

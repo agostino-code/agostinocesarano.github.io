@@ -357,7 +357,6 @@ In ambito **statico o lessicale.**
 
 Blocchi annidati *vedono e usano i legami dei blocchi più esterni* (legami non locali) e, di solito, possono aggiungere legami locali o sovrapporne di nuovi.
 
-
 In ambito **dinamico.**
 
 Concetto qui esaminato solo in relazione ai blocchi annidati, ma che assume il proprio senso maggiore quando vi sono procedure chiamanti e chiamate. In questo caso *la procedura* *chiamata vede e usa i legami visti e usati dalla procedura chiamante.*
@@ -427,3 +426,5 @@ In ogni momento dell’esecuzione lo stack di attivazione contiene i record “a
 1. il top dello stack contiene sempre il record del blocco correntemente in esecuzione;
 2. ogni volta che si entra in un blocco, il record di attivazione del blocco viene posto sullo stack (push);
 3. ogni volta che si esce da un blocco, viene eliminato il record al top dello stack (pop).
+
+**Procedure**

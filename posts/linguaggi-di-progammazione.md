@@ -448,3 +448,9 @@ Sul top dello stack c'è sempre il record relativo alla procedura correntemente 
 Alla terminazione della procedura, il record di attivazione viene rimosso dallo stack.
 
 **Record di attivazione**
+
+Include:
+
+1. Tutte le variabili dichiarate localmente.
+2. Puntatore alla prossima istruzione (permette di riprendere l’esecuzione quando il controllo viene restituito alla procedura chiamante).
+3. Memoria temporanea necessaria alla valutazione delle espressioni contenute nella procedura.

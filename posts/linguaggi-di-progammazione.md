@@ -427,4 +427,24 @@ In ogni momento dell’esecuzione lo stack di attivazione contiene i record “a
 2. ogni volta che si entra in un blocco, il record di attivazione del blocco viene posto sullo stack (push);
 3. ogni volta che si esce da un blocco, viene eliminato il record al top dello stack (pop).
 
-**Procedure**
+##### Procedure
+
+Procedure sono astrazioni di parti di programma in unita di esecuzione più piccole, che consentono il loro (ri-)uso.
+
+**Vantaggi:**
+
+* Programmi più semplici da scrivere, leggere o modificare;
+* suddivisione dei compiti in più programmi;
+* progettazione top-down ( un algoritmo complesso viene suddiviso in unità più piccole );
+* Riusabilità dei programmi; riduzione errori.
+
+**Astrazione procedurale** la rappresentazione di una unità di esecuzione attraverso un’altra unita più semplice.
+
+Ogni volta che una procedura viene invocata il suo **record di attivazione** viene aggiunto al cosiddetto **stack di esecuzione**.
+
+
+Sul top dello stack c'è sempre il record relativo alla procedura correntemente in esecuzione.
+
+Alla terminazione della procedura, il record di attivazione viene rimosso dallo stack.
+
+**Record di attivazione**

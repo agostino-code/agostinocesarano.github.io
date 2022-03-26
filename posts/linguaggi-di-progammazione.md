@@ -454,3 +454,10 @@ Include:
 1. Tutte le variabili dichiarate localmente.
 2. Puntatore alla prossima istruzione (permette di riprendere l’esecuzione quando il controllo viene restituito alla procedura chiamante).
 3. Memoria temporanea necessaria alla valutazione delle espressioni contenute nella procedura.
+
+**Propagazione dei data object**
+
+Viene realizzata aggiungendo al record di attivazione un puntatore al record di attivazione della procedura da cui vengono propagate le definizioni o i dati.
+
+
+Se viene richiesto l’accesso ad un dato che non è definito localmente, esso viene ricercato in modo ricorsivo nei record di attivazione precedenti.

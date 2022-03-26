@@ -462,8 +462,36 @@ Se viene richiesto l’accesso ad un dato che non è definito localmente, esso v
 
 Tre tipologie di realizzazione della propagazione.
 
-1. *Propagazione in ambito statico.*In questo caso la procedura è propagata dal programma che la contiene.
+1. *Propagazione in ambito statico.* In questo caso la procedura è propagata dal programma che la contiene.
 2. *Propagazione in ambito dinamico.* In questo caso la procedura è propagata dal programma chiamante.
+3. *Nessuna propagazione.* L’uso di ambienti non locali è scoraggiato perché produce effetti collaterali non facilmente prevedibili.
 
-Nessuna propagazione. L’uso di ambienti non locali `e scoraggiato
-perch´e produce effetti collaterali non facilmente prevedibili.
+*Esempio di propagazione in ambito statico*
+
+```
+program p;
+  var a, b, c: integer ;
+  
+  procedure q;
+    var a, c; integer ;
+    
+    procedure r;
+      var a: integer ;
+    begin {r}                  variabili : a da r; b da p; c da q;
+      ...                      procedure : q da p; r da q}
+    end ; {r}
+    
+  begin {q} {                  variabili : a da q; b da p; c da q;
+      ...                      procedure : q ed s da p; r da q}
+  end ; {q}
+  
+  procedure s;
+  var b: integer ;
+  begin {s} {                  variabili : a da p; b da s; c da p;
+      ...                      procedure : q ed s da p}
+  end ; {s}
+  
+begin {p} {                    variabili : a, b, c da p;
+   ...                         procedure : q, s da p}
+end . {p}
+```

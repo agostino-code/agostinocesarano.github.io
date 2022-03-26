@@ -493,5 +493,5 @@ program p;
   
 begin {p}                      {variabili : a, b, c da p;
    ...                         procedure : q, s da p}
-end . {p}
+end ; {p}
 ```

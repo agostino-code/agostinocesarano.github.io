@@ -495,3 +495,15 @@ begin {p}                      {variabili : a, b, c da p;
    ...                         procedure : q, s da p}
 end ; {p}
 ```
+
+**Propagazione in ambito statico**
+
+Supponendo una sequenza di attivazione (p, s, q, q, r), lo stack di esecuzione ha questa forma:
+
+![Propagazione in ambito statico](/static/img/propagazione-statica.jpg "Propagazione in ambito statico")
+
+**Propagazione in ambito dinamico**
+
+La stessa sequenza di attivazione precedente (p, s, q, q, r), genera allora lo stack di esecuzione:
+
+![](/static/img/propagazione-dinamica.jpg)

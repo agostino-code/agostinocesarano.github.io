@@ -226,3 +226,5 @@ Questo cambiamento di percezione è descritto nelle **curve isofoniche**, che de
 **ADC (Analog to Digital Conversion)**
 
 Quando dobbiamo trasformare un segnale audio in un file digitale, dobbiamo dividere il processo in tre fasi:
+
+![Analogico a Digitale](/static/img/analogico-a-digitale.png "Analogico a Digitale")

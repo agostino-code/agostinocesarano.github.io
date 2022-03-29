@@ -205,3 +205,7 @@ Prestazioni buone per **run-length > 3**
 É un metodo di compressione lossless che sfrutta la ripetizione di gruppi di caratteri o frasi.
 
 Prestazioni buone per input di testo con molte ripetizioni: linguaggio naturale (inglese, italiano,…).
+
+##### L'Audio
+
+L'audio è causato dalle variazioni di pressione dell'aria, le frequenze udibili dall'uomo variano nell'intervallo di **20-20.000 Hz,** ciò che descrive un onda sonora sono due descrittori :

@@ -221,4 +221,8 @@ Questo è dovuto dal fatto che queste sono le frequenze del nostro parlato, quin
 
 Questo cambiamento di percezione è descritto nelle **curve isofoniche**, che descrivono la quantità di decibel che servono per percepire un suono di una determinata frequenza.
 
-![curve isofoniche](/static/img/curve-isofoniche.png "curve isofoniche")
+![Curve isofoniche](/static/img/curve-isofoniche.png "Curve isofoniche")
+
+**ADC (Analog to Digital Conversion)**
+
+Quando dobbiamo trasformare un segnale audio in un file digitale, dobbiamo dividere il processo in tre fasi:

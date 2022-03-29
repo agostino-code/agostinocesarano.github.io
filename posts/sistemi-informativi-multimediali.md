@@ -218,3 +218,7 @@ Le capacità uditive dell'uomo non sono lineari rispetto a questi due parametri.
 Ad esempio, per i suoni che vanno dalle frequenze di 1000 e 5000 Hz, abbiamo bisogno di un ampiezza minore ( meno dB ) per percepire il suono.
 
 Questo è dovuto dal fatto che queste sono le frequenze del nostro parlato, quindi il nostro orecchio si è adeguato.
+
+Questo cambiamento di percezione è descritto nelle **curve isofoniche**, che descrivono la quantità di decibel che servono per percepire un suono di una determinata frequenza.
+
+![curve isofoniche](/static/img/curve-isofoniche.jpg "curve isofoniche")

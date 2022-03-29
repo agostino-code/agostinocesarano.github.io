@@ -209,3 +209,6 @@ Prestazioni buone per input di testo con molte ripetizioni: linguaggio naturale 
 ##### L'Audio
 
 L'audio è causato dalle variazioni di pressione dell'aria, le frequenze udibili dall'uomo variano nell'intervallo di **20-20.000 Hz,** ciò che descrive un onda sonora sono due descrittori :
+
+* Ampiezza, descrive la forza del suono.
+* Tempo, descrive la frequenza del suono.

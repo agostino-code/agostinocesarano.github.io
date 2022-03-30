@@ -524,3 +524,40 @@ Devono essere specificati in due punti:
 
 * nella definizione della procedura: *parametri formali;*
 * nelle invocazioni della procedura: *parametri attuali.*
+
+**Associazione dei parametri**
+
+*Regola comune:* nella definizione deve essere specificato il *tipo* dei parametri formali; nella invocazione è richiesta la corrispondenza di tipo tra parametri formali e attuali.
+
+*Eccezioni:* lasciare i parametri formali senza alcun legame di tipo; il legame si instaura durante l’esecuzione (*run time*) allo stesso tipo dei parametri attuali (*impossibile il type checking in compilazione*).
+
+**Metodi di associazione:**
+
+1. *per posizione:* a seconda della posizione relativa nella sequenza dei parametri;
+2. *per nome:* il nome del parametro formale è aggiunto come prefisso al parametro attuale;
+
+*Esempio*
+
+ADA permette di associare i parametri delle funzioni sia per posizione che per nome.
+
+Data la seguente procedure dichiarata in (ADA):
+
+```
+procedure TEST (A: in Atype ; b: in out Btype ; C: out Ctype )
+```
+
+allora una invocazione che usi *associazione per posizione* è:
+
+```
+TEST (X, Y, Z);
+```
+
+I **parametri attuali** sono inseriti nell'ordine di dichiarazione.
+
+Mentre un invocazione che usi *associazione per nome* può essere:
+
+```
+TEST (A=>X, C=>Z, b=>Y);
+```
+
+I parametri non rispettano l'ordine di dichiarazione, la definizione dei **parametri attuali** viene fatta tramite nome.

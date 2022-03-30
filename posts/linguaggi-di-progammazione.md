@@ -509,3 +509,18 @@ La stessa sequenza di attivazione precedente (p, s, q, q, r), genera allora lo s
 ![Propagazione in ambito dinamico](/static/img/propagazione-dinamica.jpg "Propagazione in ambito dinamico")
 
 Nella propagazione in ambito dinamico è praticamente impossibile determinare chi andrà a chiamare quella procedura durante la scrittura del codice sorgente.
+
+##### Parametrizzazione di procedure
+
+Sono il mezzo per il quale le informazioni transitano tra l’unita chiamante e quella chiamata.
+
+Possiamo distinguere:
+
+1. parametri di **IN (input):** sono passati dalla unità chiamante alla unità chiamata al momento dell’invocazione;
+2. parametri di **OUT (output):** sono passati dall’unità chiamata alla unità chiamante al momento della terminazione della prima;
+3. parametri **IN-OUT (input-output):** servono a far transitare le informazioni in entrambe le direzioni.
+
+Devono essere specificati in due punti:
+
+* nella definizione della procedura: *parametri formali;*
+* nelle invocazioni della procedura: *parametri attuali.*

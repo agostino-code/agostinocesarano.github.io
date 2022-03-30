@@ -565,3 +565,18 @@ I parametri non rispettano l'ordine di dichiarazione, la definizione dei **param
 Una ulteriore tecnica è la cosiddetta *associazione di default*.
 
 Essa permette di specificare valori di default ai parametri formali che non sono stati legati a valori da parametri attuali.
+
+**Parametri di IN (input)**
+
+Possono essere realizzati in due modi:
+
+1. *con un riferimento*; in questo caso la locazione del parametro attuale diventa la locazione del parametro formale;
+
+   poiché il parametro formale è di tipo IN, allora si deve impedire la modifica all’interno della procedura;
+2. *con una copia*; in questo caso in una nuova locazione, quella del parametro formale, viene copiato il valore del parametro attuale; parametro formale visto come variabile locale;
+
+   modifica permessa, perché valida solo nell’ambiente di esecuzione della procedura.
+
+Il secondo modo è meno efficiente del primo, sia rispetto allo spazio sia al tempo, ma è più flessibile e richiede meno variabili locali.
+
+**Parametri di OUT (output)**

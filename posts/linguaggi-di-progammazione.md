@@ -561,3 +561,7 @@ TEST (A=>X, C=>Z, b=>Y);
 ```
 
 I parametri non rispettano l'ordine di dichiarazione, la definizione dei **parametri attuali** viene fatta tramite nome.
+
+Una ulteriore tecnica è la cosiddetta *associazione di default*.
+
+Essa permette di specificare valori di default ai parametri formali che non sono stati legati a valori da parametri attuali.

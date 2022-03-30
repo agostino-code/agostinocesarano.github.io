@@ -507,3 +507,5 @@ Supponendo una sequenza di attivazione (p, s, q, q, r), lo stack di esecuzione h
 La stessa sequenza di attivazione precedente (p, s, q, q, r), genera allora lo stack di esecuzione:
 
 ![Propagazione in ambito dinamico](/static/img/propagazione-dinamica.jpg "Propagazione in ambito dinamico")
+
+Nella propagazione in ambito dinamico è praticamente impossibile determinare chi andrà a chiamare quella procedura durante la scrittura del codice sorgente.

@@ -669,7 +669,7 @@ La differenza tecnica, è che la macro non ha bisogno di un record di attivazion
 
 Sono procedure che restituiscono un valore alla procedura chiamante.
 
-Sono realizzate
+Sono realizzate:
 
 * o creando una pseudovariabile nell’ambiente locale della procedura chiamata, che verrà restituita al termine della funzione. 
 

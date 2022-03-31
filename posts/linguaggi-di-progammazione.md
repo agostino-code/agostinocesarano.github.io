@@ -102,25 +102,14 @@ meno eccezioni alle regole del linguaggio.
 > *Programmi di tipo ( iterativo )*
 >
 > **Imperativo:** Un programma specifica sequenze di modifiche da apportare allo stato della macchina (memoria).
-
-
-
+>
 > *Programmi di tipo ( ricorsivo )*
 >
 > **Funzionale:** Il programma e le sue componenti sono funzioni. Esecuzione come valutazione di funzioni.
-
-
-
 >
 > **Logico:** Programma come descrizione logica di un problema. Esecuzione analoga a processi di dimostrazione di teoremi. 
-
-
-
 >
 > **Orientato ad oggetti:** Programma costituito da oggetti che scambiano messaggi.
-
-
-
 >
 > **Parallelo:** Programmi che descrivono entità distribuite che sono eseguite contemporaneamente ed in modo asincrono.
 
@@ -682,5 +671,7 @@ Sono procedure che restituiscono un valore alla procedura chiamante.
 
 Sono realizzate
 
-* o creando una pseudovariabile nell’ambiente locale della procedura chiamata. Tale variabile può essere solo modificata; non è possibile l’accesso in lettura.
-* o utilizzando una istruzione di return per restituire esplicitamente il controllo alla procedura chiamante inviandole allo stesso tempo il valore di una espressione.
+* o creando una pseudovariabile nell’ambiente locale della procedura chiamata, che verrà restituita al termine della funzione. 
+
+  Tale variabile può essere solo modificata; non è possibile l’accesso in lettura.
+* o utilizzando una istruzione di return per restituire esplicitamente il valore di una espressione.

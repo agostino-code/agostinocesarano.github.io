@@ -1,8 +1,8 @@
 ---
 title: Linguaggi di Progammazione
-date: 2022-03-10T23:13:22.891Z
+date: 2022-03-31T08:31:09.343Z
 author: Agostino Cesarano
-summary: Appunti per il corso di Linguaggi di Progammazione, Professore Bonatti.
+summary: Appunti per il corso di LP, Professore Bonatti.
 tags:
   - LP
 ---
@@ -636,3 +636,34 @@ end .
 Pascal ha scoping statico, quindi la procedure vede le variabili locali dei blocchi più esterni.
 
 In questo caso tutte le variabili valgono due, effettuando un passaggio per riferimento, le variabili che passo alla procedure sono le stesse, cioè l'env() dei parametri attuali e della variabile locale A sono uguali, questo può portare a **risultati indesiderati.**
+
+**Procedure come parametri di procedura**
+
+Alcuni linguaggi permettono l’uso di procedure come argomento di altre procedure.
+
+**Macro**
+
+Procedure in cui i nomi dei parametri attuali sostituiscono i nomi dei parametri formali.
+
+Esempio: data la macro
+
+```pascal
+procedure swap (a, b: integer );
+var temp : integer ;
+begin
+temp := a;
+a:= b;
+b:= temp
+end ;
+```
+
+La differenza tecnica, è che la macro non ha bisogno di un record di attivazione, allora la chiamata swap(x, y) esegue il seguente brano di codice, la procedure non viene eseguita nel record, ma localmente:
+
+**Funzioni**
+
+Sono procedure che restituiscono un valore alla procedura chiamante.
+
+Sono realizzate
+
+* o creando una pseudovariabile nell’ambiente locale della procedura chiamata. Tale variabile può essere solo modificata; non è possibile l’accesso in lettura.
+* o utilizzando una istruzione di return per restituire esplicitamente il controllo alla procedura chiamante inviandole allo stesso tempo il valore di una espressione.

@@ -589,6 +589,8 @@ Se passo il parametro attuale tramite riferimento, la funzione env() del paramet
 
 In C/C++ il passaggio dei parametri attuali di IN viene fatto tramite copia.
 
+In Pascal se c'è var prima del parametro formale, il passaggio è fatto per riferimento.
+
 **Parametri di OUT (output)**
 
 Possono essere realizzati:

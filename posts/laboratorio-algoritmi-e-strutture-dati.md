@@ -1,8 +1,9 @@
 ---
-title: Laboratorio Algoritmi e Strutture Dati
-date: 2022-03-14T10:42:54.368Z
+title: Laboratorio Algoritmi e Strutture Dati (Introduzione al C++)
+date: 2022-03-31T08:51:36.312Z
 author: Agostino Cesarano
-summary: Appunti per il corso di LASD, Professore Mogavero.
+summary: Appunti per il corso di LASD, Professore Mogavero; prima parte
+  introduttiva sul C++.
 metaDescription: ""
 tags:
   - LASD

@@ -1,8 +1,10 @@
 ---
-title: Linguaggi di Progammazione
+title: Linguaggi di Progammazione (Proprietà e Funzionalità di base)
 date: 2022-03-31T08:31:09.343Z
 author: Agostino Cesarano
-summary: Appunti per il corso di LP, Professore Bonatti.
+summary: |-
+  Appunti per il corso di LP, Professore Bonatti.
+  Prima parte su proprietà 
 tags:
   - LP
 ---
@@ -97,14 +99,29 @@ meno eccezioni alle regole del linguaggio.
 
 **Paradigmi computazionali**
 
-> **Imperativo:** Un programma specifica sequenze di modifiche da apportare allo stato della macchina (memoria).
->
 > *Programmi di tipo ( iterativo )*
-> **Funzionale:** Il programma e le sue componenti sono funzioni. Esecuzione come valutazione di funzioni.
 >
+> **Imperativo:** Un programma specifica sequenze di modifiche da apportare allo stato della macchina (memoria).
+
+
+
 > *Programmi di tipo ( ricorsivo )*
-> **Logico:** Programma come descrizione logica di un problema. Esecuzione analoga a processi di dimostrazione di teoremi.
+>
+> **Funzionale:** Il programma e le sue componenti sono funzioni. Esecuzione come valutazione di funzioni.
+
+
+
+>
+> **Logico:** Programma come descrizione logica di un problema. Esecuzione analoga a processi di dimostrazione di teoremi. 
+
+
+
+>
 > **Orientato ad oggetti:** Programma costituito da oggetti che scambiano messaggi.
+
+
+
+>
 > **Parallelo:** Programmi che descrivono entità distribuite che sono eseguite contemporaneamente ed in modo asincrono.
 
 *I linguaggi di programmazione moderni permettono di usare più paradigmi in base alle nostre esigenze.*

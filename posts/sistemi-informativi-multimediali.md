@@ -229,9 +229,15 @@ Quando dobbiamo trasformare un segnale audio in un file digitale, dobbiamo divid
 
 ![Analogico a Digitale](/static/img/analogico-a-digitale.png "Analogico a Digitale")
 
-1. Campionamento, prelievo di valori assunti dal segnale analogico ad intervalli discreti di tempo
+1. *Campionamento*, prelievo di valori assunti dal segnale analogico ad intervalli discreti di tempo
    (gestiti da un clock) Δt.
 
    Il valore campionato resta costante durante il successivo intervallo di tempo. I campioni prelevati sono, in questa fase, ancora di tipo analogico assumendo pertanto un qualsiasi valore di un intervallo continuo.
-2. Quantizzazione
-3. Codifica
+2. *Quantizzazione*, processo di conversione dei valori continui in valori discreti. L’intervallo del segnale viene suddiviso in un numero fisso di sotto‐intervalli di uguale dimensione e viene  assegnato un valore. 
+
+   Ciascun campione cade in uno specifico intervallo; quindi i valori possibili sono in numero limitato.
+
+   La grandezza del sotto‐intervallo di quantizzazione è detto **passo di quantizzazione**.
+3. *Codifica, p*rocesso di rappresentazione numerica dei valori quantizzati.
+
+   Quanto maggiore sarà sia la frequenza di campionamento sia il numero dei livelli di quantizzazione allora tanto maggiore sarà la fedeltà del segnale digitalizzato.

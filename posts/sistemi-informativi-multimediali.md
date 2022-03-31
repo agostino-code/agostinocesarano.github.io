@@ -229,6 +229,9 @@ Quando dobbiamo trasformare un segnale audio in un file digitale, dobbiamo divid
 
 ![Analogico a Digitale](/static/img/analogico-a-digitale.png "Analogico a Digitale")
 
-1. Campionamento
+1. Campionamento, prelievo di valori assunti dal segnale analogico ad intervalli discreti di tempo
+   (gestiti da un clock) Δt.
+
+   Il valore campionato resta costante durante il successivo intervallo di tempo. I campioni prelevati sono, in questa fase, ancora di tipo analogico assumendo pertanto un qualsiasi valore di un intervallo continuo.
 2. Quantizzazione
 3. Codifica

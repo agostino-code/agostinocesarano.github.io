@@ -2,9 +2,9 @@
 title: Linguaggi di Progammazione (Proprietà e Funzionalità di base)
 date: 2022-03-31T08:31:09.343Z
 author: Agostino Cesarano
-summary: |-
-  Appunti per il corso di LP, Professore Bonatti.
-  Prima parte su proprietà 
+summary: Appunti per il corso di LP, Professore Bonatti; prima parte, di
+  introduzione ai linguaggi di programmazione, con introduzione a quelli che
+  sono le principali proprietà e funzionalità presenti in essi.
 tags:
   - LP
 ---

@@ -579,6 +579,8 @@ Possono essere realizzati in due modi:
 
 Il secondo modo è meno efficiente del primo, sia rispetto allo spazio sia al tempo, ma è più flessibile e richiede meno variabili locali.
 
+Se passo il parametro attuale tramite riferimento, la funzione env() del parametro formale e attuale sono uguali.
+
 **Parametri di OUT (output)**
 
 Possono essere realizzati:

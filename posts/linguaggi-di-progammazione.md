@@ -564,7 +564,7 @@ I parametri non rispettano l'ordine di dichiarazione, la definizione dei **param
 
 Una ulteriore tecnica è la cosiddetta *associazione di default*.
 
-Essa permette di specificare valori di default ai parametri formali che non sono stati legati a valori da parametri attuali.
+Introdotta dal Lisp è successivamente implementato in molti linguaggi, essa permette di specificare valori di default ai parametri formali che non sono stati legati a valori da parametri attuali.
 
 **Parametri di IN (input)**
 
@@ -586,5 +586,24 @@ Possono essere realizzati:
 * con un riferimento;
 * con una copia;
 
-  Rappresentano risultati alcuni linguaggi assumono che i parametri
-  OUT non siano inizializzati e ne proibiscono la “lettura”.
+  Rappresentano risultati -> alcuni linguaggi assumono che i parametri
+  OUT non siano inizializzati e ne proibiscono la “lettura”, ad es.
+
+  * uso a destra di un assegnamento
+  * passaggio a un parametro IN o IN OUT di un’altra procedura
+
+Non esistono regole generali nemmeno tra diverse versioni di uno stesso linguaggio, ad es.
+
+* Ada 83 proibisce di “leggere” i parametri OUT 
+* Le versioni successive invece lo permettono
+
+Altri linguaggi non hanno parametri di tipo OUT multipli, se devo restituire più elementi, restituisco un "oggetto".
+
+**Parametri di IN OUT (Input) e (Output)**
+
+Sono la combinazione dei due precedenti. Anch’essi possono essere realizzati:
+
+* con un riferimento; non ci sono limitazioni all’uso all’interno della procedura;
+* con una copia; avvengono due processi di copia, uno durante l’attivazione ed uno durante la terminazione della procedura.
+
+Non tutti i linguaggi hanno parametri di Input e Output,

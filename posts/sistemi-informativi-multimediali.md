@@ -241,3 +241,11 @@ Quando dobbiamo trasformare un segnale audio in un file digitale, dobbiamo divid
 3. *Codifica, p*rocesso di rappresentazione numerica dei valori quantizzati.
 
    Quanto maggiore sarà sia la frequenza di campionamento sia il numero dei livelli di quantizzazione allora tanto maggiore sarà la fedeltà del segnale digitalizzato.
+
+**DAC (Digital to Analog Conversion)**
+
+Quando dobbiamo trasformare il segnale digitale analogico, la codifica viene trasformata in un segnale analogico campionato.
+
+Tramite un filtro passa-basso il segnale viene modellato per ricreare l'onda originaria, più sarà fedele la digitalizzazione, è meno sarà la perdita di dettagli rispetto al sognale d'origine.
+
+![](/static/img/digitale-a-analogico.png)

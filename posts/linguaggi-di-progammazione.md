@@ -603,11 +603,36 @@ Non esistono regole generali nemmeno tra diverse versioni di uno stesso linguagg
 
 Altri linguaggi non hanno parametri di tipo OUT multipli, se devo restituire più elementi, restituisco un "oggetto".
 
-**Parametri di IN OUT (Input) e (Output)**
+**Parametri di IN OUT (input) e (output)**
 
 Sono la combinazione dei due precedenti. Anch’essi possono essere realizzati:
 
 * con un riferimento; non ci sono limitazioni all’uso all’interno della procedura;
 * con una copia; avvengono due processi di copia, uno durante l’attivazione ed uno durante la terminazione della procedura.
 
-Non tutti i linguaggi hanno parametri di Input e Output,
+Non tutti i linguaggi hanno parametri di input e output, i parametri di input/output non hanno vincoli  di non "lettura" dei parametri di OUT e vincoli di non "modifica" dei parametri IN.
+
+**Aliasing**
+
+È la possibilità di riferirsi alla stessa locazione con nomi diversi.
+
+Nel passaggio dei parametri può causare notevoli problemi di interpretazione. Per esempio:
+
+```pascal
+program MAIN ;
+  var
+    A: integer ;
+  procedure TEST ( var X, Y: integer );
+  begin
+    X:= A + Y;
+    writeln (A, X, Y)
+  end ;
+begin
+  A:= 1;
+  TEST (A, A)
+end .
+```
+
+Pascal ha scoping statico, quindi la procedure vede le variabili locali dei blocchi più esterni.
+
+In questo caso tutte le variabili valgono due, effettuando un passaggio per riferimento, le variabili che passo alla procedure sono le stesse, cioè l'env() dei parametri attuali e della variabile locale A sono uguali, questo può portare a **risultati indesiderati.**

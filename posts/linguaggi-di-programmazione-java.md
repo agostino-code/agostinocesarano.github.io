@@ -56,7 +56,7 @@ Dal punto di vista dell’utilizzatore:
 * La maggior parte del type-checking è svolto durante la compilazione.
 * Ogni realizzazione della JVM deve essere capace di eseguire un qualunque programma conforme alle specifiche della JVM.
 
-**Garbage Collector**
+##### **Garbage Collector**
 
 La memoria allocata che non e più necessaria deve essere resa disponibile.
 
@@ -69,3 +69,32 @@ Il Garbage Collector:
 * ricerca e libera la memoria non più necessaria;
 * è eseguito automaticamente;
 * è dipendente dalle varie realizzazioni di JVM.
+
+##### JRE (Java Runtime Environment)
+
+La Java Runtime Environment è un sottoinsieme della JVM.
+
+In dettaglio, è composto da:
+
+* Class loader, che ha il compito di recuperare le classi che in compilazione la JVM richiede.
+* ByteCode verifer, verifica che il codice scritto in bytecode non esegue azioni dannose per il sistema.
+
+Successivamente passa il bytecode verificato all'interprete JVM.
+
+**JIT** in alcune circostanze Java salva il programma già compilato per migliorare la velocità di esecuzione.
+
+**Sicurezza**
+
+Miglioramento della sicurezza del codice che proviene da fonti esterne.
+
+* Il Class Loader:
+  carica solo le classi necessarie per l’esecuzione del programma;
+* mantiene le classi del file system locale in uno spazio di nomi separato, non sarà possibile rimpiazzare le librerie standard, poiché le classi locali sono sempre caricate per prime;
+* previene il cosı detto spoofing.
+
+Il Bytecode Verifier controlla che:
+
+* il codice rispetti le specifiche della JVM;
+* il codice non violi l’integrità del sistema;
+* il codice non generi stack overflow o underflow;
+* non vi siano conversioni di tipo illegali (e.g. la conversione di interi in puntatori).

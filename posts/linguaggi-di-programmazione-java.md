@@ -30,3 +30,42 @@ javac $nomefile.java //Comando per compilazione
 
 java $nomefile.java //Comando per l'esecuzione
 ```
+
+La compilazione crea dei file .class che contengono **bytecode** java, che successivamente vengono eseguiti dalla JVM installata su un qualsiasi dispositivo.
+
+##### JVM (Java Virtual Machine)
+
+La Java Virtual Machine è una macchina virtuale che è emulata dalla macchina reale.
+
+I programmi per la JVM sono contenuti in file .class, ciascuno dei quali contiene al più una classe pubblica.
+
+**Punti di vista**
+
+Dal punto di vista della realizzazione, la JVM specifica:
+
+* l’insieme di istruzioni della CPU;
+* l’insieme dei registri;
+* il formato del file Class;
+* lo stack di esecuzione;
+* lo heap gestito dal **garbage collector**;
+* l’area di memoria.
+
+Dal punto di vista dell’utilizzatore:
+
+* Il formato del programma compilato, eseguibile dalla JVM, consiste in bytecode molto compatti ed efficienti.
+* La maggior parte del type-checking è svolto durante la compilazione.
+* Ogni realizzazione della JVM deve essere capace di eseguire un qualunque programma conforme alle specifiche della JVM.
+
+**Garbage Collector**
+
+La memoria allocata che non e più necessaria deve essere resa disponibile.
+
+In altri linguaggi la de-allocazione e responsabilità del programmatore.
+
+Java fornisce un thread a livello di sistema per tracciare l’allocazione di memoria.
+
+Il Garbage Collector:
+
+* ricerca e libera la memoria non più necessaria;
+* è eseguito automaticamente;
+* è dipendente dalle varie realizzazioni di JVM.

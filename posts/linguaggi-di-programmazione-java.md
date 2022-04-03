@@ -13,11 +13,20 @@ Con sintassi simile a C++ e semantica simile a SmallTalk.
 
 È di solito menzionato (ma non serve solo) per produrre applet: applicazioni WEB che risiedono sul server ma sono eseguite dal browser WEB del cliente.
 
-Le applicazioni Java sono programmi autonomi che non richiedono un browser WEB per essere eseguiti
+Le applicazioni Java sono programmi autonomi che non richiedono un browser WEB per essere eseguiti.
 
 Tali programmi richiedono solo un elaboratore su cui sia installato Java Runtime Environment (**JRE**).
 
-
-Il JRE è un **ambiente di sviluppo**, cioè un insieme di numerosi strumenti per la realizzazione di
+Il JRE può essere associato ad un **ambiente di sviluppo**, cioè un insieme di numerosi strumenti per la realizzazione di
 programmi: un compilatore, un interprete, un generatore di documentazione, uno strumento di
 aggregazione di file, . . .
+
+I principali ambienti di sviluppo sono Intellij, Eclipse ecc.
+
+In questo corso, compileremo i programmi nativamente senza l'utilizzo di **ambienti di sviluppo**.
+
+```java
+javac $nomefile.java //Comando per compilazione
+
+java $nomefile.java //Comando per l'esecuzione
+```

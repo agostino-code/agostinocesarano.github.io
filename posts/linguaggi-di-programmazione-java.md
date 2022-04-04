@@ -324,9 +324,7 @@ Otto tipi primitivi:
 
 Il tipo boolean ha due litterali: true, false.
 
-
 Non c’è cast tra tipi interi e boolean. Interpretare valori numerici come valori logici non è permesso in Java.
-
 
 **char**
 
@@ -350,5 +348,25 @@ Le stringhe non sono tipi primitivi, è una classe (comincia per lettera maiusco
 
 **Tipi interi**
 
-
 ![Tipi interi Java](/static/img/tipiinteri.png "Tipi interi Java")
+
+I litterali hanno tre forme: decimale, ottale ed esadecimale.
+
+* 2 il valore decimale è due.
+* 077 lo zero iniziale denota un valore ottale.
+* 0xBAAC la parte 0x iniziale denota un valore esadecimale.
+
+**Litterali a virgola mobile**
+
+Hanno come tipo di default il tipo double.
+
+##### Tipi reference
+
+Tutti i tipi non primitivi sono tipi reference.
+
+Una variabile reference contiene la “maniglia” di un oggetto, per creare un puntatore in Java, posso solo crearli con una **new**, l'unica cosa che posso fare con un puntatore è:
+
+* Accedere a quell'oggetto
+* Copiare quell'Oggetto
+
+**Costruzione di oggetti**

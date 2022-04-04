@@ -107,10 +107,32 @@ A sinistra ci dice cosa dobbiamo rappresentare a destra dei : : = ci descrive la
 
 **Classi**
 
+La sintassi per la dichiarazione di una classe è:
+
 ```
-<class_declaration > ::= <modifier> class <name> {
+<class_declaration> ::= <modifier> class <name> {
                          <attribute_declaration>*
                          <constructor_declaration>*
                          <method_declaration>*
+                         }
+```
+
+**Attributi**
+
+La sintassi per la dichiarazione di un attributo è:
+
+```
+<attribute_declaration> ::= <modifier> <type> <name> [= <default_value>];
+
+<type > ::= byte | short | int | long | char | float | double | boolean | <class>
+```
+
+**Metodi**
+
+La sintassi per la dichiarazione di metodi è:
+
+```
+<method_declaration> ::= <modifier> <return_type > <name> (<parameter>*) {
+                         <statement >*
                          }
 ```

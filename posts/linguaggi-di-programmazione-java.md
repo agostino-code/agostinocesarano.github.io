@@ -265,3 +265,9 @@ Gli attributi saranno privati, ci saranno metodi che permettono di accedere agli
 L'incapsulazione permette anche di cambiare facilmente l'implementazione, es. collection.
 
 Rendere il codice modulare è un vantaggio enorme.
+
+**Tipo di dato astratto**
+
+È un tipo di dato dove le strutture dati sono associate a un insieme di operazioni e possono essere usate solo attraverso quelle operazioni (sono accessibili solo dal codice di quelle operazioni) , perfettamente incapsulato.
+
+Da non confondere con classi astratte che sono classi INCOMPLETE, non ho l'implementazione di alcuni metodi.

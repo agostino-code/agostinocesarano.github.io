@@ -143,4 +143,4 @@ La notazione “dot”: <object>.<member>.
 
 è usata per l’accesso a membri non privati di una oggetto.
 
-Ricordiamo che Java ha uno scoping statico
+Ricordiamo che Java ha uno scoping statico, quindi possiamo accedere agli attributi dei blocchi più esterni.

@@ -308,3 +308,47 @@ $guadagniMenoSpese // legale
 
 !ilCubo // illegale : deve cominciare con lettera , $, oppure _
 ```
+
+##### Tipi primitivi
+
+**Elenco**
+
+Otto tipi primitivi:
+
+* **Logici:** boolean
+* **Testuali:** char
+* **Interi:** byte, short, int, long
+* **Floating point:** float, double
+
+**boolean**
+
+Il tipo boolean ha due litterali: true, false.
+
+
+Non c’è cast tra tipi interi e boolean. Interpretare valori numerici come valori logici non è permesso in Java.
+
+
+**char**
+
+Rappresenta un carattere Unicode (16 bit).
+
+I litterali di questo tipo sono inclusi tra apici singoli (’ ’).
+
+*Esempi:*
+
+```java
+’a’ // la lettera a
+’\t’ // una tabulazione
+’\u03A6 ’ // la lettera greca phi
+```
+
+**String**
+
+Le stringhe non sono tipi primitivi, è una classe (comincia per lettera maiuscola).
+
+"Ha i suoi litterali racchiusi tra apici doppi".
+
+**Tipi interi**
+
+
+![Tipi interi Java](/static/img/tipiinteri.png "Tipi interi Java")

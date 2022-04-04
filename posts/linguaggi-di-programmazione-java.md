@@ -271,3 +271,16 @@ Rendere il codice modulare è un vantaggio enorme.
 È un tipo di dato dove le strutture dati sono associate a un insieme di operazioni e possono essere usate solo attraverso quelle operazioni (sono accessibili solo dal codice di quelle operazioni) , perfettamente incapsulato.
 
 Da non confondere con classi astratte che sono classi INCOMPLETE, non ho l'implementazione di alcuni metodi.
+
+**Identificatori**
+
+Sono nomi assegnati a variabili, classi, metodi.
+
+Possono cominciare con un carattere Unicode, underscore( ), oppure il dollaro ($).
+
+Sono case sensitive e non hanno lunghezza massima.
+
+Il nome di una classe `e costituito solo da caratteri ASCII poiché molti sistemi non supportano
+Unicode.
+
+**Parole chiavi**

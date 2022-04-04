@@ -370,3 +370,17 @@ Una variabile reference contiene la “maniglia” di un oggetto, per creare un 
 * Copiare quell'Oggetto
 
 **Costruzione di oggetti**
+
+La new serve ad allocare spazio per il nuovo oggetto. Scatena i seguenti processi:
+
+1. Viene allocato lo spazio per il nuovo oggetto e le variabili dell’istanza sono inizializzate al loro valore di default (e.g. 0, false, null, e così via).
+2. Viene eseguita ogni inizializzazione esplicita degli attributi.
+3. Viene eseguito un costruttore.
+4. Viene assegnato il riferimento finale all’oggetto.
+
+##### Parametri
+
+**Passaggio per valore**
+
+* Java permette il passaggio dei parametri per valore (nella nostra tassonomia, parametri IN realizzati per copia).
+* Il passaggio per riferimento (che permette la modifica del valore del parametro nel contesto della procedura chiamante) è *PROIBITO IN JAVA*.

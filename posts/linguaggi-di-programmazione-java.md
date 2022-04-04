@@ -386,3 +386,11 @@ La new serve ad allocare spazio per il nuovo oggetto. Scatena i seguenti process
 
 * Java permette il passaggio dei parametri per valore (nella nostra tassonomia, parametri IN realizzati per copia).
 * Il passaggio per riferimento (che permette la modifica del valore del parametro nel contesto della procedura chiamante) è *PROIBITO IN JAVA*.
+
+**Il riferimento this**
+
+La parola chiave this puo essere usata:
+
+* Per fare riferimento, all’interno di un metodo o di un costruttore locale, ad attributi o metodi locali.
+* Questa tecnica è usata per risolvere *ambiguita* in alcuni casi in cui una variabile locale di un metodo maschera un attributo locale dell’oggetto.
+* Per permettere ad un oggetto di passare il riferimento a se stesso come parametro ad un altro metodo o costruttore.

@@ -284,3 +284,27 @@ Il nome di una classe `e costituito solo da caratteri ASCII poiché molti sistem
 Unicode.
 
 **Parole chiavi**
+
+![Parole chiavi in Java](/static/img/parolechiave.png "Parole chiavi in Java")
+
+Queste parole chiavi:
+
+* Non possono essere usate come identificatori.
+* *true, false, null* sono in minuscolo, non in maiuscolo come in C++.
+* Strettamente parlando sono litterali, non parole chiavi.
+* Non c’è l’operatore *sizeof* : la dimensione e la rappresentazione dei tipi è fissa e non dipende dalla realizzazione della JVM.
+* *goto e const* sono parole chiavi che non sono usate in Java, per convenzione, dato che vengono usate in C sono parole chiavi anche in Java.
+
+*Esempi di Identificatori*
+
+```java
+foobar // legale
+  
+BIGinterface // legale ; contiene parola chiave
+
+$guadagniMenoSpese // legale
+
+3_node5 // illegale : comincia con cifra
+
+!ilCubo // illegale : deve cominciare con lettera , $, oppure _
+```

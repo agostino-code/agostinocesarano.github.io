@@ -98,3 +98,17 @@ Il Bytecode Verifier controlla che:
 * il codice non violi l’integrità del sistema;
 * il codice non generi stack overflow o underflow;
 * non vi siano conversioni di tipo illegali (e.g. la conversione di interi in puntatori).
+
+##### SIntassi
+
+Grammatica di Backus-Nour delle dichiarazioni.
+
+**Classi**
+
+```
+<class_declaration > ::= <modifier > class <name > {
+                         < attribute_declaration >*
+                         < constructor_declaration >*
+                         <method_declaration >*
+}
+```

@@ -144,3 +144,71 @@ La notazione “dot”: <object>.<member>.
 è usata per l’accesso a membri non privati di una oggetto.
 
 Ricordiamo che Java ha uno scoping statico, quindi possiamo accedere agli attributi dei blocchi più esterni.
+
+##### Incapsulazione
+
+È un concetto introdotto già prima della nascita di Java è dei linguaggi ad oggetti.
+
+**Il problema**
+
+Dato il seguente class diagram:
+
+  *MiaData*
++giorno : int
++mese : int
++anno : int
+
+Il codice cliente ha accesso diretto ai dati interni:
+
+```java
+MiaData d = new MiaData ();
+
+d. giorno = 32;
+// non valido
+
+d.mese = 2; d. giorno = 30;
+// plausibile ma sbagliato
+
+d. giorno = d. giorno + 1;
+// nessun controllo del limite superiore
+```
+
+Ciò significa che non effettuo controlli sui dati, i dati hanno accesso diretto.
+
+**La soluzione**
+
+  *MiaData*
+-giorno : int
+-mese : int
+-anno : int
+
+\------------------------------------
++getGiorno() : int
++getMese() : int
++getAnno() : int
++setGiorno( g : int ) : boolean
++setMese( m : int )
++setAnno( a : int )
+-validGiorno( d : int ) : boolean
+
+Il cliente deve usare i metodi per accedere ai dati interni:
+
+```java
+MiaData d = new MiaData ();
+
+d. setGiorno (32);
+// non valido , ma ritorna falso
+
+d. setMese (2);
+d. setGiorno (30);
+// plausibile ma sbagliato ; setGiorno ritorna false
+
+d. setGiorno (d. getGiorno () + 1);
+// restituisce false se si eccede il limite
+```
+
+Gli attributi saranno privati, ci saranno metodi che permettono di accedere agli attributi ed effettuano tutti i controlli del caso, rispettando i vincoli di integrità di quei attributi.
+
+L'incapsulazione permette anche di cambiare facilmente l'implementazione, es. collection.
+
+Rendere il codice modulare è un vantaggio enorme.

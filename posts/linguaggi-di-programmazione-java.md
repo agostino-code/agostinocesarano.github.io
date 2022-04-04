@@ -136,3 +136,11 @@ La sintassi per la dichiarazione di metodi è:
                          <statement >*
                          }
 ```
+
+**Accesso a membri di oggetto**
+
+La notazione “dot”: <object>.<member>.
+
+è usata per l’accesso a membri non privati di una oggetto.
+
+Ricordiamo che Java ha uno scoping statico

@@ -350,6 +350,8 @@ Le stringhe non sono tipi primitivi, è una classe (comincia per lettera maiusco
 
 ![Tipi interi Java](/static/img/tipiinteri.png "Tipi interi Java")
 
+Il renge dei valori è di default per tutte le JVM l'architettura, quindi la dimensione dei registri non influisce.
+
 I litterali hanno tre forme: decimale, ottale ed esadecimale.
 
 * 2 il valore decimale è due.

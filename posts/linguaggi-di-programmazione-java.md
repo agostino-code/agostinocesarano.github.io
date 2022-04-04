@@ -145,6 +145,59 @@ La notazione “dot”: <object>.<member>.
 
 Ricordiamo che Java ha uno scoping statico, quindi possiamo accedere agli attributi dei blocchi più esterni.
 
+**Costruttori**
+
+La sintassi per la dichiarazione di un costruttore è:
+
+```
+<constructor_declaration> ::= <modifier> <class_name> (<parameter>*) {
+                              <statement >*
+                             }
+```
+
+I costruttori non avranno tipo di ritorno è come nome hanno il nome della classe.
+
+* I costruttori NON sono metodi.
+* I costruttori non vengono ereditati dalle sottoclassi.
+
+**Costruttore di default**
+
+* C’è sempre almeno un costruttore in ogni classe.
+* Se il programmatore non scrive nessun costruttore, allora verrà usato un costruttore di default.
+* Il costruttore di default non ha argomenti.
+* Il costruttore di default non ha corpo.
+
+Il costruttore di default permette di creare istanze di classi ( con l’espressione new *nomeclasse*()) senza dover scrivere un costruttore.
+
+**Sorgenti**
+
+```
+<source_file > ::= [< package_declaration >]
+                     <import_declaration >*
+                     <class_declaration >*
+```
+
+* l’ordine degli elementi e importante;
+* il nome del file sorgente deve essere lo stesso dell’unica classe pubblica contenuta nel file; se il file sorgente non contiene classi pubbliche allora il nome del file può essere qualunque.
+
+**Enunciato package**
+
+La sintassi dell’enunciato package è:
+
+```
+<package_declaration > ::= package <top_pkg_name > [.< sub_pkg_name >]*;
+```
+
+Ricorda:
+
+* la dichiarazione specifica che il contenuto del file appartiene al pacchetto dichiarato;
+* e permessa una sola dichiarazione di pacchetto per file sorgente;
+* si deve specificare la dichiarazione all’inizio del file sorgente;
+* se non è dichiarato il pacchetto, allora il contenuto del file appartiene al pacchetto di default;
+* i nomi di pacchetto devono essere gerarchici e separati da punti;
+* un nome di pacchetto corrisponde di solito ad un nome di cartella;
+* in genere i nomi di pacchetto sono scritti in lettera minuscola, mentre i nomi di classe sono in lettera minuscola ma ogni loro parola comincia per lettera maiuscola.
+
 ##### Incapsulazione
 
 È un concetto introdotto già prima della nascita di Java è dei linguaggi ad oggetti.

@@ -103,12 +103,14 @@ Il Bytecode Verifier controlla che:
 
 Grammatica di Backus-Nour delle dichiarazioni.
 
+A sinistra ci dice cosa dobbiamo rappresentare a destra dei : : = ci descrive la dichiarazione.
+
 **Classi**
 
 ```
-<class_declaration > ::= <modifier > class <name > {
-                         < attribute_declaration >*
-                         < constructor_declaration >*
-                         <method_declaration >*
-}
+<class_declaration > ::= <modifier> class <name> {
+                         <attribute_declaration>*
+                         <constructor_declaration>*
+                         <method_declaration>*
+                         }
 ```

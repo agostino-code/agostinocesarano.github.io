@@ -254,4 +254,14 @@ Quando dobbiamo trasformare il segnale digitale analogico, la codifica viene tra
 
 Tramite un filtro passa-basso il segnale viene modellato per ricreare l'onda originaria, più sarà fedele la digitalizzazione, è meno sarà la perdita di dettagli rispetto al sognale d'origine.
 
-![](/static/img/digitale-a-analogico.png)
+![Digitale a analogico](/static/img/digitale-a-analogico.png "Digitale a analogico")
+
+**Scelta della Frequenza di Campionamento**
+
+##### Teorema di Nyquist
+
+La Frequenza di Campionamento è strettamente dipendente dalla frequenza massima del segnale analogico da convertire; infatti il Teorema di Nyquist afferma che:
+
+Se in un segnale analogico c’è una componente con frequenza massima pari a **f Hz** allora la frequenza di campionamento dovrebbe essere almeno **2 f Hz**.
+
+La frequenza minima di campionamento, per non avere perdita di dati è almeno il doppio della frequenza massima raggiunta dal segnale analogico.

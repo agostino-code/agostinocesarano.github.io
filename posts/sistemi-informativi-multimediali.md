@@ -265,3 +265,20 @@ La Frequenza di Campionamento è strettamente dipendente dalla frequenza massima
 Se in un segnale analogico c’è una componente con frequenza massima pari a **f Hz** allora la frequenza di campionamento dovrebbe essere almeno **2 f Hz**.
 
 La frequenza minima di campionamento, per non avere perdita di dati è almeno il doppio della frequenza massima raggiunta dal segnale analogico.
+
+**Scelta della Frequenza di Campionamento**
+
+##### Teorema di Nyquist
+
+La Frequenza di Campionamento *è strettamente dipendente dalla frequenza massima* del segnale analogico da convertire; infatti il Teorema di Nyquist afferma che:
+
+> Se in un segnale analogico c’è una componente con frequenza massima pari a **f Hz** allora la frequenza di campionamento dovrebbe essere almeno **2 f Hz**.
+
+La frequenza minima di campionamento, per non avere perdita di dati è almeno il doppio della frequenza massima raggiunta dal segnale analogico.
+
+**Scelta numero dei livelli di Quantizzazione**
+
+Il numero Q dei livelli di quantizzazione determina la quantità b di bit
+necessaria per rappresentare ciascun campione:
+
+b=log2Q

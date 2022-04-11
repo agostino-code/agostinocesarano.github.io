@@ -285,4 +285,17 @@ b=log2Q
 
 La quantizzazione può essere anche dinamica prendendo i valori non a intervalli fissi, ma quantizziamo a intervalli variabili.
 
-Questa tecnica è chiamata Audio Companding.
+Questa tecnica è chiamata **Audio Companding.**
+
+**Predictive Coding**
+
+Con il Predictive Coding, anzichè codificare il valore del campione da trasmettere, *si codifica la differenza tra la predizione del valore del campione e il valore del campione attuale.*
+
+L’efficacia del Predictive Coding si basa sul fatto che:
+
+* campioni vicini sono significativamente correlati.
+* per codificare una differenza occorre un numero inferiore di bit.
+
+**Audio sintetico: Midi**
+
+Ricrea perfettamente uno strumento musicale elettronicamente, non è un segnale analogico tramutato in segnale digitale, ma è un  suono ricreato digitalmente attraverso dei preset.

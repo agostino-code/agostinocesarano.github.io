@@ -282,3 +282,7 @@ Il numero Q dei livelli di quantizzazione determina la quantità b di bit
 necessaria per rappresentare ciascun campione:
 
 b=log2Q
+
+La quantizzazione può essere anche dinamica prendendo i valori non a intervalli fissi, ma quantizziamo a intervalli variabili.
+
+Questa tecnica è chiamata Audio Companding.

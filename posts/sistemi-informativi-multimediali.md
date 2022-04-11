@@ -166,13 +166,19 @@ Metodi noti impiegati per la compressione:
 
 *Esempio di utilizzo*
 
-![Compressione metodo Huffman fase 1](/static/img/hoffman1.png "Compressione metodo Huffman fase 1")
+Codifica di Huffman con la frase in francese *“Here’s an example of optimized Huffman coding using the French subject string j’aime aller sur le bord de l’eau les jeudis ou les jours impairs“*, contando i vari caratteri possiamo scriverci la frequenza di ogni simbolo (ad esempio la lettera *J* si ripete 3 volte, la lettera *a* si ripete 4 volte e così via).
 
-![Compressione metodo Huffman fase 2](/static/img/hoffman2.png "Compressione metodo Huffman fase 2")
+Mettendo in ordine crescente la frequenza dei simboli, ad ogni passo prendiamo i caratteri con frequenza minore e li uniamo in un albero fino ad aggiungere ogni carattere del testo.
 
-![Compressione metodo Huffman fase 3](/static/img/hoffman3.png "Compressione metodo Huffman fase 3")
+![Compressione metodo Huffman fase 1](/static/img/huffman1.gif "Compressione metodo Huffman fase 1")
 
-![Compressione metodo Huffman fase 4](/static/img/hoffman4.png "Compressione metodo Huffman fase 4")
+Completato l’**albero di Huffman**, a partire dal nodo radice si assegna al ramo sinistro il codice 0 e al ramo destro il codice 1.
+
+Ogni lettera del testo verrà codificata dai codici dato dal percorso dell’albero dalla radice fino al nodo che contiene la lettera. Ad esempio nell’immagine sottostante possiamo dedurre che la lettera *a* viene codificata con il codice *0110*, la lettera *e* con il codice *100* e così via.
+
+![Compressione metodo Huffman fase 2](/static/img/huffman2.png "Compressione metodo Huffman fase 2")
+
+Da questi esempi possiamo notare che le lettere con una frequenza minore sono state codificate con codici più lunghi rispetto alle lettere che si presentano più spesso nel testo.
 
 **Importante!**
 

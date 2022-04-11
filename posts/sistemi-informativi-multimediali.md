@@ -299,3 +299,9 @@ L’efficacia del Predictive Coding si basa sul fatto che:
 **Audio sintetico: Midi**
 
 Ricrea perfettamente uno strumento musicale elettronicamente, non è un segnale analogico tramutato in segnale digitale, ma è un  suono ricreato digitalmente attraverso dei preset.
+
+Il file midi contiene quindi informazioni e direttive che vengono interpretate da sistemi speciali (sintetizzatori) Hardware o Software e ne realizzano l’esecuzione.
+
+Le direttive sono del tipo:
+
+*Esegui la nota N con una durata T e con lo strumento S*

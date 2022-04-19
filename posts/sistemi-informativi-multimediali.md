@@ -305,3 +305,9 @@ Il file midi contiene quindi informazioni e direttive che vengono interpretate d
 Le direttive sono del tipo:
 
 *Esegui la nota N con una durata T e con lo strumento S*
+
+#### Le immagini
+
+Tutti abbiamo una percezione diversa dei colori e dei dettagli.
+
+Quando dobbiamo digitalizzare un immagine dobbiamo tenere conto della percezione dell' occhio umano.

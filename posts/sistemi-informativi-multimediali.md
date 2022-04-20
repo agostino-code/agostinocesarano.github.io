@@ -328,3 +328,19 @@ Le tre proprietà fisiche delle radiazioni di colore sono:
 * Luminanza (illuminazione)
 * Tinta (il colore)
 * Saturazione (la purezza)
+
+**Sintesi additiva e sottrattiva**
+
+Le radiazioni riflesse, *le radiazioni emesse da una fonte luminosa*, se mescolate producono la visione del bianco.
+
+Il verificarsi di tale fenomeno da origine a quella che comunemente viene detta *sintesi o mescolanza additiva.*
+
+Per convenzione si considerano 3 colori primari come quella RGB.
+
+Considerando il fenomeno dalla parte della radiazione assorbita, le radiazioni emesse dall'assorbimento di radiazioni riflesse sulle superfici.
+
+Le superfici che ci appaiono colorate (per es. pittura e stampa) sottraggono alla nostra visione una parte dello spettro visibile.
+
+Nella sintesi sottrattiva si analizza la capacità di assorbimento della luce.
+
+![](/static/img/sintesiaddesottr.jpg)

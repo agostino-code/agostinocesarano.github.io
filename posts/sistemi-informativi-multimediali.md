@@ -344,3 +344,28 @@ Le superfici che ci appaiono colorate (per es. pittura e stampa) sottraggono all
 Nella sintesi sottrattiva si analizza la capacità di assorbimento della luce.
 
 ![Sintesi sottrattiva e additiva](/static/img/sintesiaddesottr.jpg "Sintesi additiva e sottrattiva")
+
+##### Le immagini digitali
+
+Origini delle immagini digitali:
+
+* Macchine fotografiche
+* Scanner
+* Fotogrammi di filmati
+* Disegni elettronici
+
+Schemi di classificazione delle immagini:
+
+**Raster (o bitmap)**
+
+> *Raster (= griglia)* definisce la griglia ortogonale di punti (scacchiera) che costituisce un’immagine. Ogni elemento è chiamato pixel a cui è associato un colore secondo uno specifico modello.
+
+I modelli di memorizzazione possono essere **LOSSY o LOSSLESS.**
+
+Le immagini Raster possono essere migliorate mediante la tecnica del **Multi-Frame,** più immagini raster compongono una singola.
+
+**Vettoriali**
+
+> Nella grafica vettoriale un'immagine è descritta mediante un insieme di primitive geometriche, *formule geometriche*, che descrivono punti, linee, curve e poligoni ai quali sono associabili svariati attributi.
+
+Le immagini vettoriali si distinguono per la grande qualità e la elevata compressione, **LOSSLESS**, compressione senza perdita di qualità.

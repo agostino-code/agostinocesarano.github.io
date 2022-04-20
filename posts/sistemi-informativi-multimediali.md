@@ -343,4 +343,4 @@ Le superfici che ci appaiono colorate (per es. pittura e stampa) sottraggono all
 
 Nella sintesi sottrattiva si analizza la capacità di assorbimento della luce.
 
-![](/static/img/sintesiaddesottr.jpg)
+![Sintesi sottrattiva e additiva](/static/img/sintesiaddesottr.jpg "Sintesi additiva e sottrattiva")

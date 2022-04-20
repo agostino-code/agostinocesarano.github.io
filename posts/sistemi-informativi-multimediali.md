@@ -311,3 +311,20 @@ Le direttive sono del tipo:
 Tutti abbiamo una percezione diversa dei colori e dei dettagli.
 
 Quando dobbiamo digitalizzare un immagine dobbiamo tenere conto della percezione dell' occhio umano.
+
+**Rappresentazione dei colori**
+
+Gli algoritmi di indicizzazione e di ricerca delle immagini devono essere basati su una
+corretta *Rappresentazione dei colori.*
+
+La luce visibile è una radiazione elettromagnetica con lunghezza d’onda tra 400 e 780 nm.
+
+Differenti lunghezze d’onda producono differenti sensazioni di colore
+
+![Spettro visibile](/static/img/visible-spectrum.jpeg "Spettro visibile")
+
+Le tre proprietà fisiche delle radiazioni di colore sono:
+
+* Luminanza (illuminazione)
+* Tinta (il colore)
+* Saturazione (la purezza)

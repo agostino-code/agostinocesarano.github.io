@@ -335,13 +335,15 @@ Le radiazioni riflesse, *le radiazioni emesse da una fonte luminosa*, se mescola
 
 Il verificarsi di tale fenomeno da origine a quella che comunemente viene detta *sintesi o mescolanza additiva.*
 
-Per convenzione si considerano 3 colori primari come quella RGB.
+Per convenzione si considerano 3 colori primari **RGB,** per la sintesi additiva.
 
 Considerando il fenomeno dalla parte della radiazione assorbita, le radiazioni emesse dall'assorbimento di radiazioni riflesse sulle superfici.
 
 Le superfici che ci appaiono colorate (per es. pittura e stampa) sottraggono alla nostra visione una parte dello spettro visibile.
 
 Nella sintesi sottrattiva si analizza la capacità di assorbimento della luce.
+
+Si considera il modello **CMYK**, per la sintesi sottrattiva.
 
 ![Sintesi sottrattiva e additiva](/static/img/sintesiaddesottr.jpg "Sintesi additiva e sottrattiva")
 
@@ -368,4 +370,44 @@ Le immagini Raster possono essere migliorate mediante la tecnica del **Multi-Fra
 
 > Nella grafica vettoriale un'immagine è descritta mediante un insieme di primitive geometriche, *formule geometriche*, che descrivono punti, linee, curve e poligoni ai quali sono associabili svariati attributi.
 
-Le immagini vettoriali si distinguono per la grande qualità e la elevata compressione, **LOSSLESS**, compressione senza perdita di qualità.
+Le immagini vettoriali si distinguono per la grande qualità e la elevata compressione, **LOSSLESS**, compressione senza perdita di qualità.ù
+
+**Le immagini a colori**
+
+Un modello di colore è un modello matematico astratto che permette di rappresentare i colori delle immagini in forma numerica; esistono diversi modelli:
+
+* **RGB** (Red, Green, Blue) (a sintesi additiva, per es. monitor, TV,…)
+* **CMYK** (Cyan, Magenta, Yellow, Black) (a sintesi sottrattiva, per es. stampanti,…)
+* YUV (opera in ambito analogico; nato per la compatibilità tv colori con tv B/N)
+* YCbCr (l’equivalente digitale della YUV; Y=Luminanza; Cb=CromaBlu; Cr=CromaRed)
+* HSV (Hue, Saturation, Value)
+
+##### Compressione immagine
+
+Fondamenti della compressione:
+
+1. L’occhio umano è limitato poiché non percepisce tutto ciò che è realmente rappresentato.
+2. Generalmente, per ogni pixel di immagine, i punti adiacenti sono simili; la similitudine di tali punti ravvicinati costituisce la **Ridondanza Spaziale**.
+3. Differentemente dai testi, non è particolarmente significativa la perdita di informazioni; la compressione a perdita è quindi ammessa.
+
+**Tipi di Compressione**
+
+> **Senza perdita (LossLess)** permette di ricostruire perfettamente la rappresentazione dell’oggetto originale (es. codifica di Huffman).
+>
+> **Con perdita (Lossy)** permette di ricostruire solo in parte la rappresentazione dell’oggetto originale.
+
+Le tecniche “lossy” sono classificate in:
+
+* Compressione con sottocampionamento
+* Predictive Coding
+* Codifica mediante trasformazione
+
+**Compressione mediante sottocampionamento**
+
+A causa della ridondanza spaziale (similitudine di pixel vicini), si considerano soltanto “alcuni” pixel; per esempio, si potrebbe considerare solo un pixel ogni due (sottocampionamento).
+
+In fase di decodifica i pixel “mancanti” vengono ricostruiti approssimando i loro valori mediante una interpolazione.
+
+È possibile raffinare questo metodo scegliendo di sottocampionare quelle componenti dell’immagine per le quali il nostro occhio è meno sensibile.
+
+Ogni immagine può essere decomposta mediante le componenti Luminanza e Crominanza.

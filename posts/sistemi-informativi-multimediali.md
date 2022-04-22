@@ -404,10 +404,29 @@ Le tecniche “lossy” sono classificate in:
 
 **Compressione mediante sottocampionamento**
 
-A causa della ridondanza spaziale (similitudine di pixel vicini), si considerano soltanto “alcuni” pixel; per esempio, si potrebbe considerare solo un pixel ogni due (sottocampionamento).
+A causa della ridondanza spaziale (similitudine di pixel vicini), si considerano soltanto “alcuni” pixel; per esempio, si potrebbe considerare solo un pixel ogni due (*sottocampionamento*).
 
 In fase di decodifica i pixel “mancanti” vengono ricostruiti approssimando i loro valori mediante una interpolazione.
 
 È possibile raffinare questo metodo scegliendo di sottocampionare quelle componenti dell’immagine per le quali il nostro occhio è meno sensibile.
 
-Ogni immagine può essere decomposta mediante le componenti Luminanza e Crominanza.
+Ogni immagine può essere decomposta mediante le componenti **Luminanza e Crominanza**.
+
+Il nostro occhio è molto **più sensibile alla Luminanza** che rispetto alla Crominanza e quindi per la componente di Crominanza è possibile effettuare:
+
+* Un livello di sottocampionamento maggiore.
+* Una quantizzazione meno raffinata.
+
+Quindi una compressione maggiore.
+
+**Compressione mediante Predictive Coding**
+
+È analogo al predictive coding audio;
+
+Valori spazialmente vicini sono fortemente correlati;
+
+Se A e B sono due pixel vicini ed abbiamo già codificato A allora, anziché codificare per intero anche B, è possibile codificare solo la differenza tra i valori A e B.
+
+Tale differenza, essendo inferiore al valore di B, è codificabile con un minor numero di bit;
+
+La predizione può essere fatta sia tra le righe sia tra le colonne dell’immagine.

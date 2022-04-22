@@ -430,3 +430,14 @@ Se A e B sono due pixel vicini ed abbiamo già codificato A allora, anziché cod
 Tale differenza, essendo inferiore al valore di B, è codificabile con un minor numero di bit;
 
 La predizione può essere fatta sia tra le righe sia tra le colonne dell’immagine.
+
+**Codifica mediante Trasformazione**
+
+Una immagine viene suddivisa in sottoimmagini rettangolari su cui si applica una trasformazione unitaria dal dominio spaziale al dominio delle frequenze.
+
+Se nel dominio spaziale i dati sono fortemente correlati, allora i dati risultanti nel dominio delle frequenze sono adatti ad una fase di compressione (Huffman, Run‐length,…)
+
+Le Trasformazioni maggiormente impiegate sono:
+
+* DFT (Discrete Fourier Transform)
+* DCT ( Discrete Cosine Transform)

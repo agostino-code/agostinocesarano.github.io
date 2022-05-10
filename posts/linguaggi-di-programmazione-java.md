@@ -394,3 +394,40 @@ La parola chiave this puo essere usata:
 * Per fare riferimento, all’interno di un metodo o di un costruttore locale, ad attributi o metodi locali.
 * Questa tecnica è usata per risolvere *ambiguita* in alcuni casi in cui una variabile locale di un metodo maschera un attributo locale dell’oggetto.
 * Per permettere ad un oggetto di passare il riferimento a se stesso come parametro ad un altro metodo o costruttore.
+
+**Variabili**
+
+* Variabili definite all’interno di un metodo sono dette **locali**; esse sono create quando il metodo è invocato e sono distrutte alla sua terminazione; esse DEVONO essere inizializzate esplicitamente prima di essere usate.
+* Variabili usate come parametro di metodi, visto il meccanismo di passaggio di parametri (IN per
+  copia), sono variabili locali.
+* Variabili definite all’esterno di un metodo sono create quando viene costruito un oggetto. Ve ne
+  sono di due tipi:
+
+  * *Variabili di classe:* sono dichiarate usando il modificatore **static**; sono create nel momento
+    in cui una classe è caricata in memoria (esistono a prescindere dalle istanze); continuano ad
+    esistere finché la classe rimane in memoria; una variabile valida per tutte le istanze.
+  * *Variabili di istanza:* quelle dichiarate **senza modificatore static**; sono create durante la
+    costruzione di una istanza; continuano ad esistere finché l’oggetto esiste; una variabile diversa
+    per ciascuna istanza.
+
+**Inizializzazioni**
+
+Nessuna variabile può essere usata prima di
+essere inizializzata!
+
+*Le variabili non locali sono inizializzate dalla JVM*, nel momento in cui la classe è caricata in memoria o in cui è allocato spazio per il nuovo oggetto, ai seguenti valori:
+
+**Variabile   Valore**
+*byte               0
+short              0
+int                  0
+long               0L
+float              0.0F
+double          0.0D
+char           ’\u0000’
+boolean        false
+riferimenti     null*
+
+**ATTENZIONE!**
+
+Le variabili locali (quelle dei metodi) **DEVONO** essere inizializzate manualmente prima dell’uso.

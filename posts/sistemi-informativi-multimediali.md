@@ -1,6 +1,6 @@
 ---
 title: Sistemi Informativi Multimediali
-date: 2022-03-18T14:57:21.807Z
+date: 2022-05-10T05:14:16.173Z
 author: Agostino Cesarano
 summary: Appunti per il corso di SIM, Professore Balzano.
 tags:
@@ -441,3 +441,14 @@ Le Trasformazioni maggiormente impiegate sono:
 
 * DFT (Discrete Fourier Transform)
 * DCT ( Discrete Cosine Transform)
+
+**Nozioni : Serie di Fourier**
+
+La serie di Fourier rappresenta un segnale periodico x(t) di pulsazione ω0 mediante una somma pesata di sinusoidi di cui la prima (fondamentale) ha pulsazione ω0 e le successive (armoniche) hanno pulsazioni multiple di ω0.
+
+Fourier dimostrò che qualsiasi segnale periodico *\[ f(x)=f(x+T) ]* può essere scomposto in una somma di (infiniti) segnali sinusoidali.
+
+Un suono prodotto da un corpo vibrante **non è mai puro** (ovvero senza multipli in frequenza della nota di base) ma è costituito da più suoni, che si differenziano fra loro in intensità (volume) e frequenza (tono, alto o basso).
+Al suono fondamentale, quindi, se ne aggiungono altri: questi sono **gli armonici**, che hanno una importanza fondamentale sia nella determinazione del timbro di uno strumento che nella determinazione degli intervalli musicali.
+
+**Gli armonici natural**i sono una successione di suoni le cui frequenze sono *multipli di una nota di base*, chiamata fondamentale. Corrispondono alle frequenze naturali delle armoniche di una corda vibrante.

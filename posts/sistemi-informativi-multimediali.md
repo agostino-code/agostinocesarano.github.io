@@ -455,6 +455,21 @@ Al suono fondamentale, quindi, se ne aggiungono altri: questi sono **gli armonic
 
 La trasformata di Fourier decompone un segnale nelle diverse frequenze che partecipano a costruirlo, questa decomposizione è unica.
 
-<!--StartFragment-->
-
 ##### Immagini jpeg
+
+Standard JPEG (Joint Photographic ExpertsGroup), basate sul modello LOSSY (con perdita di informazioni).
+
+Compressione basata sui limiti della percezione umana.
+
+1. Partizionamento dell'Immagine
+
+   I pixel dell’immagine originale sono raggruppati in blocchi di 8x8 elementi.
+2. Passaggio al dominio delle frequenze
+
+   Un'immagine può essere scomposta dalla somma di tante variazioni di luminosità di forma cosinusoidale, di diversa frequenza e intensità.
+3. Quantizzazione
+
+   Le frequenze risultanti vengono quantizzate in modo non lineare: le tabelle di quantizzazione utilizzano opportuni valori per arrotondare con meno precisione i coefficienti delle alte frequenze rispetto a quelle basse.
+4. Codifica
+
+   Scansione ZIG-ZAG; Eliminazione delle ridondanze mediante codifica RUN-LENGHT e Huffman.

@@ -473,3 +473,5 @@ Compressione basata sui limiti della percezione umana.
 4. Codifica
 
    Scansione ZIG-ZAG; Eliminazione delle ridondanze mediante codifica RUN-LENGHT e Huffman.
+
+**Immagini Vettoriali**

@@ -440,11 +440,9 @@ Se nel dominio spaziale i dati sono fortemente correlati, allora i dati risultan
 Le Trasformazioni maggiormente impiegate sono:
 
 * DFT (Discrete Fourier Transform)
-* DCT ( Discrete Cosine Transform)
+* DCT (Discrete Cosine Transform)
 
 **Nozioni : Serie di Fourier**
-
-La serie di Fourier rappresenta un segnale periodico x(t) di pulsazione ω0 mediante una somma pesata di sinusoidi di cui la prima (fondamentale) ha pulsazione ω0 e le successive (armoniche) hanno pulsazioni multiple di ω0.
 
 Fourier dimostrò che qualsiasi segnale periodico *\[ f(x)=f(x+T) ]* può essere scomposto in una somma di (infiniti) segnali sinusoidali.
 
@@ -452,3 +450,11 @@ Un suono prodotto da un corpo vibrante **non è mai puro** (ovvero senza multipl
 Al suono fondamentale, quindi, se ne aggiungono altri: questi sono **gli armonici**, che hanno una importanza fondamentale sia nella determinazione del timbro di uno strumento che nella determinazione degli intervalli musicali.
 
 **Gli armonici natural**i sono una successione di suoni le cui frequenze sono *multipli di una nota di base*, chiamata fondamentale. Corrispondono alle frequenze naturali delle armoniche di una corda vibrante.
+
+**Trasformata di Fourier**
+
+La trasformata di Fourier decompone un segnale nelle diverse frequenze che partecipano a costruirlo, questa decomposizione è unica.
+
+<!--StartFragment-->
+
+##### Immagini jpeg

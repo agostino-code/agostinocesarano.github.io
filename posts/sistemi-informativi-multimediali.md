@@ -474,4 +474,14 @@ Compressione basata sui limiti della percezione umana.
 
    Scansione ZIG-ZAG; Eliminazione delle ridondanze mediante codifica RUN-LENGHT e Huffman.
 
-**Immagini Vettoriali**
+##### Immagini Vettoriali
+
+Tecnica che descrive immagini mediante un insieme di primitive geometriche quali punti, linee, curve, poligoni,... sono definiti mediante *equazioni matematiche.*
+
+I principali vantaggi sono che le immagini vettoriali *sono indipendenti dalla risoluzione;* gli elementi che compongono le immagini vengono descritte tramite equazioni che vengono elaborate per generare l'immagine.
+
+Questo comporta che le immagini hanno una minore occupazione di memoria.
+
+Si debbono salvare meno informazioni per ricavare un immagine.
+
+I svantaggi sono che è richiesta una maggiore capacità di elaborazione quindi computer più potenti.

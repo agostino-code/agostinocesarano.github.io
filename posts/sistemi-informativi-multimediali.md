@@ -508,8 +508,23 @@ Codifica e decodifica di un flusso descrivendo ogni singolo fotogramma, video co
 
 * Semplice l'accesso ad un singolo frame.
 
+È adatto per i video che hanno molti cambiamenti di scene.
+
 **Codifica interframe**
 
 Descrizione dei cambiamenti che occorrono tra un fotogramma ed il successivo, partiamo con un fotogramma descritto con codifica intraframe *( keyframes )*  è ricostruiamo gli altri, in base al cambiamento descritto.
 
 * Complesso l'accesso diretto ad un singolo frame.
+
+È adatto per video che hanno pochi elementi che cambiano in una scena.
+
+**Compressione Video**
+
+La compressione video è basata sulle ridondanze dei fotogrammi.
+
+La similitudine dei fotogrammi adiacenti viene compresso in informazioni più rilevanti come
+
+1. Lo spostamento di oggetti nella scena ( motion vector ).
+2. La differenza tra i 2 blocchi.
+
+Quindi in scene che presentano ridondanze tra fotogrammi adiacenti, viene trasmesso il motion vector e la relativa differenza.

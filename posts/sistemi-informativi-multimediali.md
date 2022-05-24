@@ -485,3 +485,18 @@ Questo comporta che le immagini hanno una minore occupazione di memoria.
 Si debbono salvare meno informazioni per ricavare un immagine.
 
 I svantaggi sono che è richiesta una maggiore capacità di elaborazione quindi computer più potenti.
+
+**Immagini Frattali**
+
+Il metodo frattale (che è un metodo LOSSY con perdita ) cerca di decomporre l’immagine in parti elementari che verranno memorizzate insieme alle regole che ne guideranno poi la ricomposizione.
+
+L' idea è basata sulla scomposizione dell’immagine in parti più piccole e cercando poi trasformazioni geometriche elementari (traslazioni, rotazioni, omotetie,…) che applicate iterativamente alle parti precedentemente decomposte permettano di ricostruire l’immagine originale.
+
+Le immagini che si possono convertire nel metodo frattale, sono le immagini che contengono molte ridondanze.
+
+##### Il Video
+
+Il video è una sequenza di fotogrammi o immagini ,visualizzate a frequenza costante.
+
+* Frame Rate ( frequenza di scorrimento delle immagini ), più veloce è più fluido.
+*

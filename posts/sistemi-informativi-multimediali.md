@@ -499,4 +499,17 @@ Le immagini che si possono convertire nel metodo frattale, sono le immagini che 
 Il video è una sequenza di fotogrammi o immagini ,visualizzate a frequenza costante.
 
 * Frame Rate ( frequenza di scorrimento delle immagini ), più veloce è più fluido.
-*
+
+Il video è un media che richiede una grande quantità di dati per la sua rappresentazione, è quindi fondamentale l'uso di tecniche di compressione.
+
+**Codifica intraframe**
+
+Codifica e decodifica di un flusso descrivendo ogni singolo fotogramma, video come sequenza di immagini statiche.
+
+* Semplice l'accesso ad un singolo frame.
+
+**Codifica interframe**
+
+Descrizione dei cambiamenti che occorrono tra un fotogramma ed il successivo, partiamo con un fotogramma descritto con codifica intraframe *( keyframes )*  è ricostruiamo gli altri, in base al cambiamento descritto.
+
+* Complesso l'accesso diretto ad un singolo frame.

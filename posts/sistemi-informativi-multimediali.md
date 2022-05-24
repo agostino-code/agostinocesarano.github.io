@@ -1,11 +1,10 @@
 ---
-title: Sistemi Informativi Multimediali (Introduzione e Media "
-  Testo-Audio-Immagini-Video ")
+title: Sistemi Informativi Multimediali (Introduzione e Media )
 date: 2022-05-24T08:14:51.770Z
 author: Agostino Cesarano
-summary: |-
-  Appunti per il corso di SIM, Professore Balzano.
-  Parte introduttiva, media e principati tecniche di compressione.
+summary: Appunti per il corso di SIM, Professore Balzano; prima parte,
+  introduzione, media "Testo-Audio-Immagini-Video", e principati tecniche di
+  compressione.
 tags:
   - SIM
 ---

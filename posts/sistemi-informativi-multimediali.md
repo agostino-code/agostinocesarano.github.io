@@ -1,5 +1,5 @@
 ---
-title: Sistemi Informativi Multimediali ( Introduzione e Media )
+title: Sistemi Informativi Multimediali (Introduzione e Media)
 date: 2022-05-24T08:14:51.770Z
 author: Agostino Cesarano
 summary: Appunti per il corso di SIM, Professore Balzano; prima parte,

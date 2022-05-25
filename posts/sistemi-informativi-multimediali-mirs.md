@@ -31,3 +31,57 @@ La seconda fase è quella del recupero delle informazione, il modello è lo stes
 4. Il Server riceve i dati e li smista alla indicizzazione.
 5. Il motore di indicizzazione reperisce gli elementi nel database più pertinenti alla ricerca.
 6. Recupero dell'oggetto richiesto ed invio all'interfaccia utente.
+
+**Modello dei Dati**
+
+Un DBMS ha la finalità di archiviare i dati, tenendo conto di *tipo e proprietà dell'oggetto* che dovrà contenere.
+
+Il modello dei dati di un MIRS deve soddisfare alcuni requisiti:
+
+* Estensibilità a nuovi tipi di dati.
+* Flessibilità, deve permettere inserimento e ricerca.
+* Predisposizione, per la rappresentazione di dati semplici e complessi.
+* Efficienza nelle strategie di memorizzazione e ricerca.
+* Incapsulamento di codice e dati in una singola unità, singolo oggetto.
+
+Il codice definisce le operazioni effettuabili sui dati.
+
+Il modello dei dati si divide in tre parti principi chiamate Layer:
+
+* Layer Oggetto
+* Layer Tipo
+* Layer Formato
+
+> Il Layer Oggetto è costituito da relazioni:
+>
+> 1. Spaziale
+> 2. Temporale
+> 3. Composito
+
+Che specificano ciò che sono i dettagli dell'oggetto.
+
+Sincronizzazione audio - video o immagini, testo, posizione di apparizione.
+
+> Il Layer Tipo è costituito dai tipi principali di media:
+>
+> 1. Testo
+> 2. Immagine
+> 3. Grafica
+> 4. Audio
+> 5. Video
+
+Queste informazioni vengono usate nella fase di ricerca, ogni tipo ha un suo dato significativo.
+
+Testo ( numeri caratteri testuali )
+
+Immagine ( dimensione in pixel, istogramma di colore, oggetti contenuti nell'immagine )
+
+Grafica ( elementi che compongono la scena )
+
+Audio ( durata audio )
+
+Video ( durata video, keyframes )
+
+> Il Layer Formato specifica il formato con cui il media è memorizzato.
+
+**Modello di un video**

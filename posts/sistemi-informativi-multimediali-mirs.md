@@ -85,3 +85,19 @@ Video ( durata video, keyframes )
 > Il Layer Formato specifica il formato con cui il media è memorizzato.
 
 **Modello di un video**
+
+Il modello generale di un video è un:
+
+Episodio -> Scene -> Shot -> Frame
+
+Un Episodio si divide in più Scene e ogni scena si divide in più Shot, gli shot a loto volta in più Frame.
+
+Ad ogni livello di dati vengono assegnati gli attributi relativi:
+
+Episodio: autore, data di creazione, tipo di video, produttore, ecc…
+
+Scena: attributi comuni agli Shot che contiene.
+
+Shot (ripresa): frame chiave, oggetto ripreso, data, luogo.
+
+Frame: statistiche sull’immagine, distribuzione del colore, ecc…

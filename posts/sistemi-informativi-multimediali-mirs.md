@@ -114,3 +114,67 @@ Requisiti principali di una interfaccia utente di un MIRS:
 **Popolazione del Database**
 
 A differenza dei DBMS tradizionali in un MIRS i dati sono costituiti da media diversi e non hanno struttura ed attributi prefissati.
+
+**Fase di Ricerca**
+
+Le query che possono essere inviate ad un MIRS sono:
+
+* Multiformi l’utente può ricercare l'elemento in modi differenti e tipi di media differenti;
+* Incerte: l’utente sa cosa vuole ma non sa descriverlo e riconosce il risultato corretto solo quando lo vede.
+
+**Raffinamento delle Query**
+
+Spesso per query “incerte” occorre una fase di browsing: l’utente sa riconoscere quello che cerca ma non sa bene come descriverlo:
+
+* richiesta vaga e presentazione di un insieme ampio di risultati
+* ricerca su una tassonomia che organizza le informazioni (categorie, ecc…)
+*  ricerca casuale su un insieme di risultati forniti a caso
+
+Data l’incertezza delle query sui dati multimediali, l’utente deve poter raffinare le sue richieste in base ai risultati ottenuti per la richiesta iniziale.
+
+> Se l’utente si vede restituito dal sistema un elemento abbastanza simile a quello cercato, il sistema deve permettergli di riutilizzarlo per effettuare una nuova ricerca, più raffinata.
+
+Tale processo può essere ripetuto più volte.
+
+La conoscenza del dominio e il profilo utente possono essere utilizzati per raffinare una query.
+
+Un feedback sulla pertinenza è particolarmente utile nelle applicazioni multimediali.
+
+> Nella pratica, il processo di individuazione di un’informazione multimediale è una combinazione delle fasi di ricerca, browsing e raffinamento.
+
+**Estrazione delle caratteristiche/feature**
+
+Gli oggetti multimediali gestiti dal database sono preprocessati per estrarne caratteristiche ed attributi.
+
+I requisiti per l’estrazione delle feature sono:
+
+* Le feature estratte devono essere complete e rappresentare il contenuto e l’informazione presente nel dato.
+* Devono essere memorizzate in maniera compatta è facili da caricare ( altrimenti sarebbe più efficace rifare la ricerca ).
+
+**Tipi di feature**
+
+**METADATATI**
+
+Catturano le informazioni di contesto che non descrivono o interpretano il contenuto del dato stesso (autore, data di creazione, titolo, ecc…)
+
+**ANNOTAZIONI TESTUALI**
+
+Sono descrizioni testuali del contenuto di un dato multimediale (possono essere soggettive e incomplete)
+
+**FEATURE DI BASSO LIVELLO**
+
+In genere possono essere estratte automaticamente
+
+Catturano dati e statistiche di un oggetto e le relazioni spazio temporali tra parti dell’ oggetto
+
+* Audio: volume medio, distribuzione in frequenza
+* Immagini: distribuzione del colore, tessitura, forma degli oggetti,…
+* Video: struttura temporale e feature dei singoli frame
+
+**FEATURE DI ALTO LIVELLO**
+
+In genere l’estrazione richiede l’intervento umano.
+
+Cercano di riconoscere e capire gli oggetti: per esempio se in un file audio c’è musica o parlato.
+
+Quindi operazioni più complesse è difficilmente eseguibili da una macchina.

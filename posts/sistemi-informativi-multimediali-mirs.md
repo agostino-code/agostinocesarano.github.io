@@ -178,3 +178,23 @@ In genere l’estrazione richiede l’intervento umano.
 Cercano di riconoscere e capire gli oggetti: per esempio se in un file audio c’è musica o parlato.
 
 Quindi operazioni più complesse è difficilmente eseguibili da una macchina.
+
+##### Indicizzazione dei dati
+
+> Dopo avere estratto le feature e gli attributi da un dato multimediale è necessario usare delle strutture di indicizzazione per organizzare la memorizzazione delle feature e fare in modo cha la ricerca sia efficiente.
+
+Il retrieval multimediale è basato sulla similarità e non su un matching esatto tra query e elementi del database.
+
+La similarità è calcolata sulle feature estratte e sugli attributi ed è espressa come uno o più valori.
+
+**Multimedia Data Compression**
+
+La gran parte dei dati Audio, Video, Immagini,… è salvata in formato compresso.
+
+L’obiettivo principale della compressione dei Dati Multimediali non considera gli aspetti relativi al retrieval e alla presentazione.
+
+Per l’estrazione delle caratteristiche dagli oggetti multimediali occorre prima effettuare una decompressione.
+
+Standard di Rappresentazione dei Dati
+
+L’estrazione delle caratteristiche ed il processo di confronto presume che, per ogni media, il dato raw (grezzo o di base) sia lo stesso. Ciò non corrisponde al mondo reale, possiamo trovare immagini con scala di colori diverse, oppure audio con una amplificazione maggiore.

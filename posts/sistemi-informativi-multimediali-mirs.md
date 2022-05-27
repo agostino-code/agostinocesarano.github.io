@@ -101,3 +101,16 @@ Scena: attributi comuni agli Shot che contiene.
 Shot (ripresa): frame chiave, oggetto ripreso, data, luogo.
 
 Frame: statistiche sull’immagine, distribuzione del colore, ecc…
+
+##### Interfaccia utente
+
+Requisiti principali di una interfaccia utente di un MIRS:
+
+1. Deve fornire gli strumenti per inserire oggetti nel database.
+2. Deve fornire strumenti per definire efficacemente le query e le esigenze di ricerca dell'utente.
+3. Presentare i risultati delle ricerche in maniera efficace.
+4. Essere user-friendly, facile da usare.
+
+**Popolazione del Database**
+
+A differenza dei DBMS tradizionali in un MIRS i dati sono costituiti da media diversi e non hanno struttura ed attributi prefissati.

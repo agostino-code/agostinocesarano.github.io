@@ -195,6 +195,6 @@ L’obiettivo principale della compressione dei Dati Multimediali non considera 
 
 Per l’estrazione delle caratteristiche dagli oggetti multimediali occorre prima effettuare una decompressione.
 
-Standard di Rappresentazione dei Dati
+**Standard di Rappresentazione dei Dati**
 
 L’estrazione delle caratteristiche ed il processo di confronto presume che, per ogni media, il dato raw (grezzo o di base) sia lo stesso. Ciò non corrisponde al mondo reale, possiamo trovare immagini con scala di colori diverse, oppure audio con una amplificazione maggiore.

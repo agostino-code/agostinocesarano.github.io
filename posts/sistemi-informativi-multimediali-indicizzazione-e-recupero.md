@@ -8,3 +8,25 @@ tags:
   - SIM
 ---
 ##### Indicizzazione e Recupero
+
+**Differenze tra DBMS e IR**
+
+**DBMS**
+
+Struttura omogenea dei record, i componenti del record sono per lo più gli attributi.
+
+Un record è definito completamente ed univocamente dai propri attributi.
+
+> Retrieval con match esatto.
+
+
+**IR**
+
+* Records non strutturati
+* Attributi non prefissati
+
+Indicizzazione del documento, recupero di keywords.
+
+> Retrieval con match approssimato o parziale.
+
+**Processo base del Document Retrieval**

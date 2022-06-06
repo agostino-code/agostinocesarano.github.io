@@ -19,7 +19,6 @@ Un record è definito completamente ed univocamente dai propri attributi.
 
 > Retrieval con match esatto.
 
-
 **IR**
 
 * Records non strutturati
@@ -30,3 +29,25 @@ Indicizzazione del documento, recupero di keywords.
 > Retrieval con match approssimato o parziale.
 
 **Processo base del Document Retrieval**
+
+Il processo di Document Retrieval si divide in due fasi:
+
+* Online
+* Offline
+
+![Retrieval dei Documenti](/static/img/retrieval.png "Retrieval dei Documenti")
+
+**Retrieval Off-Line**
+
+Riceve dei Documenti è li processa in modo da estrarre le caratteristiche fondamentali.
+
+**Retrieval On-Line**
+
+Riceve una Query, analizza quelle che sono le informazioni da ricercare.
+
+Successivamente confronta le informazioni da cercare con le caratteristiche dei dati precedentemente processati nella parte Off-Line dell' processo di ricerca.
+
+Una volta trovati i documenti che abbiano caratteristiche simili a quelli ricercate, vengono mostrate all'utente che può:
+
+* Raffinare la sua ricerca.
+* Fornire un feedback sui documenti visualizzati ( Caratteristica non sempre presente in tutti gli IR).

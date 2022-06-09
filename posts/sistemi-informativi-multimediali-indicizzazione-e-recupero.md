@@ -51,3 +51,20 @@ Una volta trovati i documenti che abbiano caratteristiche simili a quelli ricerc
 
 * Raffinare la sua ricerca.
 * Fornire un feedback sui documenti visualizzati ( Caratteristica non sempre presente in tutti gli IR).
+
+**Problema?**
+
+Come memorizzo le caratteristiche pre-processate?
+
+##### Inverted Files
+
+L’inverted file contiene un insieme di record che contengono:
+
+* il termine che si vuole cercare
+* una sequenza di puntatori a documenti e/o records che contengono quel termine
+
+La ricerca può essere effettuata tramite Operatori Booleani OR AND NOT
+
+Query con composizione booleana delle chiavi di ricerca
+
+Esempio: termine_1 ANT NOT termine_2

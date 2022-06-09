@@ -67,8 +67,24 @@ La ricerca può essere effettuata tramite Operatori Booleani OR AND NOT
 
 Query con composizione booleana delle chiavi di ricerca
 
-Esempio: termine_1 ANT NOT termine_2
+*Esempio:* termine_1 ANT NOT termine_2
 
 > Il processo di ricerca è più efficiente rispetto al **flat‐file** non si analizzano i documenti interi ma solo l’inverted file da cui si ricavano i collegamenti ai documenti che soddisfano la query.
 
 ![Inverted File](/static/img/inverted-file.png "Inverted File")
+
+**Inverted File con operazioni estese**
+
+È possibile raffinare la ricerca tenendo conto di:
+
+* Differenza di importanza tra un termine e un altro.
+* Posizione in cui un termine compare.
+* La frequenza in cui un termine compare all’interno di un documento.
+
+Definiamo 2 nuovi operatori di «prossimità» quali “**WITHIN SENTENCE**” e “**ADJACENT**”
+
+> *WITHIN SENTENCE* i termini ricercati sono presenti nello stesso paragrafo del record recuperato.
+>
+> A*DJACENT* termini ricercati confinanti nel record recuperato.
+
+##### Indicizzazione automatica del testo

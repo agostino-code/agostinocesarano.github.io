@@ -88,3 +88,22 @@ Definiamo 2 nuovi operatori di «prossimità» quali “**WITHIN SENTENCE**” e
 > A*DJACENT* termini ricercati confinanti nel record recuperato.
 
 ##### Indicizzazione automatica del testo
+
+Il processo di indicizzazione del file di testo prevede diverse fasi; lo scopo principale è quello di filtrare il testo in modo da mantenere solo le informazioni da considerare per le ricerche.
+
+![Indicizzazione automatica testo](/static/img/indicizzazione-testo.png "Indicizzazione automatica testo")
+
+Fasi di filtraggio:
+
+1. **Stop Words**, si escludono elementi insignificanti per la ricerca come “articoli”, preposizioni”,…
+2. **Stemming**, se nel testo compare più volte parole analoghe, per la ricerca si considera solo il
+   termine comune delle parole analoghe. *Esempio:* se nel testo sono presenti i termini
+   “pescare”, “pescatore”, “pesce” allora considero solo il loro prefisso comune, cioè “pesc”.
+   Anche se tale operazione rende il file più compatto, d’altro canto occorre considerare che,
+   per esempio, a causa della brevità del termine comune esso non sia più molto significativo.
+3. **Thesaurus**, possibilità di sostituire diversi termini simili che compaiono nel testo con un
+   unico termine (usando un vocabolario). Esempio: se nel testo sono presenti i termini
+   “lavare”, “pulire”, “detergere” allora potrei considerare solo il termine “lavare”.
+4. **Weighting,** I termini che compaiono nel testo hanno diversa importanza; la loro importanza
+   può essere ricavata valutando le loro frequenze di occorrenza ed il risultato della ricerca
+   viene mostrato in ordine di frequenza.

@@ -107,3 +107,20 @@ Fasi di filtraggio:
 4. **Weighting,** I termini che compaiono nel testo hanno diversa importanza; la loro importanza
    può essere ricavata valutando le loro frequenze di occorrenza ed il risultato della ricerca
    viene mostrato in ordine di frequenza.
+
+**Calcolo dei pesi**
+
+Il peso di un termine deve considerare il numero di volte in cui il termine compare sia nel documento sia nell’insieme complessivo dei documenti.
+
+La formula comunemente utilizzata per il calcolo dei pesi è:
+
+> W = f * log (N/dfj)
+
+In cui:
+
+* W = peso del termine j nel documento i
+* f = frequenza del termine j nel documento i
+* N = numero totale dei documenti del DataBase
+* dfj = numero dei documenti del DataBase che contengono il termine j
+
+##### Retrival con modello vettoriale

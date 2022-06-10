@@ -124,3 +124,13 @@ In cui:
 * dfj = numero dei documenti del DataBase che contengono il termine j
 
 ##### Retrival con modello vettoriale
+
+Il “retrieval” di un documento dal database mediante il modello spazio vettoriale si basa sul calcolo del prodotto scalare tra vettori.
+
+Supponiamo di aver formulato una query q fissata, secondo il modello del **document retrieval**. Si deve confrontarla con i documenti presenti nel database multimediale per ottenere la risposta desiderata.
+
+Per effettuare il confronto traduciamo tutto in vettori:
+
+in particolare traduciamo la query e ogni documento in un vettore delle caratteristiche **(features vector)**. 
+
+Dunque ad ogni documento presente nel db associamo un vettore che rappresenta le sue caratteristiche rilevanti.

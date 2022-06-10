@@ -133,4 +133,16 @@ Per effettuare il confronto traduciamo tutto in vettori:
 
 in particolare traduciamo la query e ogni documento in un vettore delle caratteristiche **(features vector)**. 
 
-Dunque ad ogni documento presente nel db associamo un vettore che rappresenta le sue caratteristiche rilevanti.
+Dunque ad ogni documento presente nel db associamo un vettore che rappresenta le sue caratteristiche rilevanti. 
+
+> Il db sarà formato da **N documenti**. La **query q** deve essere confrontata con tutto il database per conoscere a quale documento fra quelli presenti nel db *“somiglia”* e si avvicina di più. Per effettuare il **confronto** tra il **vettore delle caratteristiche associato alla query** e gli **N vettori delle caratteristiche associati ai diversi documenti presenti nel database** utilizziamo il prodotto scalare.
+
+**Richiami di geometria e fisica**
+
+> Un vettore è un ente geometrico con il quale esprimiamo graficamente grandezze fisiche. Esso è rappresentato tramite un segmento orientato ed è definito da un modulo, una direzione, un
+> verso e da un punto di applicazione.
+
+* Il modulo è un numero che indica quanto è intensa la grandezza che viene associato al vettore.
+* La lunghezza del vettore è indicata dal modulo. La retta sulla quale giace il segmento è la direzione del vettore. 
+* La freccia del vettore indica il verso, ossia verso dove agisce il vettore. 
+* Il punto di applicazione è il punto in cui si applica la grandezza.

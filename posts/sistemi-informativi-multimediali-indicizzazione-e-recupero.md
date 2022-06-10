@@ -139,7 +139,7 @@ Dunque ad ogni documento presente nel db associamo un vettore che rappresenta le
 
 **Richiami di geometria e fisica**
 
-> Un vettore è un ente geometrico con il quale esprimiamo graficamente grandezze fisiche. Esso è rappresentato tramite un segmento orientato ed è definito da un modulo, una direzione, un
+> Un vettore **è un ente geometrico** con il quale **esprimiamo graficamente grandezze fisiche**. Esso è rappresentato tramite un segmento orientato ed è definito da un modulo, una direzione, un
 > verso e da un punto di applicazione.
 
 * Il modulo è un numero che indica quanto è intensa la grandezza che viene associato al vettore.

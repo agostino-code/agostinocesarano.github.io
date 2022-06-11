@@ -167,4 +167,10 @@ Seno e Coseno indicate con sin(α) e cos(α), sono due funzioni trigonometriche 
 
 **Richiami Teorema di pitagora**
 
-Preso un triangolo rettangolo (un angolo del triangolo misura 90°)
+Preso un triangolo rettangolo (un angolo del triangolo misura 90°), il teorema di pitagora definisce formule per il calcolo dei lati.
+
+![Teorema di pitagora](/static/img/teorema-di-pitagora.png "Teorema di pitagora")
+
+![Triangolo rettangolo](/static/img/triangolo-rettangolo.png "Triangolo rettangolo")
+
+Le formule inverse permettono il calcolo dei cateti, la formula base prevede il calcolo dell'ipotenusa.

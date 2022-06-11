@@ -158,3 +158,5 @@ Tra i due vettori si forma un certo angolo **theta θ**. Se calcoliamo **\|a| co
 > Il modulo del vettore a si calcola attraverso il teorema di pitagora
 
 *quindi faremo la radice quadrata della somma di ciascuna componente del vettore elevata al quadrato.*
+
+![Prodotto scalare](/static/img/prodotto-scalare.jpg "Prodotto scalare")

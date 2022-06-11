@@ -166,3 +166,5 @@ Tra i due vettori si forma un certo angolo **theta θ**. Se calcoliamo **\|a| co
 Seno e Coseno indicate con sin(α) e cos(α), sono due funzioni trigonometriche fondamentali che vengono definite a partire dalla circonferenza goniometrica (circonferenza di raggio 1), e che associano a ciascun angolo un determinato valore numerico compreso tra -1 e +1.
 
 **Richiami Teorema di pitagora**
+
+Preso un triangolo rettangolo (un angolo del triangolo misura 90°)

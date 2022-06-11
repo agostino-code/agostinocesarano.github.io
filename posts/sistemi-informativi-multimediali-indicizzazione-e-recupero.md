@@ -160,3 +160,9 @@ Tra i due vettori si forma un certo angolo **theta θ**. Se calcoliamo **\|a| co
 *quindi faremo la radice quadrata della somma di ciascuna componente del vettore elevata al quadrato.*
 
 ![Prodotto scalare](/static/img/prodotto-scalare.jpg "Prodotto scalare")
+
+**Richiami Seno, coseno, circonferenza goniometrica**
+
+Seno e Coseno indicate con sin(α) e cos(α), sono due funzioni trigonometriche fondamentali che vengono definite a partire dalla circonferenza goniometrica (circonferenza di raggio 1), e che associano a ciascun angolo un determinato valore numerico compreso tra -1 e +1.
+
+**Richiami Teorema di pitagora**

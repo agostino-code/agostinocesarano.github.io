@@ -146,3 +146,15 @@ Dunque ad ogni documento presente nel db associamo un vettore che rappresenta le
 * La lunghezza del vettore è indicata dal modulo. La retta sulla quale giace il segmento è la direzione del vettore. 
 * La freccia del vettore indica il verso, ossia verso dove agisce il vettore. 
 * Il punto di applicazione è il punto in cui si applica la grandezza.
+
+Immaginiamo di avere 2 vettori a e b nello spazio le cui componenti per individuarli sono rispettivamente:
+
+**a = \[a1, a2, …, an]**
+
+**b = \[b1, b2, …, bn]**
+
+Tra i due vettori si forma un certo angolo **theta θ**. Se calcoliamo **\|a| cos θ** è come se stessimo proiettando la componente di a su b: quindi **\|a| cos θ** *è la proiezione di a su b.*
+
+> Il modulo del vettore a si calcola attraverso il teorema di pitagora
+
+*quindi faremo la radice quadrata della somma di ciascuna componente del vettore elevata al quadrato.*

@@ -171,6 +171,4 @@ Preso un triangolo rettangolo (un angolo del triangolo misura 90°), il teorema 
 
 ![Teorema di pitagora](/static/img/teorema-di-pitagora.png "Teorema di pitagora")
 
-![Triangolo rettangolo](/static/img/triangolo-rettangolo.png "Triangolo rettangolo")
-
 Le formule inverse permettono il calcolo dei cateti, la formula base prevede il calcolo dell'ipotenusa.

@@ -172,3 +172,18 @@ Preso un triangolo rettangolo (un angolo del triangolo misura 90°), il teorema 
 ![Teorema di pitagora](/static/img/teorema-di-pitagora.png "Teorema di pitagora")
 
 Le formule inverse permettono il calcolo dei cateti, la formula base prevede il calcolo dell'ipotenusa.
+
+> Quindi il **Retrieval con modello spazio vettoriale** usa ilo prodotto scalare per il calcolo dell' indice di similitudine tra i vettori delle caratteristiche di Query e Documenti.
+
+Due vettori a e b quando hanno un angolo theta che converge a 0, sono più simili;
+indipendentemente dalla loro lunghezza.
+
+Due vettori non sono per niente simili quando l’angolo fra essi compresi è di 90°.
+
+Il coseno a 90° vale 0! Quindi i due vettori sono totalmente opposti.
+
+Quando i due vettori sono ortogonali tra di loro i documenti sono incoerenti fra di loro.
+
+> Quindi se i due vettori delle caratteristiche hanno l’angolo theta che si avvicina a 0 sono simili.
+>
+> Se hanno l’angolo theta che si avvicina a 90° sono difformi tra di loro.

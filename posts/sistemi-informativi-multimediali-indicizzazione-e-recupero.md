@@ -196,3 +196,74 @@ Quando i due vettori sono ortogonali tra di loro i documenti sono incoerenti fra
 > Quindi se i due vettori delle caratteristiche hanno l’angolo theta che si avvicina a 0 sono simili.
 >
 > Se hanno l’angolo theta che si avvicina a 90° sono difformi tra di loro.
+
+##### Tecniche basate su revalence feedback
+
+Quando scriviamo una query in un motore di ricerca non sempre abbiamo da subito il risultato desiderato.
+
+Probabilmente dobbiamo scrivere la query più volte. Il motore di ricerca prende atto del
+cambiamento: propone un raffinamento della query tramite una sorta di “contrattazione”, che fa si che quando formuliamo un ulteriore query la formuliamo via via più precisa.
+
+> Il motore di ricerca sfrutta il feedback che l’utente stesso gli fornisce con le sue ricerca.
+
+**Effettuiamo quindi una query modification.**
+L’idea di base di questo modello consiste nello sfruttare le valutazioni degli utenti (feedback)
+permettendo di raffinare i pesi dei termini sia della query sia dei documenti.
+
+Nella query modification:
+
+* La modifica di una query beneficia solo l’utente che l’ha formulata.
+* I termini che sono stati ritenuti rilevanti vengono aggiunti alla query originale oppure viene aumentato il peso di quel termine.
+* I termini che non sono stati ritenuti rilevanti vengono cancellati dalla query oppure viene diminuito il peso di quel termine.
+
+La regola applicata è la **formula di rocchio**: la valutazione di una query si ottiene valutando la query precedente aggiungendo o sottraendo alcune componenti più significative o meno significative. 
+
+> Raffina quindi il confronto tra documento e query, creando un nuovo vettore delle Query più "raffinato".
+
+Il raffinamento della Query è a beneficio dell'Utente mentre il motore di ricerca attraverso la **document modification** raffina i vettori delle caratteristiche dei documenti. 
+
+Modifichiamo il vettore delle caratteristiche di un documento in base alle query che vengono ripetute e modificate dagli utenti.
+
+La documento modification avviene in maniera automatica (in seguito a click utente che modificano il ranking del documento) o manuale (a pagamento per agevolare il ranking, persone valutano i documenti e ne identificano le caratteristiche).
+
+Nella document modification:
+
+* La modifica di un documento beneficia anche altri utenti.
+* I valori dei pesi dei documenti vengono aggiornati considerando la query stessa (e non considerando la lista dei documenti giudicati rilevanti dall’utente).
+* Vengono aumentati i pesi dei termini che si trovano sia nella query che nell’insieme dei documenti rilevanti.
+* Vengono diminuiti i pesi dei termini che si trovano nell’insieme dei documenti rilevanti ma non nella query.
+
+##### Modello basato su Cluster
+
+Raccogliamo in uno spazio(cluster) i documenti simili tra loro.
+
+All’interno del cluster individuiamo l’elemento centroide ossia un elemento reale o virtuale che lo
+identifica.
+
+Il confronto della query non lo facciamo con tutti i documenti, ma con i diversi centroidi di documenti.
+
+Fra i centroidi si sceglie quello più vicino alla query e lo si confronta con essa.
+
+**Generazione del cluster**
+
+**Similarità per coppie:** si costruisce una matrice delle distanze; ogni documento è
+distante in termine di similarità da un altro documento e si costruisce la matrice.
+
+Si prende la coppia di documenti con la minor distanza; la coppia viene eliminata dalla matrice e si restituisce come un unico elemento centroide che è come se fosse il centro fra i due.
+
+Si ripete il procedimento finché la matrice non diventa di un unico elemento formando un cluster
+“agglomerato di documenti”.
+
+**Clustering euristico:** parte dall’ipotesi di aver un unico documento in un unico cluster.
+
+Quando arriva un documento dall’esterno lo si aggiunge al cluster più similarmente vicino ad esso.
+
+Se il documento è troppo distante dal cluster se ne forma uno nuovo.
+
+##### Cluster-Based Retrieval
+
+Dopo aver generato i vari Cluster, la ricerca sarà più efficace.
+
+Data una Query, si restituiscono l'insieme di Documenti del Cluster in cui il Centroide è simile alla Query ricercata.
+
+Il confronto avviene solo sui Centroidi è non su tutti i documenti.

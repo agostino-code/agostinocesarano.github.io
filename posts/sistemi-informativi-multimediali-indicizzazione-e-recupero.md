@@ -285,3 +285,43 @@ Nella pratica, i parametri di valutazione recall e precisione vengono valutati i
 **Tipicamente quanto maggiore è la recall tanto minore risulta la precisione:** infatti quanto maggiore è lo sforzo della query per prelevare tutti i documenti rilevanti, tanto maggiore sarà la probabilità che in output andranno anche documenti non rilevanti (e quindi imprecisione).
 
 **Viceversa quanto maggiore è la precisione tanto minore risulta la recall:** per evitare di prendere elementi non rilevanti si finisce inevitabilmente per non prelevare qualche documento rilevante.
+
+##### Indicizzazione e recupero dell’audio
+
+Per ciò che riguarda l'audio non esiste uno standard per l'indicizzazione.
+
+Non c’è un metodo generale che permetta di definire quale sia lo standard.
+
+Per gli esseri umani risulta semplice saper distinguere tra:
+
+* differenti tipi di audio (voce, musica, rumori,…)
+* diverse “velocità di esecuzione” (lento, svelto,…)
+* diversi toni (felice, arrabbiato, triste,…).
+
+Inoltre, per un essere umano, risulta semplice determinare la similitudine tra diversi pezzi audio.
+
+Attualmente, il modo più utilizzato per classificare vari brani audio è basato sul titolo oppure sul nome del file.
+
+Tale metodo rende impossibile ricercare tramite query come “cercare un brano audio simile a quello che abbiamo appena ascoltato”.
+
+Ulteriore complicazione nasce dal fatto che non esiste uno standard di memorizzazione del file audio (diverse frequenze di campionamento, ampiezze,….) e ciò comporta ovviamente grosse problematiche per il loro confronto.
+
+Risulta pertanto necessario sviluppare tecniche e metodi di retrieving diverse.
+
+**Approccio generale per l’audio indexing**
+
+L’approccio che viene generalmente seguito per lo studio dei vari brani audio consiste nel realizzare un primo livello di distinzione:
+
+* Parlato
+* Musica
+* Rumori
+
+La gestione è quindi diversificata per tipologie: per esempio nei file audio, lo studio del parlato (speech recognition) consiste principalmente nel convertire il file audio parlato in parole di testo su cui si potrà poi effettuare una query tradizionale.
+
+Le query audio vengono gestite su sottoinsiemi simili di brani audio.
+
+La distinzione tra diverse tipologie audio è importante per diverse ragioni:
+
+* Diversi tipi di audio richiedono differenti tecniche di indicizzazione e recupero
+* Diversi tipi di audio assumono significati diversi per le applicazioni
+* La classificazione comporta poi una riduzione dello spazio di ricerca

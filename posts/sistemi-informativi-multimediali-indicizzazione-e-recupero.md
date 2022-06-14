@@ -279,3 +279,9 @@ Il confronto avviene solo sui Centroidi è non su tutti i documenti.
   totale di documenti recuperabili.
 
 ![Calcolo prestazione di un MIRS](/static/img/prestazioni-di-un-mirs.jpg "Calcolo prestazione di un MIRS")
+
+Nella pratica, i parametri di valutazione recall e precisione vengono valutati in modo congiunto, ed una buona prestazione è indice di compromesso.
+
+**Tipicamente quanto maggiore è la recall tanto minore risulta la precisione:** infatti quanto maggiore è lo sforzo della query per prelevare tutti i documenti rilevanti, tanto maggiore sarà la probabilità che in output andranno anche documenti non rilevanti (e quindi imprecisione).
+
+**Viceversa quanto maggiore è la precisione tanto minore risulta la recall:** per evitare di prendere elementi non rilevanti si finisce inevitabilmente per non prelevare qualche documento rilevante.

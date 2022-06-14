@@ -383,3 +383,33 @@ Nel Dominio delle Frequenze il segnale viene rappresentato come ampiezza che var
 ![Spettro del segnale](/static/img/spettogramma.png "Spettro del segnale")
 
 *Colore più intenso indica una ampiezza maggiore.*
+
+##### Bandwidth (Larghezza di Banda) 
+
+Gamma (o range) delle frequenze di un suono.
+
+*Es. Mediamente la musica ha un range molto più ampio del parlato*
+
+Il metodo più semplice adottato per il calcolo del range effettua una differenza:
+
+> Range frequenze = Max. Frequenza - Min. Frequenza
+
+Lo spettro del segnale facilita la valutazione della distribuzione delle frequenze componenti; ad esempio è possibile rapidamente valutare se il segnale possiede componenti con frequenze elevate.
+
+* La presenza di alte frequenze nel segnale audio comporta che con alta probabilità il segnale in oggetto contiene musica (la musica ha frequenze molto più elevate rispetto il parlato).
+* **7kHz è la soglia del parlato:** se facciamo un’analisi e notiamo che la frequenza non supera i 7kHz allora già possiamo stabilire che il segnale audio non rappresenta musica ma parlato.
+
+Ciò non è possibile nel dominio temporale, ma solo in quello frequenziale.
+
+> Frequenze fino a 7 kHz banda bassa; frequenze oltre i 7 kHz banda alta.
+
+**Armoniche**
+
+Un suono prodotto da un corpo vibrante non è mai puro, ma è costituito da più segnali più acuti e meno intensi, questi sono gli armonici, che hanno una importanza fondamentale nella determinazione del timbro di uno strumento e nella determinazione degli intervalli musicali.
+
+> Le armoniche di un suono sono multiple in frequenza rispetto una frequenza più
+> bassa detta frequenza fondamentale.
+
+In genere la musica contiene molte più armoniche di un semplice suono
+
+Il test che stabilisce se un suono contiene armoniche controlla che le frequenze di componenti dominanti siano multiple di una frequenza fondamentale.

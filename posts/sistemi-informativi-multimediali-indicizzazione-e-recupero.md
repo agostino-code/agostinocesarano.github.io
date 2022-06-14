@@ -123,6 +123,15 @@ In cui:
 * N = numero totale dei documenti del DataBase
 * dfj = numero dei documenti del DataBase che contengono il termine j
 
+##### Algoritmo di pattern matching e pattern matching 2
+
+Nell’algoritmo di pattern matching 2 spostiamo il pattern di ricerca più avanti di una casella alla volta a differenza di quello normale, ciò è possibile grazie alla particolare funzione fallimento che si costruisce partendo dal pattern di ricerca (disposizione dell' testo).
+
+Grazie ad essa, una volta costruita se si fallisce un determinato numero di confronti non abbiamo bisogno di proseguire, poiché riusciamo a prevedere già cosa si trova in seguito che non corrisponde col pattern, quindi possiamo spostarci di n posizioni in avanti, non dovendo scorrere
+tutti i caratteri.
+
+Ciò migliora la complessità computazionale della ricerca: per l’algoritmo di pattern matching 2 equivale a **O(M+N)** e **O(M*N)** per l'algoritmo di pattern matching semplice carattere per carattere.
+
 ##### Retrival con modello vettoriale
 
 Il “retrieval” di un documento dal database mediante il modello spazio vettoriale si basa sul calcolo del prodotto scalare tra vettori.

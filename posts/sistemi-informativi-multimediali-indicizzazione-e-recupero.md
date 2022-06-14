@@ -325,3 +325,61 @@ La distinzione tra diverse tipologie audio è importante per diverse ragioni:
 * Diversi tipi di audio richiedono differenti tecniche di indicizzazione e recupero
 * Diversi tipi di audio assumono significati diversi per le applicazioni
 * La classificazione comporta poi una riduzione dello spazio di ricerca
+
+**Proprietà e caratteristiche principali dell’audio**
+
+Del segnale audio possiamo avere una rappresentazione:
+
+> Nel dominio temporale \[time domain] (rappresentazione Tempo/Ampiezza)
+
+l’asse X rappresenta il tempo, l’asse Y rappresenta l’ampiezza del segnale
+
+> Nel dominio delle frequenze (rappresentazione Frequenza/Magnitudine)
+
+Es. La voce arriva ad una frequenza di 7K
+
+**Si passa dal dominio temporale a quello frequenziale utilizzando la trasformata di Fourier.**
+
+Ciascun tipo di rappresentazione è particolarmente idonea per l’estrazione di determinate
+caratteristiche.
+
+##### Caratteristiche derivabili dal Time Domain
+
+La rappresentazione Time Domain è la tecnica più immediata ed intuitiva per la rappresentazione di un segnale la cui ampiezza varia nel tempo.
+
+Dal time domain possiamo ricavare il silenzio ossia un parametro rappresentato dallo 0.
+
+I valori del segnale possono essere positivi o negativi a seconda se la pressione d’aria provocata dall’onda sonora risulta essere superiore o inferiore alla pressione atmosferica in condizioni di silenzio.
+
+Si assume che ogni campione audio sia rappresentato mediante un insieme di 16 bit; ciò comporta che il campionamento dei valori da 32767 (2^15‐1) a ‐32767.
+
+
+**Average Energy (energia media)**
+
+Rappresenta l’energia complessiva che un certo segnale esprime, dovuta all’intensità con la quale viene espresso un suono.
+
+* Più è alta è l’ampiezza del segnale audio più elevata l’intensità.
+* Indica la “rumorosità” del segnale audio
+
+**Zero crossing rate**
+
+Frequenza di passaggio per lo zero. Indica con quale frequenza cambia segno l’ampiezza del segnale.
+
+**Silence Ratio (Quantità di silenzio)**
+
+Indica la proporzione di silenzio nel brano musicale; è il periodo entro il quale i valori
+assoluti di ampiezza di un certo numero di campioni (e non solo un singolo valore) e per un “certo” tempo siano prossimi allo zero.
+
+##### Caratteristiche derivanti dal Dominio delle Frequenze
+
+La rappresentazione nel dominio delle frequenze deriva dalla rappresentazione nel dominio temporale applicando la trasformata di Fourier.
+
+La trasformata di Fourier decompone un segnale nelle proprie frequenze componenti.
+
+Nel Dominio delle Frequenze il segnale viene rappresentato come ampiezza che varia in base alla frequenza; in altre parole tale rappresentazione mostra in che modo è distribuita l’energia alle varie frequenze.
+
+> La rappresentazione nel dominio delle Frequenze è comunemente detta **Spettro del segnale**
+
+![Spettro del segnale](/static/img/spettogramma.png "Spettro del segnale")
+
+*Colore più intenso indica una ampiezza maggiore.*

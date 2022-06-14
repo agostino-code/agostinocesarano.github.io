@@ -267,3 +267,15 @@ Dopo aver generato i vari Cluster, la ricerca sarà più efficace.
 Data una Query, si restituiscono l'insieme di Documenti del Cluster in cui il Centroide è simile alla Query ricercata.
 
 Il confronto avviene solo sui Centroidi è non su tutti i documenti.
+
+##### Misurazione delle prestazioni
+
+* Velocità di ricerca
+* **Recall:** capacità di recuperare informazioni rilevanti dal database. Si
+  definisce come rapporto tra il numero dei documenti rilevanti recuperati
+  ed il numero totale di elementi rilevanti nel database.
+* **Precisione:** misura l’accuratezza dei documenti recuperati. Si definisce
+  come rapporto tra il numero di documenti rilevanti recuperati ed il numero
+  totale di documenti recuperabili.
+
+![Calcolo prestazione di un MIRS](/static/img/prestazioni-di-un-mirs.jpg "Calcolo prestazione di un MIRS")

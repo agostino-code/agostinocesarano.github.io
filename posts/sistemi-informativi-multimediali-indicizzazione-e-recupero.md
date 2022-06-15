@@ -424,7 +424,7 @@ Ogni “pezzetto” di parlato (frame temporale per esempio di 10 ms) viene rapp
 
 Il processo di riconoscimento consiste nel considerare più piccola delle differenze tra il vettore P e ciascun vettore memorizzato nella precedente fase di Training.
 
-**Dinamic Time Warping**
+**Dynamic Time Warping**
 
 Quando abbiamo un’onda che esprime un certo segnale da riconoscere, non abbiamo mai la corrispondenza diretta con un altro: dobbiamo trovare un modo per sovrapporre i segnali.
 
@@ -437,3 +437,12 @@ Dobbiamo estrarre delle caratteristiche dal segnale che ci consentano di riconos
 *Quindi se abbiamo un segnale dove devo riconoscere il parlato, da confrontare con un altro segnale già riconosciuto, ma con un parlato più veloce, o più lento, posso effettuare la contrazione o la dilatazione del segnale nell'asse del tempo per far combaciare i picchi.*
 
 ![Time Warping](/static/img/time-warping.jpg "Time Warping")
+
+**Altri usi dell' Dynamic Time Warping**
+
+Riconoscimento di una firma basata sull’abbinamento e sul confronto di punti significativi della
+firma di riferimento e quella da verificare.
+
+Per sapere se le firme sono uguale prendiamo una serie di punti e cerchiamo di trovare una serie di corrispondenze tra le due.
+
+![Signature verification](/static/img/signature-verification.png "Signature verification")

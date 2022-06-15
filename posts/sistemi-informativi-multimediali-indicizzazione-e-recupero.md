@@ -353,7 +353,6 @@ I valori del segnale possono essere positivi o negativi a seconda se la pression
 
 Si assume che ogni campione audio sia rappresentato mediante un insieme di 16 bit; ciò comporta che il campionamento dei valori da 32767 (2^15‐1) a ‐32767.
 
-
 **Average Energy (energia media)**
 
 Rappresenta l’energia complessiva che un certo segnale esprime, dovuta all’intensità con la quale viene espresso un suono.
@@ -384,7 +383,7 @@ Nel Dominio delle Frequenze il segnale viene rappresentato come ampiezza che var
 
 *Colore più intenso indica una ampiezza maggiore.*
 
-##### Bandwidth (Larghezza di Banda) 
+##### Bandwidth (Larghezza di Banda)
 
 Gamma (o range) delle frequenze di un suono.
 
@@ -440,9 +439,17 @@ Dobbiamo estrarre delle caratteristiche dal segnale che ci consentano di riconos
 
 **Altri usi dell' Dynamic Time Warping**
 
-Riconoscimento di una firma basata sull’abbinamento e sul confronto di punti significativi della
+Con il Time Warping possiamo effettuare il riconoscimento di una firma basata sull’abbinamento e sul confronto di punti significativi della
 firma di riferimento e quella da verificare.
 
 Per sapere se le firme sono uguale prendiamo una serie di punti e cerchiamo di trovare una serie di corrispondenze tra le due.
 
 ![Signature verification](/static/img/signature-verification.png "Signature verification")
+
+Alcuni esempi di applicazione del Time Warping sono::
+
+* Riconoscimento del parlato (speech recognition)
+* Riconoscimento della scrittura (handwriting and online signature matching)
+* Riconoscimento dei gesti (gesture recognition)
+* Allineamento delle sequenza di proteine
+* Musica ed elaborazione di segnali

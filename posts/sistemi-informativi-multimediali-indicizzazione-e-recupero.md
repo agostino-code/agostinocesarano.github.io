@@ -434,4 +434,6 @@ Dobbiamo estrarre delle caratteristiche dal segnale che ci consentano di riconos
 >
 > In particolare facciamo corrispondere i picchi del segnale.
 
-*Quindi se abbiamo un segnale dove devo riconoscere il parlato, da confrontare con un altro segnale già riconosciuto, ma con un parlato più veloce, o più lento, posso effettuare lo stretching o la dilatazione del segnale nell'asse del tempo per far combaciare i picchi.*
+*Quindi se abbiamo un segnale dove devo riconoscere il parlato, da confrontare con un altro segnale già riconosciuto, ma con un parlato più veloce, o più lento, posso effettuare la contrazione o la dilatazione del segnale nell'asse del tempo per far combaciare i picchi.*
+
+![Time Warping](/static/img/time-warping.jpg "Time Warping")

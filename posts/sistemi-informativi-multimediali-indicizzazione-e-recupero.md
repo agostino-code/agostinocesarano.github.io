@@ -413,3 +413,25 @@ Un suono prodotto da un corpo vibrante non è mai puro, ma è costituito da più
 In genere la musica contiene molte più armoniche di un semplice suono
 
 Il test che stabilisce se un suono contiene armoniche controlla che le frequenze di componenti dominanti siano multiple di una frequenza fondamentale.
+
+##### Riconoscimento del parlato
+
+> Lo *automatic speech recognition (ASR*) prende in input un segnale audio e restituisce un testo, il quale viene indicizzato e ne recupera le caratteristiche.
+
+**Tecniche basate sul Dynamic Time Warping (DTW)**
+
+Ogni “pezzetto” di parlato (frame temporale per esempio di 10 ms) viene rappresentato da un vettore P di caratteristiche.
+
+Il processo di riconoscimento consiste nel considerare più piccola delle differenze tra il vettore P e ciascun vettore memorizzato nella precedente fase di Training.
+
+**Dinamic Time Warping**
+
+Quando abbiamo un’onda che esprime un certo segnale da riconoscere, non abbiamo mai la corrispondenza diretta con un altro: dobbiamo trovare un modo per sovrapporre i segnali.
+
+Dobbiamo estrarre delle caratteristiche dal segnale che ci consentano di riconoscerlo.
+
+> Col DTW dobbiamo fare una sorta di “stretching” del segnale sull’asse del tempo, per estenderlo, in modo da farlo coincidere con un altro segnale.
+>
+> In particolare facciamo corrispondere i picchi del segnale.
+
+*Quindi se abbiamo un segnale dove devo riconoscere il parlato, da confrontare con un altro segnale già riconosciuto, ma con un parlato più veloce, o più lento, posso effettuare lo stretching o la dilatazione del segnale nell'asse del tempo per far combaciare i picchi.*

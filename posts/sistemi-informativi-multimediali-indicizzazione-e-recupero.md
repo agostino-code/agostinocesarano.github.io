@@ -615,3 +615,20 @@ verso sinistra o destra.
 * alta luminosità: quando aumentiamo la luminosità l’istogramma di colore viene traslato verso destra verso toni più chiari
 * bassa luminosità: quando diminuiamo la luminosità l’istogramma di colore viene
   traslato verso sinistra verso toni più scuri
+
+**Indicizzazione su istogramma di colore. Confronto tra immagini.**
+
+Dobbiamo definire una metrica di misurazione per stabilire quanto un’immagine è simile ad un’altra immagine.
+
+Il processo che viene effettuato sarà quello di misurare inizialmente l’immagine di input col
+suo istogramma di colore facendo poi un confronto con le immagini presenti nel db e i loro istogrammi per stabilire quale di esse corrisponde o si avvicina di più all’immagine fornita in input tramite la query.
+
+Per la ricerca delle immagini nel DB serve definire una misura di distanza tra l’istogramma dell’immagine query e quelli delle immagini contenute nel database.
+
+Date 2 immagini A e B, la misura di distanza più semplice è data da:
+
+![Confronto istogrammi](/static/img/confronto-istogrammi.jpg "Confronto istogrammi")
+
+La distanza tra A e B consiste nella somma di tutti gli ai - bi. Quindi effettuiamo una differenza tra i pixel dell’immagine A e quelli dell’immagine B, relativi al bit iesimo.
+
+Questo per ogni bin dell’immagine.

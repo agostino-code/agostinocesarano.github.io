@@ -629,6 +629,4 @@ Date 2 immagini A e B, la misura di distanza più semplice è data da:
 
 ![Confronto istogrammi](/static/img/confronto-istogrammi.jpg "Confronto istogrammi")
 
-La distanza tra A e B consiste nella somma di tutti gli ai - bi. Quindi effettuiamo una differenza tra i pixel dell’immagine A e quelli dell’immagine B, relativi al bit iesimo.
-
-Questo per ogni bin dell’immagine.
+Quindi effettuiamo una differenza tra i pixel dell’immagine A e quelli dell’immagine B, relativi al bit iesimo. Questo per ogni bin dell’immagine.

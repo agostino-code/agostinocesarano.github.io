@@ -453,3 +453,45 @@ Alcuni esempi di applicazione del Time Warping sono::
 * Riconoscimento dei gesti (gesture recognition)
 * Allineamento delle sequenza di proteine
 * Musica ed elaborazione di segnali
+
+**Prestazione dei Sistemi di Speech Recognition**
+
+Le prestazioni dei Sistemi di Speech Recognition sono influenzate dai seguenti fattori:
+
+* Soggetto del parlato: articolo di giornale, libro tecnico, ecc…
+* Tipo di parlato: letto o conversazione spontanea
+* Dimensione del vocabolario utilizzato
+
+**Tecniche di identificazione dello speaker**
+
+Si tenta di riconoscere non solo il contenuto del parlato (speech recognition) ma anche lo speaker,
+attraverso tecniche come reti neurali.
+
+Cercano di estrarre informazioni su chi sta parlando ed alcuni degli obiettivi sono:
+
+Identificazione del numero di speaker che stanno parlando
+
+Identificazione del sesso o dell’età dello speaker
+
+Identificazione dello stato emotivo o attitudinale (allegro, triste, ecc…)
+
+Riconoscimento della persona che sta parlando (Voice Recognition)
+
+Utilizzano un approccio contrario ai metodi di Speech Recognition (i quali devono essere speaker‐independent e quindi cercano di eliminare le caratteristiche peculiari del parlato di ognuno degli
+speaker) cercando di enfatizzare le differenze di pronuncia, linguistiche e temporali tra i vari speaker.
+
+**Relazioni tra audio ed altri media**
+
+Quando bisogna fare il riconoscimento di un filmato è sbagliato fare un riconoscimento solo sulla parte video del filmato (la più complessa).
+
+Se all’interno di una sequenza multimediale complessa dobbiamo riconoscere una determinata sequenza, facciamo l’analisi dell’audio.
+
+Possiamo segmentare la traccia video in base all’audio.
+
+> Segmentare significa suddividere un oggetto rispettando la sua natura e il significato delle sue parti. 
+
+Facciamo corrispondere la segmentazione audio a quella video: saranno tra loro sincronizzate.
+
+In molte applicazioni l’audio è parte di un oggetto multimediale composito (ad esempio un film) dove esistono delle forti relazioni temporali tra video ed audio.
+
+Possiamo utilizzare la conoscenza su uno dei media per migliorare l’indicizzazione e la comprensione del contenuto dell’altro media, quindi individuando delle caratteristiche audio, possiamo capire cosa viene mostrato in video.

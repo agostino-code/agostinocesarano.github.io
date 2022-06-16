@@ -591,3 +591,11 @@ Se per ogni pixel dell’immagine scegliamo di rappresentare la sfumatura di que
 I bins sono quantizzazioni dell’intervallo di valori che può assumere un pixel (da 0 a 255).
 
 Possiamo suddividere quindi l’intervallo di colori possibili in 255 parti, chiamate bins.
+
+**Confronto degli istogrammi di immagini**
+
+![Istogramma di colore](/static/img/instogramma-di-colore.jpg "Istogramma di colore")
+
+In questo caso decomponiamo l’immagine nello schema RGB, attraverso l’istogramma dei blu, dei verdi e dei rossi.
+
+![Istogramma e contrasto](/static/img/istogramma-e-contrasto.jpg "Istogramma e contrasto")

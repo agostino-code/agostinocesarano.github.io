@@ -630,3 +630,40 @@ Date 2 immagini A e B, la misura di distanza più semplice è data da:
 ![Confronto istogrammi](/static/img/confronto-istogrammi.jpg "Confronto istogrammi")
 
 Quindi effettuiamo una differenza tra i pixel dell’immagine A e quelli dell’immagine B, relativi al bit iesimo. Questo per ogni bin dell’immagine.
+
+**Problemi relativi all’indicizzazione tramite istogramma del colore: problema dei bins e similarità**
+
+La discretizzazione dello spazio dei colori in classi (bins) non tiene conto della similarità dei colori:
+
+* Due bins adiacenti vengono considerati totalmente diversi.
+* Il posizionamento della linea di demarcazione tra i bins influisce fortemente sull’istogramma e sul calcolo della distanza.
+* La rappresentazione dei colori non è univoca:
+
+  * Dipendenza dal sistema di rappresentazione
+  * Dipendenza dal «device»
+
+Quindi il confronto per istogrammi non è sempre funzionale.
+
+**Limiti dell’approccio Color-Based: background**
+
+Mascheramento dell’immagine ad opera dello sfondo.
+
+Gli istogrammi sono fortemente condizionati dalla presenza di grandi blocchi di colore omogeneo e risulta che le immagini che contengono un oggetto in primo piano siano trattate in maniera errata in quanto nell’istogramma i pixel dello sfondo (background) sono maggiormente rappresentati e “mascherano” l’oggetto in primo piano.
+
+**Come si risolve questo problema?**
+
+Si possono usare tecniche di segmentazione (automatiche o semi‐ automatiche) per suddividere le
+immagini in soggetto e sfondo e, quindi, calcolare separatamente i due istogrammi usandoli
+singolarmente.
+
+##### Indicizzazione e Ricerca basate sulla forma
+
+Si basa su algoritmi di segmentazione delle immagini che sono in grado di suddividere una immagine in singoli oggetti attraverso metodi automatici o semiautomatici.
+
+I sistemi efficienti devono avere una rappresentazione unica dell’immagine, invariante rispetto a traslazione, rotazione o scala.
+
+L’immagine può essere ruotata, scalata e traslata o tutte e tre (rototraslata e poi scalata).
+
+L’immagine però rimane sempre la stessa. 
+
+*Dobbiamo essere capaci di analizzare la forma dell’immagine attraverso tecniche di segmentazione comprendendo che l’immagine può fare match anche se alterata rispetto alla forma.*

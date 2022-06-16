@@ -819,3 +819,44 @@ Se ad un certo punto la differenza tra un fotogramma i+k e i+k+1 è piccola, all
 un falso allarme e la somma si annulla.
 
 Se la differenza supera invece una certo valore allora vuol dire che la differenza che abbiamo accumulato è tale che sia evidente che c’è un cambio di shot.
+
+**Cambiamenti di illuminazione**
+
+Un secondo problema è dovuto alla determinazione di falsi shot a causa di cambiamenti di illuminazione.
+
+Un cambio di illuminazione potrebbe ingannare un algoritmo di analisi video, inducendolo a pensare che ci sia un cambio di shot.
+
+Per evitare questo “falso-positivo” dobbiamo normalizzare l’immagine.
+
+* usando diversi step di elaborazione, si possono applicare operazioni di normalizzazione ai colori.
+* oppure si possono valutare sperimentalmente gli istogrammi di colore del frame, perché abbiamo detto che se in un immagine cambia la luminosità l’istogramma di colore riamane
+  pressoché identico ma si sposta verso destra.
+
+**Richiami: modulo vettore, vettore normalizzato, normalizzare un vettore**
+
+
+**Come si calcola il modulo?** Il modulo è la lunghezza del vettore, segmento. Rappresentiamo il vettore numericamente, ad esempio, v = < 3, -5 >. Per trovare la grandezza possiamo utilizzare le coordinate, e cioè, 3 alla radice quadrata, più, -5 alla radice quadrata.
+
+
+**Come si fa a calcolare il modulo di un vettore?** L’intensità del vettore sarà uguale all’ipotenusa del triangolo ottenuto; quindi, per calcolarla potrai utilizzare il teorema di Pitagora. Utilizza il teorema di Pitagora per risalire alla formula utile a calcolare l’intensità di un vettore.ù
+
+Il teorema di Pitagora afferma
+quanto segue: A^2 + B^2 = C^2.
+
+**Modulo del vettore** = Radice quadrata delle componenti del vettore elevate al quadrato. 
+
+
+**Vettore normalizzato**
+
+
+Un vettore normalizzato è un vettore identico all’originario che ha un modulo unitario.
+
+Normalizzare significa prendere un vettore con le sue componenti, conservare la sua direzione e dividere ogni componente del vettore per il suo modulo in modo che diventi di lunghezza unitaria.
+
+> Normalizzare significa trasformare il vettore in un altro vettore che punta sempre nella stessa direzione ma con lunghezza uguale a 1.
+
+*Esempio*
+
+![Normalizzazione di un vettore](/static/img/normalizzazione-vettore.jpg "Normalizzazione di un vettore")
+
+*Prima si calcola il modulo, poi si divide ogni componente del vettore per il modulo.*

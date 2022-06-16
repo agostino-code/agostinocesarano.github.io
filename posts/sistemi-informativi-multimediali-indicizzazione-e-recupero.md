@@ -495,3 +495,31 @@ Facciamo corrispondere la segmentazione audio a quella video: saranno tra loro s
 In molte applicazioni l’audio è parte di un oggetto multimediale composito (ad esempio un film) dove esistono delle forti relazioni temporali tra video ed audio.
 
 Possiamo utilizzare la conoscenza su uno dei media per migliorare l’indicizzazione e la comprensione del contenuto dell’altro media, quindi individuando delle caratteristiche audio, possiamo capire cosa viene mostrato in video.
+
+##### Indicizzazione e recupero delle immagini
+
+L’indicizzazione ed il recupero delle immagini costituisce un settore di ricerca in cui si sono raggiunti risultati molto importanti e avanzati.
+
+I risultati ottenuti in questa di ricerca sono spesso sfruttati nei database relazionali di tipo commerciale.
+Tecniche usate spesso in: google photos, amazon photos, flickr. 
+
+Ad esempio in google foto se cerchiamo “bottiglia” ci propone tutte le immagini che dentro contengono bottiglie, perché fa un’analisi e le trova.
+
+Google foto va oltre la classificazione delle foto “per evento”. Fa classificazioni automatiche.
+
+Le principali tecniche di indicizzazione sono:
+
+![Indicizzazione delle immagini](/static/img/indicizzazione-foto.jpg "Indicizzazione delle immagini")
+
+**Memorizzazione di attributi strutturati**
+
+Questa strategia è fondata sulla memorizzazione di informazioni per ognuna delle immagini del D.B.M.S. dei cosiddetti Meta-Dati :
+
+> Nome del file, Data di creazione, Autore, Categoria dell’immagine, Soggetto.
+
+L’indicizzazione e la ricerca possono quindi essere effettuate con tecniche standard dei DBMS.
+
+I limiti più evidenti di questa metodologia sono:
+
+* Gli attributi possono non descrivere in maniera completa le immagini
+* Le query sono limitate ai soli attributi memorizzati

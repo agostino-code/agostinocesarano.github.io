@@ -860,3 +860,33 @@ Normalizzare significa prendere un vettore con le sue componenti, conservare la 
 ![Normalizzazione di un vettore](/static/img/normalizzazione-vettore.jpg "Normalizzazione di un vettore")
 
 *Prima si calcola il modulo, poi si divide ogni componente del vettore per il modulo.*
+
+**Utilizzo degli shot e loro indicizzazione**
+
+Vogliamo trovare un modo per indicizzare lo shot, sequenza di fotogrammi tra loro congrui. Lo scopo dell’indicizzazione è quello di “tirare fuori” un informazione quanto più sintetica possibile.
+
+Dopo aver individuato gli shot, occorre rappresentarli ed indicizzarli in modo da essere efficacemente gestiti dalla fase di ricerca.
+
+Per ogni shot si determinano uno o più frame rappresentativi ( Representative Frame r ‐frame ) che vengono usati per l’indicizzazione e la ricerca con tecniche simili a quelle viste per le immagini statiche (colore , forma o texture ).
+
+**Quanti r ‐frame occorre utilizzare per ogni shot?**
+
+1 r ‐frame per ogni shot
+
+Svantaggi:
+
+* Non vengono considerate correttamente le differenze di lunghezza tra i vari shot.
+* Non è “catturato” completamente il contenuto di uno shot.
+
+N r-frame al secondo
+
+Svantaggi:
+
+* Gestisco la lunghezza ma non il contenuto (non è detto che li abbia presi in modo corretto)
+* Potrebbero anche essere sovrabbondanti nel caso di uno shot molto uniforme (se non c’è
+  grande cambiamento in esso)
+
+Suddivisione in sotto‐shot
+
+Metodologia: Mediante le stesse tecniche utilizzate per la determinazione degli shot, si
+introduce un nuovo livello e si genera un r‐frame per ogni sotto‐shot.

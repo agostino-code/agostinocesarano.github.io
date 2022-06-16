@@ -667,3 +667,5 @@ L’immagine può essere ruotata, scalata e traslata o tutte e tre (rototraslata
 L’immagine però rimane sempre la stessa. 
 
 *Dobbiamo essere capaci di analizzare la forma dell’immagine attraverso tecniche di segmentazione comprendendo che l’immagine può fare match anche se alterata rispetto alla forma.*
+
+![Indicizzazione in base alla forma](/static/img/indicizzazione-forma.png "Indicizzazione in base alla forma")

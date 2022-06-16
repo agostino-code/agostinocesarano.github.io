@@ -693,3 +693,100 @@ Quando abbiamo una figura da confrontare con un’altra converrebbe subito *norm
 Una volta individuato il minimo rettangolo di base contenente l’immagine è possibile effettuare una normalizzazione di scala ridimensionando tutte le forme presenti nel DataBase in modo tale che abbiano tutte lo stesso asse maggiore.
 
 ![Normalizzazione rispetto alla scala](/static/img/normalizzazione-scala.jpg "Normalizzazione rispetto alla scala")
+
+**Calcolo della similarità**
+
+**FASE 1:** Eccentricità molto diverse → Se due forme hanno eccentricità molto diversa tra di loro,
+allora non c’è alcun bisogno di calcolare la similarità in quanto possiamo assumere che, di
+conseguenza, le figure siano molto diverse.
+
+**FASE 2:** Eccentricità uguale o simile → Se due forme hanno uguale eccentricità (e quindi la loro
+stringa binaria ha uguale lunghezza), la similarità tra di loro si calcola come differenza tra rappresentazione binaria delle due immagini.
+
+**Indicizzazione e recupero dei video**
+
+Il video è uno dei media più complessi.
+
+**Segmentazione**
+
+Segmentare un oggetto informativo significa dividere l’oggetto in diverse parti usando un criterio di divisione che rispetti la natura dell’oggetto.
+
+Per rispettare la natura del video il criterio di suddivisione deve essere basato sul contenuto del video (es. per una partita di calcio abbiamo scena del gol, del calcio d’angolo e così via..).
+
+> Tipicamente per il video la suddivisione può avvenire quando c’è un cambio di camera infatti può rappresentare il fatto che si inquadrano scene diverse.
+
+**Indicizzazione e ricerca video**
+
+Il Video è ricco di informazioni in quanto è spesso corredato di:
+
+* Sottotitoli (testo)
+* Colonna sonora (audio parlato e/o musica)
+* Frame (immagini catturate e riprodotte a velocità costante),
+* Metadati (titolo, autore, produttore, ecc…).
+
+
+Un video è costituito quindi da diverse “piste informative” per tanto è possibile usare una pista
+informativa per segmentarne un’altra. 
+
+Possiamo ad esempio usare la traccia audio per segmentare un video, non guardando i fotogrammi del video ma seguendo la traccia audio e segmentandola in corrispondenza di parole rilevanti che quindi ci permettono di individuare anche la scena video corrispondente (es. nella partita di calcio quando lo speaker grida “gol” tagliamo l’audio pochi secondi prima e dopo l’urlo ed in corrispondenza nella traccia video avremo individuato anche la scena del gol).
+
+**Retrival per singolo fotogramma**
+
+Il video viene considerato come una serie di immagini indipendenti su cui è possibile applicare tecniche per immagini.
+
+Tipicamente su un secondo di tempo ci sono 25 fotogrammi, il cui scorrimento rapido ci da idea di fluidità.
+
+Essi servono per mantenere l’immagine sul nostro occhio (persistenza dell’immagine sulla retina) ma sarebbe impossibile analizzarli tutti dato che ne sono molti e tra un fotogramma e l’altro il contenuto non varia di molto.
+
+Conviene distanziare i fotogrammi di un certo tempo, a meno che non ci interessi un particolare frame.
+
+Questo approccio dunque comporta evidenti svantaggi:
+
+* perdita di informazioni temporali
+* la mole di dati da elaborare è molto grande
+
+
+**Retrival per gruppi di fotogrammi**
+
+I frame vengono suddivisi in gruppi (shots) e l’indicizzazione è basata sui frame rappresentativi di ogni shot.
+
+
+I migliori risultati derivano combinando due o più metodi.
+
+**Indicizzazione e ricerca basata sugli SHOT**
+
+Lo SHOT è gruppo di frame contigui che hanno uno o più delle seguenti caratteristiche:
+
+* Frame fanno parte della stessa scena
+* Frame non sono interrotti da uno “stacco” della telecamera
+* Frame contengono lo stesso evento / azione
+
+Per individuare i vari SHOT che compongono un video sono necessarie tecniche di segmentazione automatiche.
+
+**Segmentazione automatica**
+
+I frame consecutivi che sono ubicati prima e dopo un “cambio di camera” generalmente mostrano un elevato cambiamento quantitativo nel loro contenuto.
+
+Per individuare gli shot occorre definire una misura quantitativa che catturi la differenza tra una coppia di frame:
+
+> Data una certa soglia, se la differenza tra un frame e il successivo supera tale valore, il punto viene considerato una interruzione tra shot diversi.
+
+Preso il fotogramma i è confrontandolo con il successivo i+1, se c'è una grande differenza tra i due frame si divide lo SHOT.
+
+**Differenza tra frame**
+
+Per verificare eventuali passaggi tra shot occorre misurare la differenza tra 2 frame consecutivi.
+
+**Metodo 1:** si calcola la somma, pixel per pixel, delle differenze tra i 2 frame consecutivi.
+
+Questo metodo non garantisce buoni risultati poiché la presenza di oggetti in
+movimento causa grandi differenze anche all’interno della stessa scena e porta a
+ottenere molte false interruzioni di shot.
+
+**Metodo 2:** si calcola la differenza tra gli istogrammi di colore dei 2 frame consecutivi.
+
+Il metodo è basato sul fatto che il movimento di oggetti all’interno della stessa scena
+causa piccole variazioni nell’istogramma dell’immagine ma non così significative da
+determinare un cambio di shot
+
+*Se le metodologie adottate “scoprono” grosse variazioni allora probabilmente si tratta di un cambio di scena.*

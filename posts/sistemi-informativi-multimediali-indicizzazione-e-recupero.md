@@ -790,3 +790,32 @@ causa piccole variazioni nell’istogramma dell’immagine ma non così signific
 determinare un cambio di shot
 
 *Se le metodologie adottate “scoprono” grosse variazioni allora probabilmente si tratta di un cambio di scena.*
+
+**Shot e transizioni**
+
+Quando tra una scena e l’altra di un video sono utilizzate le transizioni (dissolvenza incrociata, fade‐in, fade‐out, ecc…) la differenza frame per frame è sempre molto bassa.
+
+Sarebbe necessario introdurre una soglia molto più bassa ma con il rischio di trovare molti cambiamenti di shot che non corrispondono a effettivi cambi di scena.
+
+Il cambiamento morbido e graduale del frame tramite queste dissolvenze può creare difficoltà nel segmentare un video ed individuare cambi di shot che sono “non evidenti”.
+
+Per risolvere questo problema usiamo la segmentazione a due soglie.
+
+**Segmentazione a due soglie**
+
+Un meccanismo utilizzato consiste nell’introdurre due soglie diverse:
+
+* una più alta Tb utilizzata per determinare i cambi di camera
+* una più bassa Ts per determinare i frame nei quali avviene una transizione graduale
+
+Confrontando un frame con il successivo, se la differenza è maggiore di Tb si introduce un cambio di shot, se la differenza è minore di Tb ma superiore a Ts il frame è dichiarato come un potenziale frame di transizione.
+
+A questo punto si incominciano a valutare le differenze tra il fotogramma i e il fotogramma i+1,
+confrontando gli istogrammi di colore conservando le differenze.ù
+
+Se la differenza esiste ancora nei fotogrammi successivi si somma alla precedente e così via accumulandola.
+
+Se ad un certo punto la differenza tra un fotogramma i+k e i+k+1 è piccola, allora vuole dire che è
+un falso allarme e la somma si annulla.
+
+Se la differenza supera invece una certo valore allora vuol dire che la differenza che abbiamo accumulato è tale che sia evidente che c’è un cambio di shot.

@@ -669,3 +669,27 @@ L’immagine però rimane sempre la stessa.
 *Dobbiamo essere capaci di analizzare la forma dell’immagine attraverso tecniche di segmentazione comprendendo che l’immagine può fare match anche se alterata rispetto alla forma.*
 
 ![Indicizzazione in base alla forma](/static/img/indicizzazione-forma.png "Indicizzazione in base alla forma")
+
+**Definizioni geometrie degli oggetti**
+
+* **ASSE MAGGIORE**: segmento che congiunge i due punti della forma che sono più distanti fra di loro.
+* **ASSE MINORE**: segmento perpendicolare all’asse maggiore e tale che il rettangolo il cui lati sono paralleli ai due assi racchiuda completamente l’intera forma.
+*  **RETTANGOLO DI BASE**: il rettangolo descritto nella precedente (esso coincide con il più piccolo
+  rettangolo che contiene l’intera figura)
+* **ECCENTRICITA’**: rapporto tra la lunghezza dell’asse maggiore e la lunghezza dell’asse minore
+
+![Eccentricità immagini](/static/img/eccentricità.jpg "Eccentricità immagini")
+
+**Normalizzazione rispetto alle rotazioni**
+
+Il problema è che la figura potrebbe avere anche delle traslazioni: non si memorizzano nel db anche le figure traslate.
+
+> Quello che si fa è riformulare la query, si effettua una trasformazione sulla query stessa che viene riproposta quindi per la seconda volta per intercettare l’immagine traslata.
+
+**Normalizzazione rispetto ai cambiamenti di scala**
+
+Quando abbiamo una figura da confrontare con un’altra converrebbe subito *normalizzare l’immagine da confrontare (renderla in forma canonica)*: 
+
+Una volta individuato il minimo rettangolo di base contenente l’immagine è possibile effettuare una normalizzazione di scala ridimensionando tutte le forme presenti nel DataBase in modo tale che abbiano tutte lo stesso asse maggiore.
+
+![Normalizzazione rispetto alla scala](/static/img/normalizzazione-scala.jpg "Normalizzazione rispetto alla scala")

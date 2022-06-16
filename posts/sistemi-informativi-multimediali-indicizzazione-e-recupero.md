@@ -599,3 +599,19 @@ Possiamo suddividere quindi l’intervallo di colori possibili in 255 parti, chi
 In questo caso decomponiamo l’immagine nello schema RGB, attraverso l’istogramma dei blu, dei verdi e dei rossi.
 
 ![Istogramma e contrasto](/static/img/istogramma-e-contrasto.jpg "Istogramma e contrasto")
+
+Diverse tipologie di contrasto applicate sulla foto originale producono alcuni cambiamenti sull’istogramma iniziale dell’immagine.
+
+Con un basso contrasto addensiamo tutti i puntini dell’immagine intorno ad una stessa parte, non ci sono punti estremi, man mano che il contrasto si abbassa più la punta diventerà alta fino al
+caso massimo in cui il contrasto è nullo e vedremo un’unica tinta.
+
+
+Con alto contrasto si vengono a creare dei punti di accumulazione con addensamento di valori,
+più il contrasto diventa elevato più tutto si addensa intorno a pochi colori.
+
+Con bassa o alta luminosità l’istogramma non si deforma, esso viene semplicemente traslato
+verso sinistra o destra.
+
+* alta luminosità: quando aumentiamo la luminosità l’istogramma di colore viene traslato verso destra verso toni più chiari
+* bassa luminosità: quando diminuiamo la luminosità l’istogramma di colore viene
+  traslato verso sinistra verso toni più scuri

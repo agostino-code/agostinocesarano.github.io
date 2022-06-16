@@ -523,3 +523,71 @@ I limiti più evidenti di questa metodologia sono:
 
 * Gli attributi possono non descrivere in maniera completa le immagini
 * Le query sono limitate ai soli attributi memorizzati
+
+Riconoscimento degli oggetti (computer vision)
+
+Questa strategia è fondata su sofisticate tecniche di estrazione di feature e di algoritmi di riconoscimento degli oggetti presenti nella scena.
+
+Caratteristiche principali:
+
+* Sono computazionalmente molto pesanti
+* Richiedono algoritmi estremamente sofisticati
+* Godono di una buona prestazione solo per domini applicativi ristretti
+* Sono argomento di ricerca avanzata (Computer Vision)
+
+In queste tecniche il sistema deve riconoscere in modo automatico tutto ciò che c’è nella fotografia e in qualche modo deve tirare fuori una serie di elementi che costituiranno il features vector che ci permetterà di fare il retrieving dell’immagine.
+
+*Lo svantaggio è la grande capacità di computazione richiesta.*
+
+
+Tecniche di utilizzo specifiche:
+
+* Tecniche di riconoscimento del viso si dicono tecniche biometriche che ci permettono di riconoscere una persona attraverso la distanza degli occhi forma del viso ecc.
+* Altro esempio di riconoscimento immagini è il sistema che rileva il numero di targa, tutor.
+
+**Annotazioni libere (Text-based image retrieval)**
+
+Le immagini sono descritte con testo libero (non controllato).
+
+La ricerca usa gli algoritmi convenzionali di IR (Information retrieval) basati sulla ricerca di similarità tra query e testo descrittivo delle immagini.
+
+Essendo una tecnica “manuale”, occorre notare che:
+
+* Il testo deve essere il più possibile completo e consistente
+* Il testo introdotto potrebbe essere soggettivo e occorre utilizzare tecniche di relevance feedback
+
+I vantaggi sono che si possono “catturare” anche concetti di alto livello (cioè astratti) presenti nell’immagine che possono essere captati solo dall'uomo.
+
+Questo però richiede che un uomo descrivi ogni immagine, perdiamo quelli che sono gli automatismi dell'indicizzazione.
+
+**Estrazione di feature di basso livello**
+
+L’estrazione di feature di basso livello è definita su tecniche di indicizzazione e ricerca basate sul
+contenuto (content‐based).
+
+Possono prendere in considerazione una o più delle seguenti caratteristiche:
+
+* COLORE
+* FORMA
+* TEXTURE: immagine che si ripete, zone di riempiemento che si ripetono
+
+**Algoritmi basati sull’analisi del colore: istogramma di colore**
+
+Ogni immagine è memorizzata assegnando ai pixel tre valori numerici ad ognuno dei canali di colore (ad esempio RGB).
+
+Ogni canale è campionato in m intervalli (quantizzazione dei colori): il numero totale di combinazioni diverse (bins) è m al cubo. (es: 16 intervalli di colore 4096 bins)
+
+> Si definisce ISTOGRAMMA di COLORE la curva permette di capire come sono distribuiti i colori all’interno dell’immagine.
+
+
+Un’immagine rgb può essere caratterizzata da 3 istogrammi di colore:
+
+uno che rappresenta la distribuzione dei blu, uno dei verdi e uno dei rossi.
+
+
+Se per ogni pixel dell’immagine scegliamo di rappresentare la sfumatura di quel pixel con 1 byte significa che per 8 bit ho 2^8 = 256 valori possibili toni di grigio (lo 0 rappresenta il nero  255 è il bianco).
+
+
+I bins sono quantizzazioni dell’intervallo di valori che può assumere un pixel (da 0 a 255).
+
+Possiamo suddividere quindi l’intervallo di colori possibili in 255 parti, chiamate bins.

@@ -890,3 +890,40 @@ Suddivisione in sotto‐shot
 
 Metodologia: Mediante le stesse tecniche utilizzate per la determinazione degli shot, si
 introduce un nuovo livello e si genera un r‐frame per ogni sotto‐shot.
+
+**Individuazione degli r-frame**
+
+1. Si considera come r‐frame il primo frame dello shot (o del sotto‐shot)
+2. Si calcola un frame “medio” facendo la media dei colori di tutti frame dello shot pixel per pixel
+3. Si calcola la media di tutti gli istogrammi dei frame dello shot e scelgo come r‐frame il frame il cui istogramma è più vicino all’istogramma medio.
+
+**Tecniche basate sulle informazioni di movimento**
+
+Vogliamo indicizzare uno shot tramite caratteristiche rilevanti.
+
+Un video è caratterizzato anche da spostamenti.
+
+Supponiamo ci sia un oggetto che si sposta fotogramma per fotogramma.
+
+L’oggetto si sposta nei vari punti dell’immagine.
+
+Una volta fatto il riconoscimento dell’oggetto si va a calcolare il suo spostamento. 
+
+Gli spostamenti vengono memorizzati in un **motion vector** che farà parte del vettore delle caratteristiche del filmato.
+
+Si memorizza la sequenza di spostamento dell’oggetto nell’immagine.
+
+La percorrenza o lo spostamento di un oggetto definisce un ulteriore caratteristica rilevante per un video.
+
+**Tecniche basate sul riconoscimento degli oggetti**
+
+Nell’analisi di un video anziché studiare l’intera immagine ed analizzarla per riconoscere un oggetto, memorizziamo nel vettore delle caratteristiche del video il **minimum bounding box** dell’oggetto ossia il minimo rettangolo che contiene interamente l’oggetto.
+
+Quindi salviamo solo il rettangolo di base con i suoi spostamenti, non l’oggetto in sé e lavoriamo su di esso che è anche più facile da gestire.
+
+Le tecniche di riconoscimento sono di difficile applicazione nel caso di immagini statiche.
+
+Contrariamente a quanto può essere intuitivamente pensato, nel caso di dati video tali tecniche
+funzionano meglio in quanto il movimento degli oggetti tra frame successivi fornisce informazioni utili per segmentare il video e riconoscerne i singoli elementi.
+
+Gli oggetti riconosciuti sono quindi utilizzati per l’indicizzazione degli shot e la successiva ricerca.

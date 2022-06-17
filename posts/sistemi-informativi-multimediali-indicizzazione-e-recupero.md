@@ -927,3 +927,34 @@ Contrariamente a quanto può essere intuitivamente pensato, nel caso di dati vid
 funzionano meglio in quanto il movimento degli oggetti tra frame successivi fornisce informazioni utili per segmentare il video e riconoscerne i singoli elementi.
 
 Gli oggetti riconosciuti sono quindi utilizzati per l’indicizzazione degli shot e la successiva ricerca.
+
+**Presentazione video tramite MICON**
+
+Un modo per rappresentare in modo significativo uno shot è quello di usare la tecnica del MICON
+(Motion Icon): rappresentazioni compatta degli shot (l’analogo delle miniature per immagini fisse).
+
+Se disponiamo i fotogrammi uno dietro l’altro possiamo immaginare questo pacchetto di
+frames come un oggetto tridimensionale a forma di parallelepipedo.
+
+Guardando dall’alto l’oggetto osserviamo una striscia di pixel che rappresenta il bordo superiore del fotogramma e ci descrive il movimento dell’oggetto.
+
+
+Guardando di lato il discorso è analogo.
+
+Una MICON è caratterizzata da tre dimensioni:
+
+* Un r‐frame
+* La profondità (indica la durata temporale)
+* I pixel presenti sui bordi orizzontali e verticali i quali danno una idea del movimento all’interno dello shot
+
+Si possono implementare alcune operazioni sulle MICON:
+
+* Browsing: posso portare in primo piano qualunque frame dello shot
+* Taglio: posso tagliare orizzontalmente o verticalmente il “cubo” per ottenere informazioni
+  aggiuntive
+
+
+Quindi si legge anche l’evoluzione temporale e di movimento dell’oggetto. Si ottiene una sintesi
+sia temporale che spaziale.
+
+![MICON](/static/img/micon.jpg "MICON")

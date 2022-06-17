@@ -958,3 +958,13 @@ Quindi si legge anche l’evoluzione temporale e di movimento dell’oggetto. Si
 sia temporale che spaziale.
 
 ![MICON](/static/img/micon.jpg "MICON")
+
+**Browser video gerarchico**
+
+Quando si fa la classificazione di un video bisogna immaginarlo dal punto di vista concettuale come una gerarchia informativa costituita da diversi livelli.
+
+Il browser video gerarchico è uno strumento che consente di ispezionare in maniera gerarchica i vari elementi di un video.
+
+L’utente si muove sulla gerarchia alla ricerca delle informazioni che gli interessano.
+
+![Gerarchia video](/static/img/gerarchia-video.jpg "Gerarchia video")

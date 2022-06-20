@@ -32,4 +32,4 @@ La visita postorder, partendo dalla radice, visita prima i sottoalberi, in ultim
 
 La BFS Breadth-First Search è un algoritmo di visita che partendo dalla radice, visita tutti i livelli dell'albero in ampiezza.
 
-![](/static/img/breadth-.png)
+![Visita in ampiezza](/static/img/breadth-.png "Visita in ampiezza")

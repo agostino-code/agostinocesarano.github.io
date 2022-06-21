@@ -7,4 +7,12 @@ summary: Appunti per il corso di LASD, Professore Mogavero; esercizio numero 4,
 tags:
   - LASD
 ---
-**BST**
+##### BST
+
+Il BST è un albero binario che rispetta tre proprietà:
+
+1. Il sottoalbero sinistro di un nodo x contiene soltanto i nodi con chiavi minori della chiave del nodo x,
+2. Il sottoalbero destro di un nodo x contiene soltanto i nodi con chiavi maggiori della chiave del nodo x,
+3. Il sottoalbero destro e il sottoalbero sinistro devono essere entrambi due alberi binari di ricerca;
+
+**Implementazione in C++**

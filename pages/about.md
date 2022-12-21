@@ -8,4 +8,4 @@ eleventyNavigation:
   key: Chi sono?
   order: 1
 ---
-Studente Universitario presso <!--StartFragment-->[Università degli Studi di Napoli Federico II](https://www.unina.it/)<!--EndFragment-->, corso di laurea di [](https://informatica.dieti.unina.it/index.php/it/corsi-di-laurea/laurea)<!--StartFragment-->[Informatica](https://informatica.dieti.unina.it/index.php/it/corsi-di-laurea/laurea).<!--EndFragment-->
+Studente Universitario presso <!--StartFragment-->[Università degli Studi di Napoli Federico II](https://www.unina.it/)<!--EndFragment-->, corso di laurea in [](https://informatica.dieti.unina.it/index.php/it/corsi-di-laurea/laurea)<!--StartFragment-->[Informatica](https://informatica.dieti.unina.it/index.php/it/corsi-di-laurea/laurea).<!--EndFragment-->

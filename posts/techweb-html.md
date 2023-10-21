@@ -2,7 +2,7 @@
 title: TechWeb (HTML)
 date: 2023-10-21T10:38:40.686Z
 author: Agostino Cesarano
-summary: Appunti sull'HTML del corso di TechWeb, Anna Corazza.
+summary: Appunti per il corso di TechWeb, Professoressa Anna Corazza, HTML.
 tags:
   - TechWeb
 ---

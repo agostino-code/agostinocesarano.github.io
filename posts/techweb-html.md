@@ -2,9 +2,9 @@
 title: TechWeb (HTML)
 date: 2023-10-21T10:38:40.686Z
 author: Agostino Cesarano
-summary: HTML
+summary: Appunti sull'HTML del corso di TechWeb, Anna Corazza.
 tags:
-  - post
+  - TechWeb
 ---
 # HTML
 
@@ -66,14 +66,8 @@ Le form rappresentano uno, ma non l’unico, dei modi per passare parametri al s
 
 Normalmente la presenza di una form in un documento HTML presentato lato client implica programmazione lato server per implementare un programma che prenda in ingresso i parametri raccolti dalla form e li elabori in modo opportuno.
 
-<aside>
-💡 **ATTENZIONE**
-Non bisogna confondere il concetto di elemento con quello di etichetta. Infatti, l’elemento è una
-parte di documento, mentre l’etichetta è semplicemente un nome, che in un certo senso caratterizza il tipo dell’elemento (ad esempio, se si tratta di un titolo o di un paragrafo). In un documento
-possono esserci più elementi con la stessa etichetta. La stessa considerazione ovviamente vale
-anche per l’XML.
 
-</aside>
+💡 **ATTENZIONE** Non bisogna confondere il c**oncetto di elemento con quello di etichetta**. Infatti, **l’elemento è una parte di documento, mentre l’etichetta è semplicemente un nome, che in un certo senso caratterizza il tipo dell’elemento** (ad esempio, se si tratta di un titolo o di un paragrafo). In un documento possono esserci più elementi con la stessa etichetta. La stessa considerazione ovviamente vale anche per l’XML.
 
 ### HTML5
 
@@ -127,7 +121,5 @@ diverse:
 
 > Tutte le risorse (ad esempio, script, stili, immagini, dati) caricate da questa pagina devono provenire dalla stessa origine per evitare problemi di sicurezza.
 
-<aside>
-💡 La Same-Origin Policy è una misura di sicurezza importante che garantisce che le risorse di una pagina web siano isolate da altre origini, contribuendo a proteggere gli utenti da potenziali minacce e vulnerabilità.
 
-</aside>
+💡 La Same-Origin Policy è una misura di sicurezza importante che garantisce che le risorse di una pagina web siano isolate da altre origini, contribuendo a proteggere gli utenti da potenziali minacce e vulnerabilità.
